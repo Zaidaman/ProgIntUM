@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Progetto_UI",
+    "\\Progetto_UI.Web",
+    "\\Progetto_UI.Web\\Areas\\Example",
+    "\\Progetto_UI.Web\\Areas\\Example\\Users",
+    "\\Progetto_UI\\Infrastructure",
+    "\\Progetto_UI\\Services",
+    "\\Progetto_UI\\Services\\Shared"
+  ],
+  "SelectedNode": "\\Progetto_UI\\Infrastructure\\DataGenerator.cs",
+  "PreviewInSolutionExplorer": false
+}
