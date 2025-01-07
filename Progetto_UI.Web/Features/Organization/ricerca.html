@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ricerca Oggetti</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .back-home {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      z-index: 1100;
+	  background-color: black;
+    }
+  </style>
+</head>
+<body>
+  <!-- Bottone per tornare alla home -->
+  <a href="home.html" class="btn btn-outline-secondary back-home">
+    <i class="bi bi-house-door-fill"></i> Home
+  </a>
+
+  <div class="container my-5">
+    <h1 class="text-center">Inventario Annuale</h1>
+    <p class="text-center">Seleziona un anno e, se necessario, compila i parametri per filtrare i risultati.</p>
+
+    <!-- Form di ricerca -->
+    <form id="searchForm" class="p-3 border rounded">
+      <!-- Dropdown per selezionare l'anno -->
+      <div class="mb-3">
+        <label for="yearDropdown" class="form-label">Seleziona Anno</label>
+        <select id="yearDropdown" class="form-select" required>
+          <option value="" disabled selected>Seleziona un anno</option>
+          <option value="2023">2023</option>
+          <option value="2024">2024</option>
+          <option value="2025">2025</option>
+        </select>
+      </div>
+
+      <!-- Input per codice oggetto -->
+      <div class="mb-3">
+        <label for="objectCode" class="form-label">Codice Oggetto (opzionale)</label>
+        <input type="text" id="objectCode" class="form-control" placeholder="Inserisci il codice oggetto">
+      </div>
+
+      <!-- Input per area -->
+      <div class="mb-3">
+        <label for="areaCode" class="form-label">Codice Area (opzionale)</label>
+        <input type="text" id="areaCode" class="form-control" placeholder="Inserisci il codice area">
+      </div>
+
+      <!-- Bottone di ricerca -->
+      <div class="text-center">
+        <button type="button" id="searchButton" class="btn btn-primary">Cerca</button>
+      </div>
+    </form>
+
+    <!-- Sezione risultati -->
+    <div id="resultsSection" class="mt-5 d-none">
+      <h2>Risultati della Ricerca</h2>
+      <ul id="resultsList" class="list-group"></ul>
+    </div>
+  </div>
+
+  <script>
+    const searchButton = document.getElementById('searchButton');
+    const resultsSection = document.getElementById('resultsSection');
+    const resultsList = document.getElementById('resultsList');
+
+    // Dati simulati per la ricerca
+    const data = [
+      { anno: "2023", codice: "OBJ001", area: "AREA01" },
+      { anno: "2023", codice: "OBJ002", area: "AREA02" },
+      { anno: "2024", codice: "OBJ003", area: "AREA01" },
+      { anno: "2024", codice: "OBJ004", area: "AREA03" },
+      { anno: "2025", codice: "OBJ005", area: "AREA02" },
+    ];
+
+    searchButton.addEventListener('click', () => {
+      const selectedYear = document.getElementById('yearDropdown').value;
+      const objectCode = document.getElementById('objectCode').value.trim();
+      const areaCode = document.getElementById('areaCode').value.trim();
+
+      // Filtra i dati in base ai parametri
+      const filteredData = data.filter(item => {
+        return (
+          item.anno === selectedYear &&
+          (objectCode === "" || item.codice === objectCode) &&
+          (areaCode === "" || item.area === areaCode)
+        );
+      });
+
+      // Mostra i risultati
+      resultsList.innerHTML = "";
+      if (filteredData.length > 0) {
+        filteredData.forEach(item => {
+          const li = document.createElement('li');
+          li.className = "list-group-item";
+          li.textContent = `Codice: ${item.codice}, Area: ${item.area}`;
+          resultsList.appendChild(li);
+        });
+      } else {
+        const li = document.createElement('li');
+        li.className = "list-group-item text-danger";
+        li.textContent = "Nessun risultato trovato.";
+        resultsList.appendChild(li);
+      }
+      resultsSection.classList.remove('d-none');
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
+</body>
+</html>
