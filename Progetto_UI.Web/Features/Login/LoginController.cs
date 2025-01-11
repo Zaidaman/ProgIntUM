@@ -43,10 +43,12 @@ namespace Progetto_UI.Web.Features.Login
                 IsPersistent = rememberMe,
             });
 
-            if (string.IsNullOrWhiteSpace(returnUrl) == false)
-                return Redirect(returnUrl);
+            if (string.IsNullOrWhiteSpace(returnUrl))
+            {
+                returnUrl = Url.Action("Index", "OrgHome", new { area = "Organization" });
+            }
 
-            return RedirectToAction(MVC.Example.Users.Index());
+            return Redirect(returnUrl);
         }
 
         [HttpGet]

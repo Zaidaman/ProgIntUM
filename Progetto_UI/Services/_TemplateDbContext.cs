@@ -16,7 +16,7 @@ namespace Progetto_UI.Services
 
     public class TemplateDbContext : DbContext
     {
-        public TemplateDbContext()
+        public TemplateDbContext(DbContextOptions<TemplateDbContext> options) : base(options)
         {
             var folder = Environment.CurrentDirectory;
             DbPath = System.IO.Path.Join(folder, "databaseIUM.db");

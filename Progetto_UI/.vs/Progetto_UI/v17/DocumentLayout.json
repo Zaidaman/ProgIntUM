@@ -3,8 +3,33 @@
   "WorkspaceRootPath": "C:\\Users\\steve\\Desktop\\ProgIntUM\\Progetto_UI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A1B99431-CF29-4890-8AB9-8DFF37C9BC35}|..\\Progetto_UI.Web\\Progetto_UI.Web.csproj|c:\\users\\steve\\desktop\\progintum\\progetto_ui.web\\features\\organization\\orghomecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B99431-CF29-4890-8AB9-8DFF37C9BC35}|..\\Progetto_UI.Web\\Progetto_UI.Web.csproj|c:\\users\\steve\\desktop\\progintum\\progetto_ui.web\\features\\login\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|c:\\users\\steve\\desktop\\progintum\\progetto_ui\\services\\_templatedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|solutionrelative:services\\_templatedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|c:\\users\\steve\\desktop\\progintum\\progetto_ui\\infrastructure\\datagenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|solutionrelative:infrastructure\\datagenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B99431-CF29-4890-8AB9-8DFF37C9BC35}|..\\Progetto_UI.Web\\Progetto_UI.Web.csproj|c:\\users\\steve\\desktop\\progintum\\progetto_ui.web\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|c:\\users\\steve\\desktop\\progintum\\progetto_ui\\services\\shared\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|solutionrelative:services\\shared\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|c:\\users\\steve\\desktop\\progintum\\progetto_ui\\services\\shared\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|solutionrelative:services\\shared\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|c:\\users\\steve\\desktop\\progintum\\progetto_ui\\services\\shared\\user.commands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|solutionrelative:services\\shared\\user.commands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|c:\\users\\steve\\desktop\\progintum\\progetto_ui\\progetto_ui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -14,28 +39,12 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\9.0.101\\Sdks\\Microsoft.NET.Sdk.Razor\\targets\\Microsoft.NET.Sdk.Razor.MvcApplicationPartsDiscovery.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|c:\\users\\steve\\desktop\\progintum\\progetto_ui\\infrastructure\\datagenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|solutionrelative:infrastructure\\datagenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|c:\\users\\steve\\desktop\\progintum\\progetto_ui\\services\\shared\\user.commands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|solutionrelative:services\\shared\\user.commands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|c:\\users\\steve\\desktop\\progintum\\progetto_ui\\services\\shared\\user.queries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|solutionrelative:services\\shared\\user.queries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|c:\\users\\steve\\desktop\\progintum\\progetto_ui\\services\\shared\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|solutionrelative:services\\shared\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|c:\\users\\steve\\desktop\\progintum\\progetto_ui\\services\\shared\\space.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|solutionrelative:services\\shared\\space.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|c:\\users\\steve\\desktop\\progintum\\progetto_ui\\services\\shared\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|solutionrelative:services\\shared\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|c:\\users\\steve\\desktop\\progintum\\progetto_ui\\services\\shared\\org.commands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -65,23 +74,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Microsoft.NET.Sdk.Razor.MvcApplicationPartsDiscovery.targets",
-              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\Sdks\\Microsoft.NET.Sdk.Razor\\targets\\Microsoft.NET.Sdk.Razor.MvcApplicationPartsDiscovery.targets",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.101\\Sdks\\Microsoft.NET.Sdk.Razor\\targets\\Microsoft.NET.Sdk.Razor.MvcApplicationPartsDiscovery.targets",
-              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\Sdks\\Microsoft.NET.Sdk.Razor\\targets\\Microsoft.NET.Sdk.Razor.MvcApplicationPartsDiscovery.targets",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.101\\Sdks\\Microsoft.NET.Sdk.Razor\\targets\\Microsoft.NET.Sdk.Razor.MvcApplicationPartsDiscovery.targets",
-              "ViewState": "AgIAACQAAAAAAAAAAAAjwDUAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2025-01-11T15:04:54.424Z"
+              "DocumentIndex": 0,
+              "Title": "OrgHomeController.cs",
+              "DocumentMoniker": "C:\\Users\\steve\\Desktop\\ProgIntUM\\Progetto_UI.Web\\Features\\Organization\\OrgHomeController.cs",
+              "RelativeDocumentMoniker": "..\\Progetto_UI.Web\\Features\\Organization\\OrgHomeController.cs",
+              "ToolTip": "C:\\Users\\steve\\Desktop\\ProgIntUM\\Progetto_UI.Web\\Features\\Organization\\OrgHomeController.cs*",
+              "RelativeToolTip": "..\\Progetto_UI.Web\\Features\\Organization\\OrgHomeController.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T17:17:12.304Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\steve\\Desktop\\ProgIntUM\\Progetto_UI.Web\\Features\\Login\\LoginController.cs",
+              "RelativeDocumentMoniker": "..\\Progetto_UI.Web\\Features\\Login\\LoginController.cs",
+              "ToolTip": "C:\\Users\\steve\\Desktop\\ProgIntUM\\Progetto_UI.Web\\Features\\Login\\LoginController.cs*",
+              "RelativeToolTip": "..\\Progetto_UI.Web\\Features\\Login\\LoginController.cs*",
+              "ViewState": "AgIAACQAAAAAAAAAAAAowDIAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T17:09:55.729Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\steve\\Desktop\\ProgIntUM\\Progetto_UI.Web\\Startup.cs",
+              "RelativeDocumentMoniker": "..\\Progetto_UI.Web\\Startup.cs",
+              "ToolTip": "C:\\Users\\steve\\Desktop\\ProgIntUM\\Progetto_UI.Web\\Startup.cs",
+              "RelativeToolTip": "..\\Progetto_UI.Web\\Startup.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAA1wCQAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T16:55:52.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Progetto_UI.csproj",
               "DocumentMoniker": "C:\\Users\\steve\\Desktop\\ProgIntUM\\Progetto_UI\\Progetto_UI.csproj",
               "RelativeDocumentMoniker": "Progetto_UI.csproj",
@@ -93,7 +129,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "User.Queries.cs",
               "DocumentMoniker": "C:\\Users\\steve\\Desktop\\ProgIntUM\\Progetto_UI\\Services\\Shared\\User.Queries.cs",
               "RelativeDocumentMoniker": "Services\\Shared\\User.Queries.cs",
@@ -105,20 +141,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "_TemplateDbContext.cs",
               "DocumentMoniker": "C:\\Users\\steve\\Desktop\\ProgIntUM\\Progetto_UI\\Services\\_TemplateDbContext.cs",
               "RelativeDocumentMoniker": "Services\\_TemplateDbContext.cs",
               "ToolTip": "C:\\Users\\steve\\Desktop\\ProgIntUM\\Progetto_UI\\Services\\_TemplateDbContext.cs",
               "RelativeToolTip": "Services\\_TemplateDbContext.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAABOAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAABdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-05T14:01:35.18Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "User.Commands.cs",
               "DocumentMoniker": "C:\\Users\\steve\\Desktop\\ProgIntUM\\Progetto_UI\\Services\\Shared\\User.Commands.cs",
               "RelativeDocumentMoniker": "Services\\Shared\\User.Commands.cs",
@@ -126,11 +162,12 @@
               "RelativeToolTip": "Services\\Shared\\User.Commands.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-05T14:01:28.194Z"
+              "WhenOpened": "2025-01-05T14:01:28.194Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "Org.Commands.cs",
               "DocumentMoniker": "C:\\Users\\steve\\Desktop\\ProgIntUM\\Progetto_UI\\Services\\Shared\\Org.Commands.cs",
               "RelativeDocumentMoniker": "Services\\Shared\\Org.Commands.cs",
@@ -142,19 +179,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\steve\\Desktop\\ProgIntUM\\Progetto_UI\\Services\\Shared\\User.cs",
               "RelativeDocumentMoniker": "Services\\Shared\\User.cs",
               "ToolTip": "C:\\Users\\steve\\Desktop\\ProgIntUM\\Progetto_UI\\Services\\Shared\\User.cs",
               "RelativeToolTip": "Services\\Shared\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAIBZwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-04T13:43:50.536Z"
+              "WhenOpened": "2025-01-04T13:43:50.536Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "Worker.cs",
               "DocumentMoniker": "C:\\Users\\steve\\Desktop\\ProgIntUM\\Progetto_UI\\Services\\Shared\\Worker.cs",
               "RelativeDocumentMoniker": "Services\\Shared\\Worker.cs",
@@ -172,13 +210,14 @@
               "RelativeDocumentMoniker": "Infrastructure\\DataGenerator.cs",
               "ToolTip": "C:\\Users\\steve\\Desktop\\ProgIntUM\\Progetto_UI\\Infrastructure\\DataGenerator.cs",
               "RelativeToolTip": "Infrastructure\\DataGenerator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAowBQAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-05T14:01:44.649Z"
+              "WhenOpened": "2025-01-05T14:01:44.649Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "_SharedService.cs",
               "DocumentMoniker": "C:\\Users\\steve\\Desktop\\ProgIntUM\\Progetto_UI\\Services\\Shared\\_SharedService.cs",
               "RelativeDocumentMoniker": "Services\\Shared\\_SharedService.cs",
@@ -190,7 +229,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 5,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\steve\\Desktop\\ProgIntUM\\Progetto_UI\\Services\\Shared\\Product.cs",
+              "RelativeDocumentMoniker": "Services\\Shared\\Product.cs",
+              "ToolTip": "C:\\Users\\steve\\Desktop\\ProgIntUM\\Progetto_UI\\Services\\Shared\\Product.cs",
+              "RelativeToolTip": "Services\\Shared\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T15:21:35.625Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Microsoft.NET.Sdk.Razor.MvcApplicationPartsDiscovery.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\Sdks\\Microsoft.NET.Sdk.Razor\\targets\\Microsoft.NET.Sdk.Razor.MvcApplicationPartsDiscovery.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.101\\Sdks\\Microsoft.NET.Sdk.Razor\\targets\\Microsoft.NET.Sdk.Razor.MvcApplicationPartsDiscovery.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\Sdks\\Microsoft.NET.Sdk.Razor\\targets\\Microsoft.NET.Sdk.Razor.MvcApplicationPartsDiscovery.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.101\\Sdks\\Microsoft.NET.Sdk.Razor\\targets\\Microsoft.NET.Sdk.Razor.MvcApplicationPartsDiscovery.targets",
+              "ViewState": "AgIAACQAAAAAAAAAAAAjwDUAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-01-11T15:04:54.424Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "Org.Queries.cs",
               "DocumentMoniker": "C:\\Users\\steve\\Desktop\\ProgIntUM\\Progetto_UI\\Services\\Shared\\Org.Queries.cs",
               "RelativeDocumentMoniker": "Services\\Shared\\Org.Queries.cs",
@@ -202,7 +266,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "Warehouse.cs",
               "DocumentMoniker": "C:\\Users\\steve\\Desktop\\ProgIntUM\\Progetto_UI\\Services\\Shared\\Warehouse.cs",
               "RelativeDocumentMoniker": "Services\\Shared\\Warehouse.cs",
@@ -214,19 +278,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\steve\\Desktop\\ProgIntUM\\Progetto_UI\\Services\\Shared\\Product.cs",
-              "RelativeDocumentMoniker": "Services\\Shared\\Product.cs",
-              "ToolTip": "C:\\Users\\steve\\Desktop\\ProgIntUM\\Progetto_UI\\Services\\Shared\\Product.cs",
-              "RelativeToolTip": "Services\\Shared\\Product.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-03T15:21:35.625Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "Space.cs",
               "DocumentMoniker": "C:\\Users\\steve\\Desktop\\ProgIntUM\\Progetto_UI\\Services\\Shared\\Space.cs",
               "RelativeDocumentMoniker": "Services\\Shared\\Space.cs",

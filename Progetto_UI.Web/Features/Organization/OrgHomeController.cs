@@ -7,7 +7,7 @@ namespace Progetto_UI.Web.Features.Organization
         [HttpGet]
         public virtual IActionResult Index()
         {
-            return View();
+            return View("Home");
         }
     }
 }
