@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Progetto_UI.Services.Shared.Organization
+namespace Progetto_UI.Services.Shared
 {
     public class AddProductToSpaceCommand
     {
@@ -41,7 +41,7 @@ namespace Progetto_UI.Services.Shared.Organization
             {
                 throw new Exception("Space not found");
             }
-            space.ProductId = cmd.ProductId;
+            space.Product = cmd.ProductId;
 
             await _dbContext.SaveChangesAsync();
         }
@@ -54,7 +54,7 @@ namespace Progetto_UI.Services.Shared.Organization
         public async Task Handle(MoveProductCommand cmd)
         {
             var space = await _dbContext.Space
-                .Where(x => x.ProductId == cmd.ProductId)
+                .Where(x => x.Product == cmd.ProductId)
                 .FirstOrDefaultAsync();
 
             if (space == null)
@@ -62,7 +62,7 @@ namespace Progetto_UI.Services.Shared.Organization
                 throw new Exception("Product not found in any space");
             }
 
-            space.ProductId = Guid.Empty; // Remove product from current space
+            space.Product = 0; // Remove product from current space
 
             var newSpace = await _dbContext.Space
                 .Where(x => x.Id == cmd.NewSpaceId)
@@ -73,7 +73,7 @@ namespace Progetto_UI.Services.Shared.Organization
                 throw new Exception("New space not found");
             }
 
-            newSpace.ProductId = cmd.ProductId;
+            newSpace.Product = cmd.ProductId;
 
             await _dbContext.SaveChangesAsync();
         }
@@ -86,7 +86,7 @@ namespace Progetto_UI.Services.Shared.Organization
         public async Task Handle(RemoveProductFromSpaceCommand cmd)
         {
             var space = await _dbContext.Space
-                .Where(x => x.ProductId == cmd.ProductId)
+                .Where(x => x.Product == cmd.ProductId)
                 .FirstOrDefaultAsync();
 
             if (space == null)
@@ -94,7 +94,7 @@ namespace Progetto_UI.Services.Shared.Organization
                 throw new Exception("Product not found in any space");
             }
 
-            space.ProductId = Guid.Empty; // Remove product from space
+            space.Product = 0; // Remove product from space
 
             await _dbContext.SaveChangesAsync();
         }

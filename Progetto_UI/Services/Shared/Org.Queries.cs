@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Progetto_UI.Services.Shared.Organization
+namespace Progetto_UI.Services.Shared
 {
     public class ProductEntry
     {

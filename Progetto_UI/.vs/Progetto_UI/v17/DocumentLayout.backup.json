@@ -1,26 +1,65 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\lucav\\Desktop\\progetto interfaccia uomo-macchina\\Progetto_UI\\",
+  "WorkspaceRootPath": "C:\\Users\\steve\\Desktop\\ProgIntUM\\Progetto_UI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|c:\\users\\lucav\\desktop\\progetto interfaccia uomo-macchina\\progetto_ui\\services\\shared\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\steve\\Desktop\\ProgIntUM\\Progetto_UI\\Migrations\\20250111151251_MigrationIUM.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20250111151251_MigrationIUM.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|c:\\users\\steve\\desktop\\progintum\\progetto_ui\\services\\_templatedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|solutionrelative:services\\_templatedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|c:\\users\\steve\\desktop\\progintum\\progetto_ui\\progetto_ui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|solutionrelative:progetto_ui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\9.0.101\\Sdks\\Microsoft.NET.Sdk.Razor\\targets\\Microsoft.NET.Sdk.Razor.MvcApplicationPartsDiscovery.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|c:\\users\\steve\\desktop\\progintum\\progetto_ui\\infrastructure\\datagenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|solutionrelative:infrastructure\\datagenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|c:\\users\\steve\\desktop\\progintum\\progetto_ui\\services\\shared\\user.commands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|solutionrelative:services\\shared\\user.commands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|c:\\users\\steve\\desktop\\progintum\\progetto_ui\\services\\shared\\user.queries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|solutionrelative:services\\shared\\user.queries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|c:\\users\\steve\\desktop\\progintum\\progetto_ui\\services\\shared\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|solutionrelative:services\\shared\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|c:\\users\\steve\\desktop\\progintum\\progetto_ui\\services\\shared\\space.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|solutionrelative:services\\shared\\space.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|c:\\users\\steve\\desktop\\progintum\\progetto_ui\\services\\shared\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|solutionrelative:services\\shared\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|c:\\users\\lucav\\desktop\\progetto interfaccia uomo-macchina\\progetto_ui\\services\\shared\\organization\\warehouse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|solutionrelative:services\\shared\\organization\\warehouse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|c:\\users\\steve\\desktop\\progintum\\progetto_ui\\services\\shared\\org.commands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|solutionrelative:services\\shared\\org.commands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|c:\\users\\lucav\\desktop\\progetto interfaccia uomo-macchina\\progetto_ui\\services\\shared\\organization\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|solutionrelative:services\\shared\\organization\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|c:\\users\\steve\\desktop\\progintum\\progetto_ui\\services\\shared\\org.queries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|solutionrelative:services\\shared\\org.queries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|c:\\users\\lucav\\desktop\\progetto interfaccia uomo-macchina\\progetto_ui\\services\\shared\\organization\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|solutionrelative:services\\shared\\organization\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|c:\\users\\steve\\desktop\\progintum\\progetto_ui\\services\\shared\\warehouse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|solutionrelative:services\\shared\\warehouse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|c:\\users\\lucav\\desktop\\progetto interfaccia uomo-macchina\\progetto_ui\\services\\shared\\organization\\space.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|solutionrelative:services\\shared\\organization\\space.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|c:\\users\\steve\\desktop\\progintum\\progetto_ui\\services\\shared\\_sharedservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|solutionrelative:services\\shared\\_sharedservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|c:\\users\\steve\\desktop\\progintum\\progetto_ui\\services\\shared\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|solutionrelative:services\\shared\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,71 +69,187 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\lucav\\Desktop\\progetto interfaccia uomo-macchina\\Progetto_UI\\Services\\Shared\\User.cs",
-              "RelativeDocumentMoniker": "Services\\Shared\\User.cs",
-              "ToolTip": "C:\\Users\\lucav\\Desktop\\progetto interfaccia uomo-macchina\\Progetto_UI\\Services\\Shared\\User.cs",
-              "RelativeToolTip": "Services\\Shared\\User.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "20250111151251_MigrationIUM.cs",
+              "DocumentMoniker": "C:\\Users\\steve\\Desktop\\ProgIntUM\\Progetto_UI\\Migrations\\20250111151251_MigrationIUM.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250111151251_MigrationIUM.cs",
+              "ToolTip": "C:\\Users\\steve\\Desktop\\ProgIntUM\\Progetto_UI\\Migrations\\20250111151251_MigrationIUM.cs",
+              "RelativeToolTip": "Migrations\\20250111151251_MigrationIUM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-04T13:43:50.536Z",
+              "WhenOpened": "2025-01-11T15:12:52.011Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Microsoft.NET.Sdk.Razor.MvcApplicationPartsDiscovery.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\Sdks\\Microsoft.NET.Sdk.Razor\\targets\\Microsoft.NET.Sdk.Razor.MvcApplicationPartsDiscovery.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.101\\Sdks\\Microsoft.NET.Sdk.Razor\\targets\\Microsoft.NET.Sdk.Razor.MvcApplicationPartsDiscovery.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\Sdks\\Microsoft.NET.Sdk.Razor\\targets\\Microsoft.NET.Sdk.Razor.MvcApplicationPartsDiscovery.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.101\\Sdks\\Microsoft.NET.Sdk.Razor\\targets\\Microsoft.NET.Sdk.Razor.MvcApplicationPartsDiscovery.targets",
+              "ViewState": "AgIAACQAAAAAAAAAAAAjwDUAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-01-11T15:04:54.424Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Progetto_UI.csproj",
+              "DocumentMoniker": "C:\\Users\\steve\\Desktop\\ProgIntUM\\Progetto_UI\\Progetto_UI.csproj",
+              "RelativeDocumentMoniker": "Progetto_UI.csproj",
+              "ToolTip": "C:\\Users\\steve\\Desktop\\ProgIntUM\\Progetto_UI\\Progetto_UI.csproj",
+              "RelativeToolTip": "Progetto_UI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-11T14:59:29.141Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "User.Queries.cs",
+              "DocumentMoniker": "C:\\Users\\steve\\Desktop\\ProgIntUM\\Progetto_UI\\Services\\Shared\\User.Queries.cs",
+              "RelativeDocumentMoniker": "Services\\Shared\\User.Queries.cs",
+              "ToolTip": "C:\\Users\\steve\\Desktop\\ProgIntUM\\Progetto_UI\\Services\\Shared\\User.Queries.cs",
+              "RelativeToolTip": "Services\\Shared\\User.Queries.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T14:06:33.114Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_TemplateDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\steve\\Desktop\\ProgIntUM\\Progetto_UI\\Services\\_TemplateDbContext.cs",
+              "RelativeDocumentMoniker": "Services\\_TemplateDbContext.cs",
+              "ToolTip": "C:\\Users\\steve\\Desktop\\ProgIntUM\\Progetto_UI\\Services\\_TemplateDbContext.cs",
+              "RelativeToolTip": "Services\\_TemplateDbContext.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-05T14:01:35.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "User.Commands.cs",
+              "DocumentMoniker": "C:\\Users\\steve\\Desktop\\ProgIntUM\\Progetto_UI\\Services\\Shared\\User.Commands.cs",
+              "RelativeDocumentMoniker": "Services\\Shared\\User.Commands.cs",
+              "ToolTip": "C:\\Users\\steve\\Desktop\\ProgIntUM\\Progetto_UI\\Services\\Shared\\User.Commands.cs",
+              "RelativeToolTip": "Services\\Shared\\User.Commands.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-05T14:01:28.194Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Org.Commands.cs",
+              "DocumentMoniker": "C:\\Users\\steve\\Desktop\\ProgIntUM\\Progetto_UI\\Services\\Shared\\Org.Commands.cs",
+              "RelativeDocumentMoniker": "Services\\Shared\\Org.Commands.cs",
+              "ToolTip": "C:\\Users\\steve\\Desktop\\ProgIntUM\\Progetto_UI\\Services\\Shared\\Org.Commands.cs",
+              "RelativeToolTip": "Services\\Shared\\Org.Commands.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBZwGAAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-05T14:01:10.651Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\steve\\Desktop\\ProgIntUM\\Progetto_UI\\Services\\Shared\\User.cs",
+              "RelativeDocumentMoniker": "Services\\Shared\\User.cs",
+              "ToolTip": "C:\\Users\\steve\\Desktop\\ProgIntUM\\Progetto_UI\\Services\\Shared\\User.cs",
+              "RelativeToolTip": "Services\\Shared\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBZwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-04T13:43:50.536Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "Worker.cs",
-              "DocumentMoniker": "C:\\Users\\lucav\\Desktop\\progetto interfaccia uomo-macchina\\Progetto_UI\\Services\\Shared\\Organization\\Worker.cs",
-              "RelativeDocumentMoniker": "Services\\Shared\\Organization\\Worker.cs",
-              "ToolTip": "C:\\Users\\lucav\\Desktop\\progetto interfaccia uomo-macchina\\Progetto_UI\\Services\\Shared\\Organization\\Worker.cs",
-              "RelativeToolTip": "Services\\Shared\\Organization\\Worker.cs",
+              "DocumentMoniker": "C:\\Users\\steve\\Desktop\\ProgIntUM\\Progetto_UI\\Services\\Shared\\Worker.cs",
+              "RelativeDocumentMoniker": "Services\\Shared\\Worker.cs",
+              "ToolTip": "C:\\Users\\steve\\Desktop\\ProgIntUM\\Progetto_UI\\Services\\Shared\\Worker.cs",
+              "RelativeToolTip": "Services\\Shared\\Worker.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-03T15:55:44.14Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Warehouse.cs",
-              "DocumentMoniker": "C:\\Users\\lucav\\Desktop\\progetto interfaccia uomo-macchina\\Progetto_UI\\Services\\Shared\\Organization\\Warehouse.cs",
-              "RelativeDocumentMoniker": "Services\\Shared\\Organization\\Warehouse.cs",
-              "ToolTip": "C:\\Users\\lucav\\Desktop\\progetto interfaccia uomo-macchina\\Progetto_UI\\Services\\Shared\\Organization\\Warehouse.cs",
-              "RelativeToolTip": "Services\\Shared\\Organization\\Warehouse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAUAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "DataGenerator.cs",
+              "DocumentMoniker": "C:\\Users\\steve\\Desktop\\ProgIntUM\\Progetto_UI\\Infrastructure\\DataGenerator.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\DataGenerator.cs",
+              "ToolTip": "C:\\Users\\steve\\Desktop\\ProgIntUM\\Progetto_UI\\Infrastructure\\DataGenerator.cs",
+              "RelativeToolTip": "Infrastructure\\DataGenerator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-03T15:21:57.753Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-05T14:01:44.649Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 13,
+              "Title": "_SharedService.cs",
+              "DocumentMoniker": "C:\\Users\\steve\\Desktop\\ProgIntUM\\Progetto_UI\\Services\\Shared\\_SharedService.cs",
+              "RelativeDocumentMoniker": "Services\\Shared\\_SharedService.cs",
+              "ToolTip": "C:\\Users\\steve\\Desktop\\ProgIntUM\\Progetto_UI\\Services\\Shared\\_SharedService.cs",
+              "RelativeToolTip": "Services\\Shared\\_SharedService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-05T14:01:24.657Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Org.Queries.cs",
+              "DocumentMoniker": "C:\\Users\\steve\\Desktop\\ProgIntUM\\Progetto_UI\\Services\\Shared\\Org.Queries.cs",
+              "RelativeDocumentMoniker": "Services\\Shared\\Org.Queries.cs",
+              "ToolTip": "C:\\Users\\steve\\Desktop\\ProgIntUM\\Progetto_UI\\Services\\Shared\\Org.Queries.cs",
+              "RelativeToolTip": "Services\\Shared\\Org.Queries.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T09:51:56.416Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Warehouse.cs",
+              "DocumentMoniker": "C:\\Users\\steve\\Desktop\\ProgIntUM\\Progetto_UI\\Services\\Shared\\Warehouse.cs",
+              "RelativeDocumentMoniker": "Services\\Shared\\Warehouse.cs",
+              "ToolTip": "C:\\Users\\steve\\Desktop\\ProgIntUM\\Progetto_UI\\Services\\Shared\\Warehouse.cs",
+              "RelativeToolTip": "Services\\Shared\\Warehouse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T15:21:57.753Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\lucav\\Desktop\\progetto interfaccia uomo-macchina\\Progetto_UI\\Services\\Shared\\Organization\\Product.cs",
-              "RelativeDocumentMoniker": "Services\\Shared\\Organization\\Product.cs",
-              "ToolTip": "C:\\Users\\lucav\\Desktop\\progetto interfaccia uomo-macchina\\Progetto_UI\\Services\\Shared\\Organization\\Product.cs",
-              "RelativeToolTip": "Services\\Shared\\Organization\\Product.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAUAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\steve\\Desktop\\ProgIntUM\\Progetto_UI\\Services\\Shared\\Product.cs",
+              "RelativeDocumentMoniker": "Services\\Shared\\Product.cs",
+              "ToolTip": "C:\\Users\\steve\\Desktop\\ProgIntUM\\Progetto_UI\\Services\\Shared\\Product.cs",
+              "RelativeToolTip": "Services\\Shared\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-03T15:21:35.625Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "Space.cs",
-              "DocumentMoniker": "C:\\Users\\lucav\\Desktop\\progetto interfaccia uomo-macchina\\Progetto_UI\\Services\\Shared\\Organization\\Space.cs",
-              "RelativeDocumentMoniker": "Services\\Shared\\Organization\\Space.cs",
-              "ToolTip": "C:\\Users\\lucav\\Desktop\\progetto interfaccia uomo-macchina\\Progetto_UI\\Services\\Shared\\Organization\\Space.cs",
-              "RelativeToolTip": "Services\\Shared\\Organization\\Space.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAUAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\steve\\Desktop\\ProgIntUM\\Progetto_UI\\Services\\Shared\\Space.cs",
+              "RelativeDocumentMoniker": "Services\\Shared\\Space.cs",
+              "ToolTip": "C:\\Users\\steve\\Desktop\\ProgIntUM\\Progetto_UI\\Services\\Shared\\Space.cs",
+              "RelativeToolTip": "Services\\Shared\\Space.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-03T15:21:36.555Z"
             }

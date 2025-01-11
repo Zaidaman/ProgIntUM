@@ -5,15 +5,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Progetto_UI.Services.Shared.Organization
+namespace Progetto_UI.Services.Shared
 {
-    public class Worker
+    public class Product
     {
         [Key]
-        public Guid Id { get; set; }
+        public int Id { get; set; }
 
         public string Name { get; set; }
-        public string Password { get; set; }
-        public Int32 action { get; set; }
+        public string Description { get; set; }
     }
 }

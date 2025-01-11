@@ -2,7 +2,6 @@
 using System.Linq;
 using Progetto_UI.Services;
 using Progetto_UI.Services.Shared;
-using Progetto_UI.Services.Shared.Organization;
 
 namespace Progetto_UI.Infrastructure
 {

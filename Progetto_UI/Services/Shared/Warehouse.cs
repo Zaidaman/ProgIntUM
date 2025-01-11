@@ -5,13 +5,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Progetto_UI.Services.Shared.Organization
+namespace Progetto_UI.Services.Shared
 {
-    public class Space
+    public class Warehouse
     {
         [Key]
-        public Int32 Id { get; set; }
-
-        public Int32 WarehouseId { get; set; }
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public int Capacity { get; set; }
     }
 }
