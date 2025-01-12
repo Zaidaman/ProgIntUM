@@ -34,14 +34,14 @@ namespace Progetto_UI.Services.Shared
         public async Task Handle(AddProductToSpaceCommand cmd)
         {
             var space = await _dbContext.Space
-                .Where(x => x.Id == cmd.SpaceId)
+                .Where(x => x.SpaceId == cmd.SpaceId)
                 .FirstOrDefaultAsync();
 
             if (space == null)
             {
                 throw new Exception("Space not found");
             }
-            space.Product = cmd.ProductId;
+            space.ProductId = cmd.ProductId;
 
             await _dbContext.SaveChangesAsync();
         }
@@ -54,7 +54,7 @@ namespace Progetto_UI.Services.Shared
         public async Task Handle(MoveProductCommand cmd)
         {
             var space = await _dbContext.Space
-                .Where(x => x.Product == cmd.ProductId)
+                .Where(x => x.ProductId == cmd.ProductId)
                 .FirstOrDefaultAsync();
 
             if (space == null)
@@ -62,10 +62,10 @@ namespace Progetto_UI.Services.Shared
                 throw new Exception("Product not found in any space");
             }
 
-            space.Product = 0; // Remove product from current space
+            space.ProductId = 0; // Remove product from current space
 
             var newSpace = await _dbContext.Space
-                .Where(x => x.Id == cmd.NewSpaceId)
+                .Where(x => x.SpaceId == cmd.NewSpaceId)
                 .FirstOrDefaultAsync();
 
             if (newSpace == null)
@@ -73,7 +73,7 @@ namespace Progetto_UI.Services.Shared
                 throw new Exception("New space not found");
             }
 
-            newSpace.Product = cmd.ProductId;
+            newSpace.ProductId = cmd.ProductId;
 
             await _dbContext.SaveChangesAsync();
         }
@@ -86,7 +86,7 @@ namespace Progetto_UI.Services.Shared
         public async Task Handle(RemoveProductFromSpaceCommand cmd)
         {
             var space = await _dbContext.Space
-                .Where(x => x.Product == cmd.ProductId)
+                .Where(x => x.ProductId == cmd.ProductId)
                 .FirstOrDefaultAsync();
 
             if (space == null)
@@ -94,7 +94,7 @@ namespace Progetto_UI.Services.Shared
                 throw new Exception("Product not found in any space");
             }
 
-            space.Product = 0; // Remove product from space
+            space.ProductId = 0; // Remove product from space
 
             await _dbContext.SaveChangesAsync();
         }

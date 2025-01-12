@@ -48,13 +48,13 @@ namespace Progetto_UI.Infrastructure
                 context.Warehouses.AddRange(
                     new Warehouse
                     {
-                        Id = 1,
+                        WarehouseId = 1,
                         Name = "Warehouse1",
                         Capacity = 100
                     },
                     new Warehouse
                     {
-                        Id = 2,
+                        WarehouseId = 2,
                         Name = "Warehouse2",
                         Capacity = 200
                     });
@@ -65,13 +65,13 @@ namespace Progetto_UI.Infrastructure
                 context.Products.AddRange(
                     new Product
                     {
-                        Id = 1,
+                        ProductId = 1,
                         Name = "Product1",
                         Description = "Description1"
                     },
                     new Product
                     {
-                        Id = 2,
+                        ProductId = 2,
                         Name = "Product2",
                         Description = "Description2"
                     });
@@ -82,12 +82,12 @@ namespace Progetto_UI.Infrastructure
                 context.Space.AddRange(
                     new Space
                     {
-                        Id = 1,
+                        SpaceId = 1,
                         WarehouseId = 1
                     },
                     new Space
                     {
-                        Id = 2,
+                        SpaceId = 2,
                         WarehouseId = 1
                     });
             }

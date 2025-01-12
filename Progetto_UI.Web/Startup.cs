@@ -13,11 +13,15 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 using Progetto_UI.Services;
+using System;
 
 namespace Progetto_UI.Web
 {
     public class Startup
     {
+
+        public string DbPath { get; set; }
+
         public IConfiguration Configuration { get; }
 
         public IWebHostEnvironment Env { get; set; }
@@ -30,11 +34,14 @@ namespace Progetto_UI.Web
 
         public void ConfigureServices(IServiceCollection services)
         {
+            var folder = Environment.CurrentDirectory;
+            DbPath = System.IO.Path.Join(folder, "databaseIUM.db");
+
             services.Configure<AppSettings>(Configuration.GetSection("AppSettings"));
 
             services.AddDbContext<TemplateDbContext>(options =>
             {
-                options.UseInMemoryDatabase(databaseName: "Template");
+                options.UseSqlite($"Data Source={DbPath}");
             });
 
             // SERVICES FOR AUTHENTICATION

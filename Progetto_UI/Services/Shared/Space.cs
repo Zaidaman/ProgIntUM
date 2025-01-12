@@ -10,10 +10,10 @@ namespace Progetto_UI.Services.Shared
     public class Space
     {
         [Key]
-        public int Id { get; set; }
-
+        public int SpaceId { get; set; }
         public int WarehouseId { get; set; }
-
-        public int Product { get; set; }
+        public Warehouse Warehouse { get; set; }
+        public int ProductId { get; set; }
+        public Product Product { get; set; }
     }
 }

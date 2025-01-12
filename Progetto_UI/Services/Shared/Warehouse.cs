@@ -10,7 +10,7 @@ namespace Progetto_UI.Services.Shared
     public class Warehouse
     {
         [Key]
-        public int Id { get; set; }
+        public int WarehouseId { get; set; }
         public string Name { get; set; }
         public int Capacity { get; set; }
     }
