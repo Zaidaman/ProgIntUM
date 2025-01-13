@@ -7,7 +7,12 @@ namespace Progetto_UI.Web.Features.Organization
         [HttpGet]
         public virtual IActionResult Index()
         {
-            return View("Home");
+            var model = new HomeViewModel
+            {
+                Title = "Gestione Semi-elaborati",
+                ImageUrl = "./icons/warehouse.jpg"
+            };
+            return View("Home", model);
         }
     }
 }

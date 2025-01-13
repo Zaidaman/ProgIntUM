@@ -1,5 +1,4 @@
-﻿page
-@model Progetto_UI.Web.Features.Organization.SpostamentoController
+﻿@model Progetto_UI.Web.Features.Organization.ViewModels
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 <html lang="it">
 <head>
@@ -61,38 +60,38 @@
 
         <h1>Interfaccia di spostamento</h1>
 
-        <form id="spostamento-form">
+        <form asp-action="Index" method="post" id="spostamento-form">
             <div class="mb-3">
                 <label for="area-rimuovi" class="form-label">Inserisci l'area da cui prendere il pezzo</label>
-                <input type="text" class="form-control" id="area-rimuovi" placeholder="-----">
+                <input type="text" class="form-control" id="area-rimuovi" name="AreaRimuovi" value="@Model.AreaRimuovi" placeholder="-----">
             </div>
             <div class="mb-3">
                 <label for="area-inserisci" class="form-label">Inserisci l'area in cui inserire il pezzo</label>
-                <input type="text" class="form-control" id="area-inserisci" placeholder="-----">
+                <input type="text" class="form-control" id="area-inserisci" name="AreaInserisci" value="@Model.AreaInserisci" placeholder="-----">
             </div>
-            <button type="button" class="btn btn-light w-100" id="sposta-btn">Sposta</button>
+            <button type="submit" class="btn btn-light w-100" id="sposta-btn">Sposta</button>
         </form>
-    </div>
 
-    <!-- Overlay -->
-    <div id="overlay" class="overlay">
-        <div class="overlay-content">
-            <p>Il pezzo è stato registrato nella nuova area.</p>
-            <button id="closeOverlay" class="btn btn-light mt-3">Chiudi</button>
-        </div>
+        @if (ViewBag.Message != null)
+        {
+            <div id="overlay" class="overlay" style="display: flex;">
+                <div class="overlay-content">
+                    <p>@ViewBag.Message</p>
+                    <button id="closeOverlay" class="btn btn-light mt-3">Chiudi</button>
+                </div>
+            </div>
+        }
     </div>
 
     <script>
         const overlay = document.getElementById('overlay');
         const closeOverlayBtn = document.getElementById('closeOverlay');
 
-        document.getElementById('sposta-btn').addEventListener('click', function () {
-            overlay.style.display = 'flex';
-        });
-
-        closeOverlayBtn.addEventListener('click', () => {
-            overlay.style.display = 'none';
-        });
+        if (overlay) {
+            closeOverlayBtn.addEventListener('click', () => {
+                overlay.style.display = 'none';
+            });
+        }
     </script>
 </body>
 </html>

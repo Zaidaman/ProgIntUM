@@ -1,5 +1,5 @@
 ﻿@page
-@model Progetto_UI.Web.Features.Organization.InserimentoController
+@model Progetto_UI.Web.Features.Organization.ViewModels.InserimentoViewModel
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 <html lang="it">
 <head>
@@ -64,13 +64,13 @@
         <div class="mb-4">
             <label for="productCode" class="form-label">Fotografa il codice del Pezzo</label>
             <button id="captureProduct" class="btn btn-secondary w-100 mb-2">Fotografa</button>
-            <p id="productCode" class="text-center">Codice Pezzo: ........</p>
+            <p id="productCode" class="text-center">Codice Pezzo: @Model.ProductCode</p>
         </div>
 
         <div class="mb-4">
             <label for="areaCode" class="form-label">Fotografa il codice dell'Area</label>
             <button id="captureArea" class="btn btn-secondary w-100 mb-2">Fotografa</button>
-            <p id="areaCode" class="text-center">Codice Area: ........</p>
+            <p id="areaCode" class="text-center">Codice Area: @Model.AreaCode</p>
         </div>
         <button id="insertBtn" class="btn btn-primary w-100">Inserisci</button>
     </div>
