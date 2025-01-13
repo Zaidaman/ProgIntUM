@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricerca Prodotto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #6063A0;
+            color: white; /* Modifica per il colore del testo */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .back-home {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            z-index: 1100;
+            background-color: black;
+            color: white;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .overlay-content {
+            background-color: #5c5cad;
+            padding: 20px;
+            border-radius: 8px;
+            color: white;
+            text-align: center;
+        }
+
+            .overlay-content button {
+                margin-top: 10px;
+                padding: 10px;
+                border: none;
+                background-color: white;
+                color: black;
+                font-weight: bold;
+                border-radius: 4px;
+            }
+
+        .search-section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+            .search-section input {
+                width: 300px;
+                max-width: 100%;
+                margin-bottom: 10px;
+                padding: 10px;
+                border: none;
+                border-radius: 4px;
+            }
+
+            .search-section button {
+                padding: 10px 20px;
+                border: none;
+                background-color: #5c5cad;
+                color: white;
+                font-weight: bold;
+                border-radius: 4px;
+            }
+    </style>
+</head>
+<body>
+    <a href="./home.html" class="btn btn-outline-secondary back-home">
+        <i class="bi bi-house-door-fill"></i> Home
+    </a>
+
+    <div class="search-section">
+        <h2>Inserisci il codice del prodotto che vuoi ricercare</h2>
+        <input type="text" id="productInput" placeholder="-----">
+        <br>
+        <button id="searchButton">Stampa</button>
+    </div>
+
+    <div class="overlay" id="resultOverlay">
+        <div class="overlay-content">
+            <p id="productResult">Codice prodotto: </p>
+            <p id="areaResult">Codice Area: </p>
+            <button id="closeOverlay">Chiudi</button>
+        </div>
+    </div>
+
+    <script>
+        const resultOverlay = document.getElementById('resultOverlay');
+        const closeOverlay = document.getElementById('closeOverlay');
+        const productResult = document.getElementById('productResult');
+        const areaResult = document.getElementById('areaResult');
+        const searchButton = document.getElementById('searchButton');
+        const productInput = document.getElementById('productInput');
+
+        const data = [
+            { codice: "12345", area: "A1" },
+            { codice: "67890", area: "B2" },
+        ];
+
+        function generateRandomArea() {
+            const areas = ["A1", "A2", "B1", "B2", "C1", "C2"];
+            return areas[Math.floor(Math.random() * areas.length)];
+        }
+
+        searchButton.addEventListener('click', () => {
+            const productCode = productInput.value.trim();
+            const result = data.find(item => item.codice === productCode);
+
+            if (result) {
+                productResult.textContent = `Codice prodotto: ${result.codice}`;
+                areaResult.textContent = `Codice Area: ${result.area}`;
+            } else {
+                productResult.textContent = `Codice prodotto: ${productCode}`;
+                areaResult.textContent = `Codice Area: ${generateRandomArea()}`;
+            }
+
+            resultOverlay.style.display = 'flex';
+        });
+
+        closeOverlay.addEventListener('click', () => {
+            resultOverlay.style.display = 'none';
+        });
+    </script>
+</body>
+</html>

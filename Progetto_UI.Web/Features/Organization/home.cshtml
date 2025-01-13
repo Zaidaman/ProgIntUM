@@ -6,12 +6,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@Model.Title</title>
+    <title>Gestione Semi-elaborati</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <style>
         body {
             background-color: #023047;
             color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
 
         .image-section {
@@ -68,12 +72,10 @@
             }
 
         .arrows-in {
-            font-size: 2rem;
             color: #eeeeee;
         }
 
         .arrows-out {
-            font-size: 2rem;
             color: #212529;
         }
 
@@ -84,27 +86,29 @@
     </style>
 </head>
 <body>
-    <a href="/login" class="btn btn-outline-light home-btn position-fixed top-0 start-0 m-3">
-        <i class="bi bi-house-door-fill"></i> Login
+    <a href="/Login" class="btn btn-dark home-btn position-fixed top-0 start-0 m-3">
+        <i class="bi bi-box-arrow-left"></i>Login
     </a>
 
     <div class="image-section">
-        <img src="@Model.ImageUrl" alt="Warehouse">
-        <h1 class="title">@Model.Title</h1>
+        <img src="./icons/warehouse.jpg" alt="Warehouse">
+        <h1 class="title">Gestione Semi-elaborati</h1>
     </div>
 
     <div class="button-section">
         <div class="button-row">
             <div>
-                <a href="/inserimento" class="btn btn-primary d-flex align-items-center justify-content-center">Inserimento <span class="arrows-in">↑</span></a>
+                <a href="/inserimento" class="btn btn-primary d-flex align-items-center justify-content-center">
+                    Inserimento &nbsp;<i class="bi bi-arrow-90deg-left arrows-in"></i>
+                </a>
             </div>
             <div>
-                <a href="/consegna" class="btn btn-primary d-flex align-items-center justify-content-center">Consegna <span class="arrows-out">↓</span></a>
+                <a href="/consegna" class="btn btn-primary d-flex align-items-center justify-content-center">Consegna &nbsp;<i class="bi bi-arrow-90deg-right arrows-out"></i></a>
             </div>
         </div>
-        <a href="/spostamento" class="btn btn-secondary my-3 w-50">Spostamento</a>
-        <a href="/ricerca" class="btn btn-secondary my-3 w-50">Ricerca</a>
-        <a href="#" id="stampaInvBtn" class="btn btn-secondary my-3 w-50">Stampa Inv.</a>
+        <a href="/spostamento" class="btn btn-secondary my-3 w-50">Spostamento &nbsp;&nbsp;<i class="bi bi-arrow-down-up"></i></a>
+        <a href="/ricerca" class="btn btn-secondary my-3 w-50">Ricerca &nbsp;<i class="bi bi-search"></i></a>
+        <a href="#" id="stampaInvBtn" class="btn btn-secondary my-3 w-50">Stampa Inv. &nbsp;<i class="bi bi-printer-fill"></i></a>
     </div>
 
     <script>
@@ -136,7 +140,5 @@
             document.body.removeChild(link);
         });
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
 </body>
 </html>

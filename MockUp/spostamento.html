@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interfaccia di Spostamento</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #6063A0;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .back-home {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            z-index: 1100;
+            background-color: black;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .overlay-content {
+            background-color: #5c5cad;
+            padding: 20px;
+            border-radius: 8px;
+            color: white;
+            text-align: center;
+        }
+
+            .overlay-content button {
+                margin-top: 10px;
+                padding: 10px;
+                border: none;
+                background-color: white;
+                color: black;
+                font-weight: bold;
+                border-radius: 4px;
+            }
+    </style>
+</head>
+<body>
+    <a href="./home.html" class="btn btn-outline-secondary back-home">
+        <i class="bi bi-house-door-fill"></i> Home
+    </a>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Interfaccia di Spostamento</h1>
+
+        <div class="mb-4">
+            <label for="oldAreaCode" class="form-label">Fotografa il codice dell'Area da cui prendere il pezzo</label>
+            <button id="captureOldArea" class="btn btn-secondary w-100 mb-2"><i class="bi bi-camera-fill"></i>Fotografa</button>
+            <p id="oldAreaCode" class="text-center">Codice Area Vecchia: .................</p>
+        </div>
+
+        <div class="mb-4">
+            <label for="newAreaCode" class="form-label">Fotografa il codice dell'Area in cui inserire il pezzo</label>
+            <button id="captureNewArea" class="btn btn-secondary w-100 mb-2"><i class="bi bi-camera-fill"></i>Fotografa</button>
+            <p id="newAreaCode" class="text-center">Codice Area Nuova: ................ </p>
+        </div>
+        <button id="moveBtn" class="btn btn-primary w-100">Sposta</button>
+    </div>
+
+    <div id="overlay" class="overlay">
+        <div class="overlay-content">
+            <p>Il pezzo è stato spostato nell'area indicata</p>
+            <button id="closeOverlay" class="btn btn-light mt-3">Chiudi</button>
+        </div>
+    </div>
+
+    <script>
+        const oldAreaCodeEl = document.getElementById('oldAreaCode');
+        const newAreaCodeEl = document.getElementById('newAreaCode');
+        const overlay = document.getElementById('overlay');
+        const closeOverlayBtn = document.getElementById('closeOverlay');
+
+        function generateRandomCode(prefix) {
+          return `${prefix}${Math.floor(Math.random() * 100000).toString().padStart(5, '0')}`;
+        }
+
+        document.getElementById('captureOldArea').addEventListener('click', () => {
+          const randomOldAreaCode = generateRandomCode('A');
+          oldAreaCodeEl.textContent = `Codice Area Vecchia: ${randomOldAreaCode}`;
+        });
+
+        document.getElementById('captureNewArea').addEventListener('click', () => {
+          const randomNewAreaCode = generateRandomCode('A');
+          newAreaCodeEl.textContent = `Codice Area Nuova: ${randomNewAreaCode}`;
+        });
+
+        document.getElementById('moveBtn').addEventListener('click', () => {
+          overlay.style.display = 'flex';
+        });
+
+        closeOverlayBtn.addEventListener('click', () => {
+          overlay.style.display = 'none';
+          oldAreaCodeEl.textContent = 'Codice Area Vecchia: ........';
+          newAreaCodeEl.textContent = 'Codice Area Nuova: ........';
+        });
+    </script>
+</body>
+</html>
