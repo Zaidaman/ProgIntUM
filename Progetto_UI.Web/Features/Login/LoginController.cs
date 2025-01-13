@@ -93,7 +93,7 @@ namespace Progetto_UI.Web.Features.Login
             }
 
             // Restituisce il modello corretto in caso di errore
-            return View(model);
+            return View(MVC.Login.Login());
         }
 
         [HttpPost]
