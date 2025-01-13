@@ -12,26 +12,8 @@
         body {
             background-color: #6063A0;
             color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
-
-        .overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.9);
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 1050;
-            visibility: hidden;
-        }
-
-            .overlay.visible {
-                visibility: visible;
-            }
 
         .back-home {
             position: fixed;
@@ -40,10 +22,40 @@
             z-index: 1100;
             background-color: black;
         }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .overlay-content {
+            background-color: #5c5cad;
+            padding: 20px;
+            border-radius: 8px;
+            color: white;
+            text-align: center;
+        }
+
+            .overlay-content button {
+                margin-top: 10px;
+                padding: 10px;
+                border: none;
+                background-color: white;
+                color: black;
+                font-weight: bold;
+                border-radius: 4px;
+            }
     </style>
 </head>
 <body>
-    <a href="/home" class="btn btn-outline-secondary back-home">
+    <a href="./home.html" class="btn btn-outline-secondary back-home">
         <i class="bi bi-house-door-fill"></i> Home
     </a>
 
@@ -59,7 +71,7 @@
     </div>
 
     <div id="overlay" class="overlay">
-        <div class="text-center">
+        <div class="overlay-content">
             <p id="overlayText">Il pezzo è pronto alla consegna!</p>
             <button id="closeOverlay" class="btn btn-light mt-3">Chiudi</button>
         </div>
@@ -80,11 +92,11 @@
         });
 
         document.getElementById('insertBtn').addEventListener('click', () => {
-          overlay.classList.add('visible');
+          overlay.style.display = 'flex';
         });
 
         closeOverlayBtn.addEventListener('click', () => {
-          overlay.classList.remove('visible');
+          overlay.style.display = 'none';
         });
     </script>
 

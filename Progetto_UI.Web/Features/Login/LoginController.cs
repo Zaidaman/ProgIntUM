@@ -30,10 +30,10 @@ namespace Progetto_UI.Web.Features.Login
         private ActionResult LoginAndRedirect(UserDetailDTO utente, string returnUrl, bool rememberMe)
         {
             var claims = new List<Claim>
-            {
-                new Claim(ClaimTypes.NameIdentifier, utente.Id.ToString()),
-                new Claim(ClaimTypes.Email, utente.Email)
-            };
+    {
+        new Claim(ClaimTypes.NameIdentifier, utente.Id.ToString()),
+        new Claim(ClaimTypes.Email, utente.Email)
+    };
 
             var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
 
@@ -45,11 +45,12 @@ namespace Progetto_UI.Web.Features.Login
 
             if (string.IsNullOrWhiteSpace(returnUrl))
             {
-                returnUrl = Url.Action("Index", "OrgHome", new { area = "Organization" });
+                returnUrl = Url.Action("Index", "OrgHome");
             }
 
             return Redirect(returnUrl);
         }
+
 
         [HttpGet]
         public virtual IActionResult Login(string returnUrl)
@@ -59,7 +60,7 @@ namespace Progetto_UI.Web.Features.Login
                 if (string.IsNullOrWhiteSpace(returnUrl) == false)
                     return Redirect(returnUrl);
 
-                return RedirectToAction(MVC.Example.Users.Index());
+                return RedirectToAction("Index", "OrgHome", new { area = "Organization" });
             }
 
             var model = new LoginViewModel
@@ -91,16 +92,16 @@ namespace Progetto_UI.Web.Features.Login
                 }
             }
 
-            return RedirectToAction(MVC.Login.Login());
+            // Restituisce il modello corretto in caso di errore
+            return View(model);
         }
 
         [HttpPost]
         public virtual IActionResult Logout()
         {
             HttpContext.SignOutAsync();
-
             Alerts.AddSuccess(this, "Utente scollegato correttamente");
-            return RedirectToAction(MVC.Login.Login());
+            return RedirectToAction("Login");
         }
     }
 }

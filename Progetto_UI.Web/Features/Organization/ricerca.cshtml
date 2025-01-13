@@ -11,6 +11,8 @@
     <style>
         body {
             background-color: #6063A0;
+            color: white; /* Modifica per il colore del testo */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
 
         .back-home {
@@ -109,6 +111,11 @@
             { codice: "67890", area: "B2" },
         ];
 
+        function generateRandomArea() {
+            const areas = ["A1", "A2", "B1", "B2", "C1", "C2"];
+            return areas[Math.floor(Math.random() * areas.length)];
+        }
+
         searchButton.addEventListener('click', () => {
             const productCode = productInput.value.trim();
             const result = data.find(item => item.codice === productCode);
@@ -117,8 +124,8 @@
                 productResult.textContent = `Codice prodotto: ${result.codice}`;
                 areaResult.textContent = `Codice Area: ${result.area}`;
             } else {
-                productResult.textContent = "Codice prodotto: non trovato";
-                areaResult.textContent = "Codice Area: n/d";
+                productResult.textContent = `Codice prodotto: ${productCode}`;
+                areaResult.textContent = `Codice Area: ${generateRandomArea()}`;
             }
 
             resultOverlay.style.display = 'flex';

@@ -88,22 +88,15 @@ namespace Progetto_UI.Web
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            // Configure the HTTP request pipeline.
             if (!env.IsDevelopment())
             {
                 app.UseExceptionHandler("/Home/Error");
-
-                // Https redirection only in production
                 app.UseHsts();
                 app.UseHttpsRedirection();
             }
 
-            // Localization support if you want to
             app.UseRequestLocalization(SupportedCultures.CultureNames);
-
             app.UseRouting();
-
-            // Adding authentication to pipeline
             app.UseSession();
             app.UseAuthentication();
             app.UseAuthorization();
@@ -116,13 +109,13 @@ namespace Progetto_UI.Web
 
             app.UseEndpoints(endpoints =>
             {
-                // ROUTING PER HUB
                 endpoints.MapHub<TemplateHub>("/templateHub");
-
                 endpoints.MapAreaControllerRoute("Example", "Example", "Example/{controller=Users}/{action=Index}/{id?}");
                 endpoints.MapControllerRoute("default", "{controller=Login}/{action=Login}");
+                endpoints.MapControllerRoute("orgHome", "Organization/{controller=OrgHome}/{action=Index}/{id?}");
             });
         }
+
     }
 
     public static class SupportedCultures
