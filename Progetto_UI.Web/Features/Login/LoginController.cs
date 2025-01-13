@@ -30,10 +30,10 @@ namespace Progetto_UI.Web.Features.Login
         private ActionResult LoginAndRedirect(UserDetailDTO utente, string returnUrl, bool rememberMe)
         {
             var claims = new List<Claim>
-    {
-        new Claim(ClaimTypes.NameIdentifier, utente.Id.ToString()),
-        new Claim(ClaimTypes.Email, utente.Email)
-    };
+            {
+                new Claim(ClaimTypes.NameIdentifier, utente.Id.ToString()),
+                new Claim(ClaimTypes.Email, utente.Email)
+            };
 
             var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
 
