@@ -112,9 +112,8 @@
             { codice: "67890", area: "B2" },
         ];
 
-        function generateRandomArea() {
-            const areas = ["A1", "A2", "B1", "B2", "C1", "C2"];
-            return areas[Math.floor(Math.random() * areas.length)];
+        function generateRandomCode(prefix) {
+            return `${prefix}${Math.floor(Math.random() * 100).toString().padStart(3,'0')}`;
         }
 
         searchButton.addEventListener('click', () => {
@@ -126,10 +125,11 @@
                 areaResult.textContent = `Codice Area: ${result.area}`;
             } else {
                 productResult.textContent = `Codice prodotto: ${productCode}`;
-                areaResult.textContent = `Codice Area: ${generateRandomArea()}`;
+                areaResult.textContent = `Codice Area: ${generateRandomCode('A')}`;
             }
 
             resultOverlay.style.display = 'flex';
+            productInput.value = ''; // Svuota il campo di testo
         });
 
         closeOverlay.addEventListener('click', () => {

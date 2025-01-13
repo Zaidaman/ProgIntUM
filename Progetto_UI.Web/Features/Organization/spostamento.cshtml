@@ -66,13 +66,13 @@
 
         <div class="mb-4">
             <label for="areaRimuovi" class="form-label">Fotografa il codice dell'Area da cui prendere il pezzo</label>
-            <button id="captureAreaRimuovi" class="btn btn-secondary w-100 mb-2"><i class="bi bi-camera-fill"></i>Fotografa</button>
+            <button id="captureAreaRimuovi" class="btn btn-secondary w-100 mb-2"><i class="bi bi-camera-fill"></i>&nbsp;Fotografa</button>
             <p id="areaRimuovi" class="text-center">Codice Area Rimuovi: @Model.AreaRimuovi</p>
         </div>
 
         <div class="mb-4">
             <label for="areaInserisci" class="form-label">Fotografa il codice dell'Area in cui inserire il pezzo</label>
-            <button id="captureAreaInserisci" class="btn btn-secondary w-100 mb-2"><i class="bi bi-camera-fill"></i>Fotografa</button>
+            <button id="captureAreaInserisci" class="btn btn-secondary w-100 mb-2"><i class="bi bi-camera-fill"></i>&nbsp;Fotografa</button>
             <p id="areaInserisci" class="text-center">Codice Area Inserisci: @Model.AreaInserisci</p>
         </div>
         <button id="spostaBtn" class="btn btn-primary w-100">Sposta</button>
@@ -86,33 +86,33 @@
     </div>
 
     <script>
-        const areaRimuoviEl = document.getElementById('areaRimuovi');
-        const areaInserisciEl = document.getElementById('areaInserisci');
+        const oldAreaCodeEl = document.getElementById('oldAreaCode');
+        const newAreaCodeEl = document.getElementById('newAreaCode');
         const overlay = document.getElementById('overlay');
         const closeOverlayBtn = document.getElementById('closeOverlay');
 
         function generateRandomCode(prefix) {
-          return `${prefix}${Math.floor(Math.random() * 100000).toString().padStart(5, '0')}`;
+          return `${prefix}${Math.floor(Math.random() * 100).toString().padStart(3,'0')}`;
         }
 
-        document.getElementById('captureAreaRimuovi').addEventListener('click', () => {
-          const randomAreaRimuoviCode = generateRandomCode('AR');
-          areaRimuoviEl.textContent = `Codice Area Rimuovi: ${randomAreaRimuoviCode}`;
+        document.getElementById('captureOldArea').addEventListener('click', () => {
+          const randomOldAreaCode = generateRandomCode('A');
+          oldAreaCodeEl.textContent = `Codice Area Vecchia: ${randomOldAreaCode}`;
         });
 
-        document.getElementById('captureAreaInserisci').addEventListener('click', () => {
-          const randomAreaInserisciCode = generateRandomCode('AI');
-          areaInserisciEl.textContent = `Codice Area Inserisci: ${randomAreaInserisciCode}`;
+        document.getElementById('captureNewArea').addEventListener('click', () => {
+          const randomNewAreaCode = generateRandomCode('A');
+          newAreaCodeEl.textContent = `Codice Area Nuova: ${randomNewAreaCode}`;
         });
 
-        document.getElementById('spostaBtn').addEventListener('click', () => {
+        document.getElementById('moveBtn').addEventListener('click', () => {
           overlay.style.display = 'flex';
         });
 
         closeOverlayBtn.addEventListener('click', () => {
           overlay.style.display = 'none';
-          areaRimuoviEl.textContent = 'Codice Area Rimuovi: ........';
-          areaInserisciEl.textContent = 'Codice Area Inserisci: ........';
+          oldAreaCodeEl.textContent = 'Codice Area Vecchia: ........';
+          newAreaCodeEl.textContent = 'Codice Area Nuova: ........';
         });
     </script>
 </body>

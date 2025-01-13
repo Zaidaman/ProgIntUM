@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace Progetto_UI.Web.Features.Organization
+namespace Progetto_UI.Web.Features.Organization.ViewModels
 {
     public partial class OrgHomeController : Controller
     {
