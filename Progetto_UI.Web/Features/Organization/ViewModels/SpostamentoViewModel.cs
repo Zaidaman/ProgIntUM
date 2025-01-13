@@ -1,4 +1,4 @@
-namespace Progetto_UI.Web.Features.Organization
+namespace Progetto_UI.Web.Features.Organization.ViewModels
 {
     public class SpostamentoViewModel
     {
