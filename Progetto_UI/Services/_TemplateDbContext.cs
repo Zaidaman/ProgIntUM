@@ -17,7 +17,8 @@ namespace Progetto_UI.Services
     public class TemplateDbContext : DbContext
     {
         public TemplateDbContext(DbContextOptions<TemplateDbContext> options) : base(options)
-        {          
+        { 
+            DataGenerator.InitializeData(this);
         }
 
         public DbSet<Warehouse> Warehouses { get; set; }
