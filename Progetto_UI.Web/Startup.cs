@@ -88,6 +88,10 @@ namespace Progetto_UI.Web
                 app.UseHsts();
                 app.UseHttpsRedirection();
             }
+            else
+            {
+                app.UseDeveloperExceptionPage();
+            }
 
             app.UseRequestLocalization(SupportedCultures.CultureNames);
             app.UseRouting();
@@ -107,6 +111,8 @@ namespace Progetto_UI.Web
                 endpoints.MapAreaControllerRoute("Example", "Example", "Example/{controller=Users}/{action=Index}/{id?}");
                 endpoints.MapControllerRoute("default", "{controller=Login}/{action=Login}");
                 endpoints.MapControllerRoute("orgHome", "Organization/{controller=OrgHome}/{action=Index}/{id?}");
+                endpoints.MapControllerRoute(name: "default", pattern: "{controller=Login}/{action=Login}/{id?}");
+                endpoints.MapControllerRoute(name: "logout", pattern: "{controller=Login}/{action=Logout}");
             });
         }
 
