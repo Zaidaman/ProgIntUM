@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Progetto_UI.Web.Features.Organization.ViewModels;
 
-namespace Progetto_UI.Web.Features.Organization
+namespace Progetto_UI.Web.Features.Ricerca
 {
     public partial class RicercaController : Controller
     {
@@ -10,6 +9,12 @@ namespace Progetto_UI.Web.Features.Organization
         {
             var viewModel = new RicercaViewModel();
             return View(viewModel);
+        }
+
+        [HttpGet]
+        public virtual IActionResult Home()
+        {
+            return View("~/Features/Home/home.cshtml");
         }
     }
 }

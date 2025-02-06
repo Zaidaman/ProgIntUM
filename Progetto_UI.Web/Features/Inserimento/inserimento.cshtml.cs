@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace Progetto_UI.Web.Features.Organization.asp.net_version
+namespace Progetto_UI.Web.Features.Inserimento
 {
-    public class consegnaModel : PageModel
+    public class inserimentoModel : PageModel
     {
         public void OnGet()
         {

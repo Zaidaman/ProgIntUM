@@ -1,26 +1,48 @@
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Localization;
-using Microsoft.AspNetCore.Mvc;
-using System;
+﻿using Microsoft.AspNetCore.Mvc;
 
 namespace Progetto_UI.Web.Features.Home
 {
     public partial class HomeController : Controller
     {
-        public HomeController()
+        [HttpGet]
+        public virtual IActionResult Index()
         {
+            var model = new HomeViewModel
+            {
+                Title = "Gestione Semi-elaborati",
+                ImageUrl = "./Icons/warehouse.jpg"
+            };
+            return View("Home", model);
         }
 
-        [HttpPost]
-        public virtual IActionResult ChangeLanguageTo(string cultureName)
+        [HttpGet]
+        public virtual IActionResult Login()
         {
-            Response.Cookies.Append(
-                CookieRequestCultureProvider.DefaultCookieName,
-                CookieRequestCultureProvider.MakeCookieValue(new RequestCulture(cultureName)),
-                new CookieOptions { Expires = DateTimeOffset.UtcNow.AddYears(1), Secure = true }    // Secure assicura che il cookie sia inviato solo per connessioni HTTPS
-            );
+            return View("~/Features/Login/login.cshtml");
+        }
 
-            return Redirect(Request.GetTypedHeaders().Referer.ToString());
+        [HttpGet]
+        public virtual IActionResult Inserimento()
+        {
+            return View("~/Features/Inserimento/inserimento.cshtml");
+        }
+
+        [HttpGet]
+        public virtual IActionResult Consegna()
+        {
+            return View("~/Features/Consegna/consegna.cshtml");
+        }
+
+        [HttpGet]
+        public virtual IActionResult Spostamento()
+        {
+            return View("~/Features/Spostamento/spostamento.cshtml");
+        }
+
+        [HttpGet]
+        public virtual IActionResult Ricerca()
+        {
+            return View("~/Features/Ricerca/ricerca.cshtml");
         }
     }
 }

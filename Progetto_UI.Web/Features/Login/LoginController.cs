@@ -45,7 +45,7 @@ namespace Progetto_UI.Web.Features.Login
 
             if (string.IsNullOrWhiteSpace(returnUrl))
             {
-                returnUrl = Url.Action("Index", "OrgHome");
+                returnUrl = Url.Action("Index", "Home");
             }
 
             return Redirect(returnUrl);
@@ -60,7 +60,7 @@ namespace Progetto_UI.Web.Features.Login
                 if (string.IsNullOrWhiteSpace(returnUrl) == false)
                     return Redirect(returnUrl);
 
-                return RedirectToAction("Index", "OrgHome", new { area = "Organization" });
+                return RedirectToAction("Index", "Home");
             }
 
             var model = new LoginViewModel

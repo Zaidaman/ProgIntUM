@@ -1,5 +1,4 @@
-﻿@page
-@model Progetto_UI.Web.Features.Organization.ViewModels.SpostamentoViewModel
+﻿@model Progetto_UI.Web.Features.Spostamento.SpostamentoViewModel
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 <!DOCTYPE html>
 <html lang="it">
@@ -57,7 +56,7 @@
     </style>
 </head>
 <body>
-    <a href="/Home" class="btn btn-dark back-home">
+    <a href="@Url.Action("Home", "Spostamento")" class="btn btn-dark back-home">
         <i class="bi bi-house-door-fill"></i> Home
     </a>
     <div class="container mt-5">
@@ -67,13 +66,13 @@
         <div class="mb-4">
             <label for="areaRimuovi" class="form-label">Fotografa il codice dell'Area da cui prendere il pezzo</label>
             <button id="captureAreaRimuovi" class="btn btn-secondary w-100 mb-2"><i class="bi bi-camera-fill"></i>&nbsp;Fotografa</button>
-            <p id="areaRimuovi" class="text-center">Codice Area Rimuovi: @Model.AreaRimuovi</p>
+            @*<p id="areaRimuovi" class="text-center">Codice Area Rimuovi: @Model.AreaRimuovi</p>*@
         </div>
 
         <div class="mb-4">
             <label for="areaInserisci" class="form-label">Fotografa il codice dell'Area in cui inserire il pezzo</label>
             <button id="captureAreaInserisci" class="btn btn-secondary w-100 mb-2"><i class="bi bi-camera-fill"></i>&nbsp;Fotografa</button>
-            <p id="areaInserisci" class="text-center">Codice Area Inserisci: @Model.AreaInserisci</p>
+            @*<p id="areaInserisci" class="text-center">Codice Area Inserisci: @Model.AreaInserisci</p>*@
         </div>
         <button id="spostaBtn" class="btn btn-primary w-100">Sposta</button>
 

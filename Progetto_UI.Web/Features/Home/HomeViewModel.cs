@@ -1,4 +1,4 @@
-namespace Progetto_UI.Web.Features.Organization.ViewModels
+namespace Progetto_UI.Web.Features.Home
 {
     public class HomeViewModel
     {
