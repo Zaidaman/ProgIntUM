@@ -7,13 +7,14 @@ namespace Progetto_UI.Web.Features.Spostamento
         [HttpGet]
         public virtual IActionResult Index()
         {
-            return View(new SpostamentoViewModel());
+            var viewModel = new SpostamentoViewModel();
+            return View("Spostamento", viewModel);
         }
 
         [HttpGet]
         public virtual IActionResult Home()
         {
-            return View("~/Features/Home/home.cshtml");
+            return RedirectToAction("Index", "Home");
         }
     }
 }

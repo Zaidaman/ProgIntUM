@@ -8,13 +8,13 @@ namespace Progetto_UI.Web.Features.Ricerca
         public virtual IActionResult Index()
         {
             var viewModel = new RicercaViewModel();
-            return View(viewModel);
+            return View("Ricerca", viewModel);
         }
 
         [HttpGet]
         public virtual IActionResult Home()
         {
-            return View("~/Features/Home/home.cshtml");
+            return RedirectToAction("Index", "Home");
         }
     }
 }

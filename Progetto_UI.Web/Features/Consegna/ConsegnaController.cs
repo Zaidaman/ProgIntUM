@@ -8,13 +8,13 @@ namespace Progetto_UI.Web.Features.Consegna
         public virtual IActionResult Index()
         {
             var viewModel = new ConsegnaViewModel();
-            return View(viewModel);
+            return View("Consegna", viewModel);
         }
 
         [HttpGet]
         public virtual IActionResult Home()
         {
-            return View("~/Features/Home/home.cshtml");
+            return RedirectToAction("Index", "Home");
         }
     }
 }

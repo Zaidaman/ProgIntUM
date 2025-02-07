@@ -8,13 +8,13 @@ namespace Progetto_UI.Web.Features.Inserimento
         public virtual IActionResult Index()
         {
             var viewModel = new InserimentoViewModel();
-            return View(viewModel);
+            return View("Inserimento", viewModel);
         }
 
         [HttpGet]
         public virtual IActionResult Home()
         {
-            return View("~/Features/Home/home.cshtml");
+            return RedirectToAction("Index", "Home");
         }
     }
 }

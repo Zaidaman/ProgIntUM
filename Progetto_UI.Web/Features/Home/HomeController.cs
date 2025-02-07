@@ -10,7 +10,6 @@ namespace Progetto_UI.Web.Features.Home
             var model = new HomeViewModel
             {
                 Title = "Gestione Semi-elaborati",
-                ImageUrl = "./Icons/warehouse.jpg"
             };
             return View("Home", model);
         }
@@ -18,31 +17,31 @@ namespace Progetto_UI.Web.Features.Home
         [HttpGet]
         public virtual IActionResult Login()
         {
-            return View("~/Features/Login/login.cshtml");
+            return RedirectToAction("Login", "Login");
         }
 
         [HttpGet]
         public virtual IActionResult Inserimento()
         {
-            return View("~/Features/Inserimento/inserimento.cshtml");
+            return RedirectToAction("Index", "Inserimento");
         }
 
         [HttpGet]
         public virtual IActionResult Consegna()
         {
-            return View("~/Features/Consegna/consegna.cshtml");
+            return RedirectToAction("Index", "Consegna");
         }
 
         [HttpGet]
         public virtual IActionResult Spostamento()
         {
-            return View("~/Features/Spostamento/spostamento.cshtml");
+            return RedirectToAction("Index", "Spostamento");
         }
 
         [HttpGet]
         public virtual IActionResult Ricerca()
         {
-            return View("~/Features/Ricerca/ricerca.cshtml");
+            return RedirectToAction("Index", "Ricerca");
         }
     }
 }
