@@ -39,6 +39,19 @@
                             </li>
                         }
                     </ul>
+                    @* Aggiungi questo div per mostrare l'email nell'angolo in alto a destra *@
+                    @if (identitaCorrente != null)
+                    {
+                        <div class="navbar-text ms-auto">
+                            @identitaCorrente.EmailUtenteCorrente
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="navbar-text ms-auto text-danger">
+                            Identità corrente non trovata.
+                        </div>
+                    }
                 </div>
             </div>
         </nav>

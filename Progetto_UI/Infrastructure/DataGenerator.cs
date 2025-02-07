@@ -51,13 +51,7 @@ namespace Progetto_UI.Infrastructure
                         WarehouseId = 1,
                         Name = "Warehouse1",
                         Capacity = 100
-                    },
-                    new Warehouse
-                    {
-                        WarehouseId = 2,
-                        Name = "Warehouse2",
-                        Capacity = 200
-                    });
+                    });                  
             }
 
             if (!context.Products.Any())
