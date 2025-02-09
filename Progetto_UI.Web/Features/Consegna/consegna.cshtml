@@ -16,6 +16,13 @@
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
 
+<<<<<<< HEAD
+        .back-home {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            z-index: 1100;
+=======
         .overlay {
             position: fixed;
             top: 0;
@@ -26,6 +33,7 @@
             display: none;
             justify-content: center;
             align-items: center;
+>>>>>>> 93d51d2c869aec4566caa4174cd50f7c4d1a17b8
         }
 
         .overlay-content {
@@ -60,39 +68,40 @@
             }
             <label for="productCode" class="form-label">Fotografa il codice del Pezzo</label>
             <button id="captureProduct" class="btn btn-secondary w-100 mb-2"><i class="bi bi-camera-fill"></i>&nbsp;Fotografa</button>
-            @*<p id="productCode" class="text-center">Codice Pezzo: @Model.ProductCode</p>*@
+            <p id="productCode" class="text-center">Codice Pezzo: @Model.ProductCode</p>
         </div>
         <button id="insertBtn" class="btn btn-primary w-100">Inserisci</button>
     </div>
 
-    <div id="overlay" class="overlay">
-        <div class="overlay-content">
-            <p id="overlayText">Il pezzo è pronto alla consegna!</p>
-            <button id="closeOverlay" class="btn btn-light mt-3">Chiudi</button>
-        </div>
-    </div>
-
     <script>
         const productCodeEl = document.getElementById('productCode');
-        const overlay = document.getElementById('overlay');
-        const closeOverlayBtn = document.getElementById('closeOverlay');
 
-        function generateRandomCode(prefix) {
-          return `${prefix}${Math.floor(Math.random() * 100).toString().padStart(3, '0')}`;
+        // Funzione per ottenere un prodotto casuale
+        async function getRandomProduct() {
+            try {
+                const response = await fetch('/Consegna/GetAllProducts'); // Cambia URL con il tuo endpoint
+                if (!response.ok) {
+                    throw new Error('Errore nel recupero dei prodotti');
+                }
+
+                const products = await response.json();
+                if (products.length === 0) {
+                    alert("Nessun prodotto trovato!");
+                    return;
+                }
+
+                // Seleziona un prodotto casuale
+                const randomProduct = products[Math.floor(Math.random() * products.length)];
+
+                // Mostra il nome del prodotto nel paragrafo productCode
+                productCodeEl.textContent = `Codice Pezzo: ${randomProduct.name}`;
+            } catch (error) {
+                console.error("Errore nella richiesta API:", error);
+                alert("Si è verificato un errore nel recupero dei prodotti!");
+            }
         }
 
-        document.getElementById('captureProduct').addEventListener('click', () => {
-          const randomProductCode = generateRandomCode('P');
-          productCodeEl.textContent = `Codice Pezzo: ${randomProductCode}`;
-        });
-
-        document.getElementById('insertBtn').addEventListener('click', () => {
-          overlay.style.display = 'flex';
-        });
-
-        closeOverlayBtn.addEventListener('click', () => {
-          overlay.style.display = 'none';
-          productCodeEl.textContent = 'Codice Pezzo: ........ ';
-        });
+        // Aggiungi l'evento per il pulsante 'Fotografa' per mostrare un prodotto casuale
+        document.getElementById('captureProduct').addEventListener('click', getRandomProduct);
     </script>
 </body>
