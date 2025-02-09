@@ -7,10 +7,7 @@ namespace Progetto_UI.Web.Features.Home
         [HttpGet]
         public virtual IActionResult Index()
         {
-            var model = new HomeViewModel
-            {
-                Title = "Gestione Semi-elaborati",
-            };
+            var model = new HomeViewModel();
             return View("Home", model);
         }
 

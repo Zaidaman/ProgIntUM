@@ -3,6 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A1B99431-CF29-4890-8AB9-8DFF37C9BC35}|..\\Progetto_UI.Web\\Progetto_UI.Web.csproj|c:\\users\\steve\\desktop\\prog\\progetto_ui.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B99431-CF29-4890-8AB9-8DFF37C9BC35}|..\\Progetto_UI.Web\\Progetto_UI.Web.csproj|c:\\users\\steve\\desktop\\prog\\progetto_ui.web\\features\\home\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|c:\\users\\steve\\desktop\\prog\\progetto_ui\\infrastructure\\datagenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|solutionrelative:infrastructure\\datagenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -16,16 +22,10 @@
       "AbsoluteMoniker": "D:0:0:{A1B99431-CF29-4890-8AB9-8DFF37C9BC35}|..\\Progetto_UI.Web\\Progetto_UI.Web.csproj|c:\\users\\steve\\desktop\\prog\\progetto_ui.web\\features\\spostamento\\spostamento.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A1B99431-CF29-4890-8AB9-8DFF37C9BC35}|..\\Progetto_UI.Web\\Progetto_UI.Web.csproj|c:\\users\\steve\\desktop\\prog\\progetto_ui.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A1B99431-CF29-4890-8AB9-8DFF37C9BC35}|..\\Progetto_UI.Web\\Progetto_UI.Web.csproj|c:\\users\\steve\\desktop\\prog\\progetto_ui.web\\features\\ricerca\\ricerca.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A1B99431-CF29-4890-8AB9-8DFF37C9BC35}|..\\Progetto_UI.Web\\Progetto_UI.Web.csproj|c:\\users\\steve\\desktop\\prog\\progetto_ui.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1B99431-CF29-4890-8AB9-8DFF37C9BC35}|..\\Progetto_UI.Web\\Progetto_UI.Web.csproj|c:\\users\\steve\\desktop\\prog\\progetto_ui.web\\features\\home\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A1B99431-CF29-4890-8AB9-8DFF37C9BC35}|..\\Progetto_UI.Web\\Progetto_UI.Web.csproj|c:\\users\\steve\\desktop\\prog\\progetto_ui.web\\features\\inserimento\\inserimento.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
@@ -41,11 +41,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "LoginController.cs",
               "DocumentMoniker": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI.Web\\Features\\Login\\LoginController.cs",
               "RelativeDocumentMoniker": "..\\Progetto_UI.Web\\Features\\Login\\LoginController.cs",
@@ -53,12 +53,11 @@
               "RelativeToolTip": "..\\Progetto_UI.Web\\Features\\Login\\LoginController.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAwwB4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-09T11:44:56.033Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-09T11:44:56.033Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "RicercaViewModel.cs",
               "DocumentMoniker": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI.Web\\Features\\Ricerca\\RicercaViewModel.cs",
               "RelativeDocumentMoniker": "..\\Progetto_UI.Web\\Features\\Ricerca\\RicercaViewModel.cs",
@@ -66,8 +65,7 @@
               "RelativeToolTip": "..\\Progetto_UI.Web\\Features\\Ricerca\\RicercaViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-09T11:08:54.79Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-09T11:08:54.79Z"
             },
             {
               "$type": "Document",
@@ -83,20 +81,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "DataGenerator.cs",
               "DocumentMoniker": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI\\Infrastructure\\DataGenerator.cs",
               "RelativeDocumentMoniker": "Infrastructure\\DataGenerator.cs",
               "ToolTip": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI\\Infrastructure\\DataGenerator.cs",
               "RelativeToolTip": "Infrastructure\\DataGenerator.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAcwFoAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAcwCYAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-09T11:06:19.717Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI.Web\\Program.cs",
               "RelativeDocumentMoniker": "..\\Progetto_UI.Web\\Program.cs",
@@ -108,7 +106,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "ricerca.cshtml",
               "DocumentMoniker": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI.Web\\Features\\Ricerca\\ricerca.cshtml",
               "RelativeDocumentMoniker": "..\\Progetto_UI.Web\\Features\\Ricerca\\ricerca.cshtml",
@@ -120,7 +118,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "spostamento.cshtml",
               "DocumentMoniker": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI.Web\\Features\\Spostamento\\spostamento.cshtml",
               "RelativeDocumentMoniker": "..\\Progetto_UI.Web\\Features\\Spostamento\\spostamento.cshtml",
@@ -128,8 +126,7 @@
               "RelativeToolTip": "..\\Progetto_UI.Web\\Features\\Spostamento\\spostamento.cshtml",
               "ViewState": "AgIAADQAAAAAAAAAAAAUwHIAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-08T07:19:40.35Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-08T07:19:40.35Z"
             },
             {
               "$type": "Document",
@@ -145,27 +142,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "home.cshtml",
               "DocumentMoniker": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI.Web\\Features\\Home\\home.cshtml",
               "RelativeDocumentMoniker": "..\\Progetto_UI.Web\\Features\\Home\\home.cshtml",
               "ToolTip": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI.Web\\Features\\Home\\home.cshtml",
               "RelativeToolTip": "..\\Progetto_UI.Web\\Features\\Home\\home.cshtml",
-              "ViewState": "AgIAAHAAAAAAAAAAAAAUwHwAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHwAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-08T07:08:22.178Z"
+              "WhenOpened": "2025-02-08T07:08:22.178Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI.Web\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "..\\Progetto_UI.Web\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI.Web\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "..\\Progetto_UI.Web\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAABYAAAAAAAAAAAAqwCYAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAC4AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-08T07:07:49.482Z"
+              "WhenOpened": "2025-02-08T07:07:49.482Z",
+              "EditorCaption": ""
             }
           ]
         }
