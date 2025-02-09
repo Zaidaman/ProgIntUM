@@ -41,14 +41,6 @@
             .btn-secondary:hover {
                 background-color: #6c757d;
             }
-
-        .arrows-in {
-            color: #eeeeee;
-        }
-
-        .arrows-out {
-            color: #212529;
-        }
     </style>
 </head>
 <body>
@@ -63,16 +55,16 @@
         <div class="button-row">
             <div>
                 <a href="@Url.Action("Inserimento", "Home")" class="btn btn-primary d-flex align-items-center justify-content-center">
-                    Inserimento &nbsp;<i class="bi bi-arrow-90deg-left arrows-in"></i>
+                    <i class="bi bi-arrow-90deg-right"></i>&nbsp; Inserimento
                 </a>
             </div>
             <div>
-                <a href="@Url.Action("Consegna", "Home")" class="btn btn-primary d-flex align-items-center justify-content-center">Consegna &nbsp;<i class="bi bi-arrow-90deg-right arrows-out"></i></a>
+                <a href="@Url.Action("Consegna", "Home")" class="btn btn-primary d-flex align-items-center justify-content-center">Consegna &nbsp;<i class="bi bi-arrow-90deg-right"></i></a>
             </div>
         </div>
-        <a href="@Url.Action("Spostamento")" class="btn btn-secondary my-3 w-50">Spostamento &nbsp;&nbsp;<i class="bi bi-arrow-down-up"></i></a>
-        <a href="@Url.Action("Ricerca", "Home")" class="btn btn-secondary my-3 w-50">Ricerca &nbsp;<i class="bi bi-search"></i></a>
-        <a href="#" id="stampaInvBtn" class="btn btn-secondary my-3 w-50">Stampa Inv. &nbsp;<i class="bi bi-printer-fill"></i></a>
+        <a href="@Url.Action("Spostamento")" class="btn btn-secondary my-3 w-50"><i class="bi bi-arrow-down-up"></i> &nbsp;Spostamento</a>
+        <a href="@Url.Action("Ricerca", "Home")" class="btn btn-secondary my-3 w-50"><i class="bi bi-search"></i>&nbsp; Ricerca</a>
+        <a href="#" id="stampaInvBtn" class="btn btn-secondary my-3 w-50"><i class="bi bi-printer-fill"></i>&nbsp; Stampa Inv.</a>
     </div>
 
     <script>
