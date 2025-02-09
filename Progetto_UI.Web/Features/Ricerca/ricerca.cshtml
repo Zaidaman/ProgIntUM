@@ -1,7 +1,6 @@
 ﻿@model Progetto_UI.Web.Features.Ricerca.RicercaViewModel
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
-<!DOCTYPE html>
-<html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,13 +14,6 @@
             background-color: #6063A0;
             color: white; /* Modifica per il colore del testo */
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
-
-        .back-home {
-            position: fixed;
-            top: 10px;
-            left: 10px;
-            z-index: 1100;
         }
 
         .overlay {
@@ -84,6 +76,9 @@
     </a>
 
     <div class="search-section">
+        @section pageTitleContent {
+        Ricerca Pezzo
+        }
         <h2>Inserisci il codice del prodotto che vuoi ricercare</h2>
         <input type="text" id="productInput" placeholder="-----">
         <br>
@@ -146,4 +141,3 @@
         });
     </script>
 </body>
-</html>

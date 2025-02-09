@@ -14,6 +14,7 @@ namespace Progetto_UI.Web.Features.Home
         [HttpGet]
         public virtual IActionResult Login()
         {
+            RemoveRememberMeCookie();
             return RedirectToAction("Login", "Login");
         }
 
@@ -39,6 +40,14 @@ namespace Progetto_UI.Web.Features.Home
         public virtual IActionResult Ricerca()
         {
             return RedirectToAction("Index", "Ricerca");
+        }
+
+        private void RemoveRememberMeCookie()
+        {
+            if (Request.Cookies.ContainsKey(".AspNetCore.Cookies"))
+            {
+                Response.Cookies.Delete(".AspNetCore.Cookies");
+            }
         }
     }
 }

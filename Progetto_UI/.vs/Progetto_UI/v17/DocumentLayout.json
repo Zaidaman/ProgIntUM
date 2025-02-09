@@ -3,10 +3,22 @@
   "WorkspaceRootPath": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A1B99431-CF29-4890-8AB9-8DFF37C9BC35}|..\\Progetto_UI.Web\\Progetto_UI.Web.csproj|c:\\users\\steve\\desktop\\prog\\progetto_ui.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B99431-CF29-4890-8AB9-8DFF37C9BC35}|..\\Progetto_UI.Web\\Progetto_UI.Web.csproj|c:\\users\\steve\\desktop\\prog\\progetto_ui.web\\features\\home\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B99431-CF29-4890-8AB9-8DFF37C9BC35}|..\\Progetto_UI.Web\\Progetto_UI.Web.csproj|c:\\users\\steve\\desktop\\prog\\progetto_ui.web\\features\\consegna\\consegna.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A1B99431-CF29-4890-8AB9-8DFF37C9BC35}|..\\Progetto_UI.Web\\Progetto_UI.Web.csproj|c:\\users\\steve\\desktop\\prog\\progetto_ui.web\\features\\inserimento\\inserimento.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A1B99431-CF29-4890-8AB9-8DFF37C9BC35}|..\\Progetto_UI.Web\\Progetto_UI.Web.csproj|c:\\users\\steve\\desktop\\prog\\progetto_ui.web\\features\\consegna\\consegnacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B99431-CF29-4890-8AB9-8DFF37C9BC35}|..\\Progetto_UI.Web\\Progetto_UI.Web.csproj|c:\\users\\steve\\desktop\\prog\\progetto_ui.web\\features\\ricerca\\ricercaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|c:\\users\\steve\\desktop\\prog\\progetto_ui\\infrastructure\\datagenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,22 +31,10 @@
       "AbsoluteMoniker": "D:0:0:{A1B99431-CF29-4890-8AB9-8DFF37C9BC35}|..\\Progetto_UI.Web\\Progetto_UI.Web.csproj|c:\\users\\steve\\desktop\\prog\\progetto_ui.web\\features\\ricerca\\ricercacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A1B99431-CF29-4890-8AB9-8DFF37C9BC35}|..\\Progetto_UI.Web\\Progetto_UI.Web.csproj|c:\\users\\steve\\desktop\\prog\\progetto_ui.web\\features\\consegna\\consegna.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A1B99431-CF29-4890-8AB9-8DFF37C9BC35}|..\\Progetto_UI.Web\\Progetto_UI.Web.csproj|c:\\users\\steve\\desktop\\prog\\progetto_ui.web\\features\\ricerca\\ricerca.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A1B99431-CF29-4890-8AB9-8DFF37C9BC35}|..\\Progetto_UI.Web\\Progetto_UI.Web.csproj|c:\\users\\steve\\desktop\\prog\\progetto_ui.web\\features\\spostamento\\spostamento.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1B99431-CF29-4890-8AB9-8DFF37C9BC35}|..\\Progetto_UI.Web\\Progetto_UI.Web.csproj|c:\\users\\steve\\desktop\\prog\\progetto_ui.web\\features\\home\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1B99431-CF29-4890-8AB9-8DFF37C9BC35}|..\\Progetto_UI.Web\\Progetto_UI.Web.csproj|c:\\users\\steve\\desktop\\prog\\progetto_ui.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1B99431-CF29-4890-8AB9-8DFF37C9BC35}|..\\Progetto_UI.Web\\Progetto_UI.Web.csproj|c:\\users\\steve\\desktop\\prog\\progetto_ui.web\\features\\ricerca\\ricercaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A1B99431-CF29-4890-8AB9-8DFF37C9BC35}|..\\Progetto_UI.Web\\Progetto_UI.Web.csproj|c:\\users\\steve\\desktop\\prog\\progetto_ui.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -51,43 +51,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "consegna.cshtml",
-              "DocumentMoniker": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI.Web\\Features\\Consegna\\consegna.cshtml",
-              "RelativeDocumentMoniker": "..\\Progetto_UI.Web\\Features\\Consegna\\consegna.cshtml",
-              "ToolTip": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI.Web\\Features\\Consegna\\consegna.cshtml",
-              "RelativeToolTip": "..\\Progetto_UI.Web\\Features\\Consegna\\consegna.cshtml",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAAAFIAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-09T14:08:24.325Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LoginController.cs",
-              "DocumentMoniker": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI.Web\\Features\\Login\\LoginController.cs",
-              "RelativeDocumentMoniker": "..\\Progetto_UI.Web\\Features\\Login\\LoginController.cs",
-              "ToolTip": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI.Web\\Features\\Login\\LoginController.cs",
-              "RelativeToolTip": "..\\Progetto_UI.Web\\Features\\Login\\LoginController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAowB8AAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-09T11:44:56.033Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "RicercaController.cs",
-              "DocumentMoniker": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI.Web\\Features\\Ricerca\\RicercaController.cs",
-              "RelativeDocumentMoniker": "..\\Progetto_UI.Web\\Features\\Ricerca\\RicercaController.cs",
-              "ToolTip": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI.Web\\Features\\Ricerca\\RicercaController.cs",
-              "RelativeToolTip": "..\\Progetto_UI.Web\\Features\\Ricerca\\RicercaController.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAA1wCAAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-09T11:08:48.995Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "DataGenerator.cs",
               "DocumentMoniker": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI\\Infrastructure\\DataGenerator.cs",
               "RelativeDocumentMoniker": "Infrastructure\\DataGenerator.cs",
@@ -111,7 +75,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "ricerca.cshtml",
               "DocumentMoniker": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI.Web\\Features\\Ricerca\\ricerca.cshtml",
               "RelativeDocumentMoniker": "..\\Progetto_UI.Web\\Features\\Ricerca\\ricerca.cshtml",
@@ -123,7 +87,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "spostamento.cshtml",
               "DocumentMoniker": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI.Web\\Features\\Spostamento\\spostamento.cshtml",
               "RelativeDocumentMoniker": "..\\Progetto_UI.Web\\Features\\Spostamento\\spostamento.cshtml",
@@ -135,20 +99,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "inserimento.cshtml",
               "DocumentMoniker": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI.Web\\Features\\Inserimento\\inserimento.cshtml",
               "RelativeDocumentMoniker": "..\\Progetto_UI.Web\\Features\\Inserimento\\inserimento.cshtml",
               "ToolTip": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI.Web\\Features\\Inserimento\\inserimento.cshtml",
               "RelativeToolTip": "..\\Progetto_UI.Web\\Features\\Inserimento\\inserimento.cshtml",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAUwF8AAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAAAIsAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-02-08T07:09:33.762Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "ConsegnaController.cs",
               "DocumentMoniker": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI.Web\\Features\\Consegna\\ConsegnaController.cs",
               "RelativeDocumentMoniker": "..\\Progetto_UI.Web\\Features\\Consegna\\ConsegnaController.cs",
@@ -156,11 +120,12 @@
               "RelativeToolTip": "..\\Progetto_UI.Web\\Features\\Consegna\\ConsegnaController.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAIwB0AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-09T14:14:13.037Z"
+              "WhenOpened": "2025-02-09T14:14:13.037Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 5,
               "Title": "RicercaViewModel.cs",
               "DocumentMoniker": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI.Web\\Features\\Ricerca\\RicercaViewModel.cs",
               "RelativeDocumentMoniker": "..\\Progetto_UI.Web\\Features\\Ricerca\\RicercaViewModel.cs",
@@ -168,31 +133,71 @@
               "RelativeToolTip": "..\\Progetto_UI.Web\\Features\\Ricerca\\RicercaViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-09T11:08:54.79Z"
+              "WhenOpened": "2025-02-09T11:08:54.79Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "home.cshtml",
-              "DocumentMoniker": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI.Web\\Features\\Home\\home.cshtml",
-              "RelativeDocumentMoniker": "..\\Progetto_UI.Web\\Features\\Home\\home.cshtml",
-              "ToolTip": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI.Web\\Features\\Home\\home.cshtml",
-              "RelativeToolTip": "..\\Progetto_UI.Web\\Features\\Home\\home.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHwAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-08T07:08:22.178Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 0,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI.Web\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "..\\Progetto_UI.Web\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI.Web\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "..\\Progetto_UI.Web\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAAC4AAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-08T07:07:49.482Z"
+              "WhenOpened": "2025-02-08T07:07:49.482Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "home.cshtml",
+              "DocumentMoniker": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI.Web\\Features\\Home\\home.cshtml",
+              "RelativeDocumentMoniker": "..\\Progetto_UI.Web\\Features\\Home\\home.cshtml",
+              "ToolTip": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI.Web\\Features\\Home\\home.cshtml",
+              "RelativeToolTip": "..\\Progetto_UI.Web\\Features\\Home\\home.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAADoAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-08T07:08:22.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "consegna.cshtml",
+              "DocumentMoniker": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI.Web\\Features\\Consegna\\consegna.cshtml",
+              "RelativeDocumentMoniker": "..\\Progetto_UI.Web\\Features\\Consegna\\consegna.cshtml",
+              "ToolTip": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI.Web\\Features\\Consegna\\consegna.cshtml",
+              "RelativeToolTip": "..\\Progetto_UI.Web\\Features\\Consegna\\consegna.cshtml",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAAAGoAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-09T14:08:24.325Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RicercaController.cs",
+              "DocumentMoniker": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI.Web\\Features\\Ricerca\\RicercaController.cs",
+              "RelativeDocumentMoniker": "..\\Progetto_UI.Web\\Features\\Ricerca\\RicercaController.cs",
+              "ToolTip": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI.Web\\Features\\Ricerca\\RicercaController.cs",
+              "RelativeToolTip": "..\\Progetto_UI.Web\\Features\\Ricerca\\RicercaController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA1wCAAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T11:08:48.995Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI.Web\\Features\\Login\\LoginController.cs",
+              "RelativeDocumentMoniker": "..\\Progetto_UI.Web\\Features\\Login\\LoginController.cs",
+              "ToolTip": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI.Web\\Features\\Login\\LoginController.cs",
+              "RelativeToolTip": "..\\Progetto_UI.Web\\Features\\Login\\LoginController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAowB8AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T11:44:56.033Z"
             }
           ]
         }
