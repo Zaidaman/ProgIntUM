@@ -1,8 +1,6 @@
 ﻿@model Progetto_UI.Web.Features.Home.HomeViewModel
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 
-<!DOCTYPE html>
-<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,18 +14,6 @@
             background-color: #023047;
             color: white;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
-
-        .title {
-            text-align: center;
-            font-size: 2rem;
-            font-weight: bold;
-            color: black;
-            background-color: rgba(255, 255, 255, 0.7);
-            display: inline-block;
-            padding: 0.5rem 1rem;
-            border-radius: 0.5rem;
-            margin-bottom: 20px;
         }
 
         .button-section {
@@ -63,20 +49,17 @@
         .arrows-out {
             color: #212529;
         }
-
-        .home-btn {
-            z-index: 1000;
-        }
-
     </style>
 </head>
 <body>
-    <a href="@Url.Action("Login", "Home")" class="btn btn-dark home-btn position-fixed top-0 start-0 m-3">
+    <a href="@Url.Action("Login", "Home")" class="btn btn-dark back-home">
         <i class="bi bi-box-arrow-left"></i>Login
     </a>
 
     <div class="button-section">
-        <div class="title">Gestione Semi-elaborati</div>
+        @section pageTitleContent {
+            Gestione Semi-elaborati
+        }
         <div class="button-row">
             <div>
                 <a href="@Url.Action("Inserimento", "Home")" class="btn btn-primary d-flex align-items-center justify-content-center">
@@ -122,4 +105,3 @@
         });
     </script>
 </body>
-</html>
