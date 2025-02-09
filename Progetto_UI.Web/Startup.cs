@@ -96,7 +96,7 @@ namespace Progetto_UI.Web
             app.UseRequestLocalization(SupportedCultures.CultureNames);
             app.UseRouting();
             app.UseSession();
-            //app.UseAuthentication();                                  //Crea problemi nel login
+            app.UseAuthentication();
             app.UseAuthorization();
 
             var node_modules = new CompositePhysicalFileProvider(Directory.GetCurrentDirectory(), "node_modules");
@@ -109,7 +109,7 @@ namespace Progetto_UI.Web
             {
                 endpoints.MapHub<TemplateHub>("/templateHub");
                 endpoints.MapAreaControllerRoute("Example", "Example", "Example/{controller=Users}/{action=Index}/{id?}");
-                //endpoints.MapControllerRoute("default", "{controller=Login}/{action=Login}");                                //Ridondanza
+                endpoints.MapControllerRoute("default", "{controller=Login}/{action=Login}");                                //Ridondanza
                 endpoints.MapControllerRoute("orgHome", "Organization/{controller=OrgHome}/{action=Index}/{id?}");
                 endpoints.MapControllerRoute(name: "default", pattern: "{controller=Login}/{action=Login}/{id?}");        //Ridondanza
                 endpoints.MapControllerRoute(name: "logout", pattern: "{controller=Login}/{action=Logout}");
