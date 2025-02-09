@@ -36,11 +36,11 @@ namespace Progetto_UI.Infrastructure
                 new User
                 {
                     Id = Guid.Parse("bfdef48b-c7ea-4227-8333-c635af267354"), // Forced to specific Guid for tests
-                    Email = "email3@test.it",
+                    Email = "mario.vialli@gmail.com",
                     Password = "Uy6qvZV0iA2/drm4zACDLCCm7BE9aCKZVQ16bg80XiU=", // SHA-256 of text "Test"
-                    FirstName = "Nome3",
-                    LastName = "Cognome3",
-                    NickName = "Nickname3"
+                    FirstName = "Mario",
+                    LastName = "Vialli",
+                    NickName = "Viama0"
                 });
 
             if (!context.Warehouses.Any())
@@ -68,6 +68,12 @@ namespace Progetto_UI.Infrastructure
                         ProductId = 2,
                         Name = "Product2",
                         Description = "Description2"
+                    },
+                    new Product
+                    {
+                        ProductId = 3,
+                        Name = "Marchingegno",
+                        Description = "Ingranaggi"
                     });
             }
 

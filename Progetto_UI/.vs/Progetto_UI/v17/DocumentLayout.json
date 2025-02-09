@@ -1,27 +1,37 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\lucav\\OneDrive\\Desktop\\ProgIntUM\\Progetto_UI\\",
+  "WorkspaceRootPath": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A1B99431-CF29-4890-8AB9-8DFF37C9BC35}|..\\Progetto_UI.Web\\Progetto_UI.Web.csproj|c:\\users\\lucav\\onedrive\\desktop\\progintum\\progetto_ui.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|c:\\users\\steve\\desktop\\prog\\progetto_ui\\infrastructure\\datagenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|solutionrelative:infrastructure\\datagenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A1B99431-CF29-4890-8AB9-8DFF37C9BC35}|..\\Progetto_UI.Web\\Progetto_UI.Web.csproj|c:\\users\\lucav\\onedrive\\desktop\\progintum\\progetto_ui.web\\views\\shared\\_layouthtml.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A1B99431-CF29-4890-8AB9-8DFF37C9BC35}|..\\Progetto_UI.Web\\Progetto_UI.Web.csproj|c:\\users\\steve\\desktop\\prog\\progetto_ui.web\\features\\login\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A1B99431-CF29-4890-8AB9-8DFF37C9BC35}|..\\Progetto_UI.Web\\Progetto_UI.Web.csproj|c:\\users\\lucav\\onedrive\\desktop\\progintum\\progetto_ui.web\\areas\\authenticatedbasecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A1B99431-CF29-4890-8AB9-8DFF37C9BC35}|..\\Progetto_UI.Web\\Progetto_UI.Web.csproj|c:\\users\\steve\\desktop\\prog\\progetto_ui.web\\features\\ricerca\\ricercaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A1B99431-CF29-4890-8AB9-8DFF37C9BC35}|..\\Progetto_UI.Web\\Progetto_UI.Web.csproj|c:\\users\\lucav\\onedrive\\desktop\\progintum\\progetto_ui.web\\features\\login\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A1B99431-CF29-4890-8AB9-8DFF37C9BC35}|..\\Progetto_UI.Web\\Progetto_UI.Web.csproj|c:\\users\\steve\\desktop\\prog\\progetto_ui.web\\features\\spostamento\\spostamento.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A1B99431-CF29-4890-8AB9-8DFF37C9BC35}|..\\Progetto_UI.Web\\Progetto_UI.Web.csproj|c:\\users\\lucav\\onedrive\\desktop\\progintum\\progetto_ui.web\\areas\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A1B99431-CF29-4890-8AB9-8DFF37C9BC35}|..\\Progetto_UI.Web\\Progetto_UI.Web.csproj|c:\\users\\steve\\desktop\\prog\\progetto_ui.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A1B99431-CF29-4890-8AB9-8DFF37C9BC35}|..\\Progetto_UI.Web\\Progetto_UI.Web.csproj|c:\\users\\lucav\\onedrive\\desktop\\progintum\\progetto_ui.web\\views\\shared\\_pagingpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A1B99431-CF29-4890-8AB9-8DFF37C9BC35}|..\\Progetto_UI.Web\\Progetto_UI.Web.csproj|c:\\users\\steve\\desktop\\prog\\progetto_ui.web\\features\\ricerca\\ricerca.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A1B99431-CF29-4890-8AB9-8DFF37C9BC35}|..\\Progetto_UI.Web\\Progetto_UI.Web.csproj|c:\\users\\lucav\\onedrive\\desktop\\progintum\\progetto_ui.web\\features\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A1B99431-CF29-4890-8AB9-8DFF37C9BC35}|..\\Progetto_UI.Web\\Progetto_UI.Web.csproj|c:\\users\\steve\\desktop\\prog\\progetto_ui.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B99431-CF29-4890-8AB9-8DFF37C9BC35}|..\\Progetto_UI.Web\\Progetto_UI.Web.csproj|c:\\users\\steve\\desktop\\prog\\progetto_ui.web\\features\\home\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B99431-CF29-4890-8AB9-8DFF37C9BC35}|..\\Progetto_UI.Web\\Progetto_UI.Web.csproj|c:\\users\\steve\\desktop\\prog\\progetto_ui.web\\features\\inserimento\\inserimento.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B99431-CF29-4890-8AB9-8DFF37C9BC35}|..\\Progetto_UI.Web\\Progetto_UI.Web.csproj|c:\\users\\steve\\desktop\\prog\\progetto_ui.web\\features\\ricerca\\ricercacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,102 +41,131 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 3,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI.Web\\Features\\Login\\LoginController.cs",
+              "RelativeDocumentMoniker": "..\\Progetto_UI.Web\\Features\\Login\\LoginController.cs",
+              "ToolTip": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI.Web\\Features\\Login\\LoginController.cs",
+              "RelativeToolTip": "..\\Progetto_UI.Web\\Features\\Login\\LoginController.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAwwB4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T11:44:56.033Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "AuthenticatedBaseController.cs",
-              "DocumentMoniker": "C:\\Users\\lucav\\OneDrive\\Desktop\\ProgIntUM\\Progetto_UI.Web\\Areas\\AuthenticatedBaseController.cs",
-              "RelativeDocumentMoniker": "..\\Progetto_UI.Web\\Areas\\AuthenticatedBaseController.cs",
-              "ToolTip": "C:\\Users\\lucav\\OneDrive\\Desktop\\ProgIntUM\\Progetto_UI.Web\\Areas\\AuthenticatedBaseController.cs",
-              "RelativeToolTip": "..\\Progetto_UI.Web\\Areas\\AuthenticatedBaseController.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAA9wBwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-07T16:11:09.58Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LoginController.cs",
-              "DocumentMoniker": "C:\\Users\\lucav\\OneDrive\\Desktop\\ProgIntUM\\Progetto_UI.Web\\Features\\Login\\LoginController.cs",
-              "RelativeDocumentMoniker": "..\\Progetto_UI.Web\\Features\\Login\\LoginController.cs",
-              "ToolTip": "C:\\Users\\lucav\\OneDrive\\Desktop\\ProgIntUM\\Progetto_UI.Web\\Features\\Login\\LoginController.cs",
-              "RelativeToolTip": "..\\Progetto_UI.Web\\Features\\Login\\LoginController.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-07T16:05:05.456Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "_PagingPartial.cshtml",
-              "DocumentMoniker": "C:\\Users\\lucav\\OneDrive\\Desktop\\ProgIntUM\\Progetto_UI.Web\\Views\\Shared\\_PagingPartial.cshtml",
-              "RelativeDocumentMoniker": "..\\Progetto_UI.Web\\Views\\Shared\\_PagingPartial.cshtml",
-              "ToolTip": "C:\\Users\\lucav\\OneDrive\\Desktop\\ProgIntUM\\Progetto_UI.Web\\Views\\Shared\\_PagingPartial.cshtml",
-              "RelativeToolTip": "..\\Progetto_UI.Web\\Views\\Shared\\_PagingPartial.cshtml",
+              "Title": "RicercaViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI.Web\\Features\\Ricerca\\RicercaViewModel.cs",
+              "RelativeDocumentMoniker": "..\\Progetto_UI.Web\\Features\\Ricerca\\RicercaViewModel.cs",
+              "ToolTip": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI.Web\\Features\\Ricerca\\RicercaViewModel.cs",
+              "RelativeToolTip": "..\\Progetto_UI.Web\\Features\\Ricerca\\RicercaViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-07T15:29:32.693Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T11:08:54.79Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RicercaController.cs",
+              "DocumentMoniker": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI.Web\\Features\\Ricerca\\RicercaController.cs",
+              "RelativeDocumentMoniker": "..\\Progetto_UI.Web\\Features\\Ricerca\\RicercaController.cs",
+              "ToolTip": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI.Web\\Features\\Ricerca\\RicercaController.cs",
+              "RelativeToolTip": "..\\Progetto_UI.Web\\Features\\Ricerca\\RicercaController.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAQwCwAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T11:08:48.995Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DataGenerator.cs",
+              "DocumentMoniker": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI\\Infrastructure\\DataGenerator.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\DataGenerator.cs",
+              "ToolTip": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI\\Infrastructure\\DataGenerator.cs",
+              "RelativeToolTip": "Infrastructure\\DataGenerator.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAcwFoAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T11:06:19.717Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\lucav\\OneDrive\\Desktop\\ProgIntUM\\Progetto_UI.Web\\Features\\Login\\Login.cshtml",
-              "RelativeDocumentMoniker": "..\\Progetto_UI.Web\\Features\\Login\\Login.cshtml",
-              "ToolTip": "C:\\Users\\lucav\\OneDrive\\Desktop\\ProgIntUM\\Progetto_UI.Web\\Features\\Login\\Login.cshtml",
-              "RelativeToolTip": "..\\Progetto_UI.Web\\Features\\Login\\Login.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI.Web\\Program.cs",
+              "RelativeDocumentMoniker": "..\\Progetto_UI.Web\\Program.cs",
+              "ToolTip": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI.Web\\Program.cs",
+              "RelativeToolTip": "..\\Progetto_UI.Web\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-08T07:43:22.036Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ricerca.cshtml",
+              "DocumentMoniker": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI.Web\\Features\\Ricerca\\ricerca.cshtml",
+              "RelativeDocumentMoniker": "..\\Progetto_UI.Web\\Features\\Ricerca\\ricerca.cshtml",
+              "ToolTip": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI.Web\\Features\\Ricerca\\ricerca.cshtml",
+              "RelativeToolTip": "..\\Progetto_UI.Web\\Features\\Ricerca\\ricerca.cshtml",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAqwGUAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-07T15:09:52.244Z",
+              "WhenOpened": "2025-02-08T07:19:56.569Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "spostamento.cshtml",
+              "DocumentMoniker": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI.Web\\Features\\Spostamento\\spostamento.cshtml",
+              "RelativeDocumentMoniker": "..\\Progetto_UI.Web\\Features\\Spostamento\\spostamento.cshtml",
+              "ToolTip": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI.Web\\Features\\Spostamento\\spostamento.cshtml",
+              "RelativeToolTip": "..\\Progetto_UI.Web\\Features\\Spostamento\\spostamento.cshtml",
+              "ViewState": "AgIAADQAAAAAAAAAAAAUwHIAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-08T07:19:40.35Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_LayoutHtml.cshtml",
-              "DocumentMoniker": "C:\\Users\\lucav\\OneDrive\\Desktop\\ProgIntUM\\Progetto_UI.Web\\Views\\Shared\\_LayoutHtml.cshtml",
-              "RelativeDocumentMoniker": "..\\Progetto_UI.Web\\Views\\Shared\\_LayoutHtml.cshtml",
-              "ToolTip": "C:\\Users\\lucav\\OneDrive\\Desktop\\ProgIntUM\\Progetto_UI.Web\\Views\\Shared\\_LayoutHtml.cshtml",
-              "RelativeToolTip": "..\\Progetto_UI.Web\\Views\\Shared\\_LayoutHtml.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "inserimento.cshtml",
+              "DocumentMoniker": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI.Web\\Features\\Inserimento\\inserimento.cshtml",
+              "RelativeDocumentMoniker": "..\\Progetto_UI.Web\\Features\\Inserimento\\inserimento.cshtml",
+              "ToolTip": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI.Web\\Features\\Inserimento\\inserimento.cshtml",
+              "RelativeToolTip": "..\\Progetto_UI.Web\\Features\\Inserimento\\inserimento.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAADIAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-07T15:09:50.602Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-08T07:09:33.762Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\lucav\\OneDrive\\Desktop\\ProgIntUM\\Progetto_UI.Web\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "..\\Progetto_UI.Web\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\lucav\\OneDrive\\Desktop\\ProgIntUM\\Progetto_UI.Web\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "..\\Progetto_UI.Web\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAswBIAAAAxAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "home.cshtml",
+              "DocumentMoniker": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI.Web\\Features\\Home\\home.cshtml",
+              "RelativeDocumentMoniker": "..\\Progetto_UI.Web\\Features\\Home\\home.cshtml",
+              "ToolTip": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI.Web\\Features\\Home\\home.cshtml",
+              "RelativeToolTip": "..\\Progetto_UI.Web\\Features\\Home\\home.cshtml",
+              "ViewState": "AgIAAHAAAAAAAAAAAAAUwHwAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-07T15:09:49.916Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-08T07:08:22.178Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "C:\\Users\\lucav\\OneDrive\\Desktop\\ProgIntUM\\Progetto_UI.Web\\Areas\\_ViewStart.cshtml",
-              "RelativeDocumentMoniker": "..\\Progetto_UI.Web\\Areas\\_ViewStart.cshtml",
-              "ToolTip": "C:\\Users\\lucav\\OneDrive\\Desktop\\ProgIntUM\\Progetto_UI.Web\\Areas\\_ViewStart.cshtml",
-              "RelativeToolTip": "..\\Progetto_UI.Web\\Areas\\_ViewStart.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "..\\Progetto_UI.Web\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "..\\Progetto_UI.Web\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABYAAAAAAAAAAAAqwCYAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-07T15:46:45.65Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-08T07:07:49.482Z"
             }
           ]
         }

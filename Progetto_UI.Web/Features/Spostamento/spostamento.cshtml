@@ -84,7 +84,7 @@
         </div>
     </div>
 
-    <script>
+    @* <script>
         const oldAreaCodeEl = document.getElementById('oldAreaCode');
         const newAreaCodeEl = document.getElementById('newAreaCode');
         const overlay = document.getElementById('overlay');
@@ -94,15 +94,15 @@
           return `${prefix}${Math.floor(Math.random() * 100).toString().padStart(3,'0')}`;
         }
 
-        document.getElementById('captureOldArea').addEventListener('click', () => {
-          const randomOldAreaCode = generateRandomCode('A');
-          oldAreaCodeEl.textContent = `Codice Area Vecchia: ${randomOldAreaCode}`;
-        });
+        // document.getElementById('captureOldArea').addEventListener('click', () => {
+        //   const randomOldAreaCode = generateRandomCode('A');
+        //   oldAreaCodeEl.textContent = `Codice Area Vecchia: ${randomOldAreaCode}`;
+        // });
 
-        document.getElementById('captureNewArea').addEventListener('click', () => {
-          const randomNewAreaCode = generateRandomCode('A');
-          newAreaCodeEl.textContent = `Codice Area Nuova: ${randomNewAreaCode}`;
-        });
+        // document.getElementById('captureNewArea').addEventListener('click', () => {
+        //   const randomNewAreaCode = generateRandomCode('A');
+        //   newAreaCodeEl.textContent = `Codice Area Nuova: ${randomNewAreaCode}`;
+        // });
 
         document.getElementById('moveBtn').addEventListener('click', () => {
           overlay.style.display = 'flex';
@@ -113,6 +113,6 @@
           oldAreaCodeEl.textContent = 'Codice Area Vecchia: ........';
           newAreaCodeEl.textContent = 'Codice Area Nuova: ........';
         });
-    </script>
+    </script> *@
 </body>
 </html>

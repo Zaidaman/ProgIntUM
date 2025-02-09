@@ -99,40 +99,50 @@
     </div>
 
     <script>
-        const resultOverlay = document.getElementById('resultOverlay');
-        const closeOverlay = document.getElementById('closeOverlay');
-        const productResult = document.getElementById('productResult');
-        const areaResult = document.getElementById('areaResult');
-        const searchButton = document.getElementById('searchButton');
-        const productInput = document.getElementById('productInput');
+            document.addEventListener("DOMContentLoaded", function () {
+            const resultOverlay = document.getElementById('resultOverlay');
+            const closeOverlay = document.getElementById('closeOverlay');
+            const productResult = document.getElementById('productResult');
+            const areaResult = document.getElementById('areaResult');
+            const searchButton = document.getElementById('searchButton');
+            const productInput = document.getElementById('productInput');
 
-        const data = [
-            { codice: "12345", area: "A1" },
-            { codice: "67890", area: "B2" },
-        ];
-
-        function generateRandomCode(prefix) {
-            return `${prefix}${Math.floor(Math.random() * 100).toString().padStart(3,'0')}`;
-        }
-
-        searchButton.addEventListener('click', () => {
-            const productCode = productInput.value.trim();
-            const result = data.find(item => item.codice === productCode);
-
-            if (result) {
-                productResult.textContent = `Codice prodotto: ${result.codice}`;
-                areaResult.textContent = `Codice Area: ${result.area}`;
-            } else {
-                productResult.textContent = `Codice prodotto: ${productCode}`;
-                areaResult.textContent = `Codice Area: ${generateRandomCode('A')}`;
+            if (!searchButton || !productInput || !resultOverlay || !closeOverlay) {
+                console.error("Errore: Elementi DOM mancanti.");
+                return;
             }
 
-            resultOverlay.style.display = 'flex';
-            productInput.value = ''; // Svuota il campo di testo
-        });
+            searchButton.addEventListener('click', async () => {
+                const productId = productInput.value.trim();
 
-        closeOverlay.addEventListener('click', () => {
-            resultOverlay.style.display = 'none';
+                if (!productId || isNaN(productId)) {
+                    alert("Inserisci un ID numerico valido!");
+                    return;
+                }
+
+                try {
+                    const response = await fetch(`https://localhost:7132/ricerca/api/products/${productId}`);
+
+                    if (!response.ok) {
+                        throw new Error(`Errore ${response.status}: Prodotto non trovato`);
+                    }
+
+                    const product = await response.json();
+
+                    productResult.textContent = `Codice prodotto: ${product.productId}`;
+                    areaResult.textContent = `Nome: ${product.name}, Descrizione: ${product.description}`;
+                    resultOverlay.style.display = 'flex';
+                } catch (error) {
+                    console.error("Errore nella richiesta API:", error);
+                    alert("Prodotto non trovato!");
+                }
+
+                productInput.value = '';
+            });
+
+            closeOverlay.addEventListener('click', () => {
+                resultOverlay.style.display = 'none';
+            });
         });
     </script>
 </body>
