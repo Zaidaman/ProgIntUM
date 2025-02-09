@@ -65,13 +65,13 @@
         <div class="mb-4">
             <label for="productCode" class="form-label">Fotografa il codice del Pezzo</label>
             <button id="captureProduct" class="btn btn-secondary w-100 mb-2">&nbsp;Fotografa</button>
-            @*<p id="productCode" class="text-center"><i class="bi bi-camera-fill"></i>Codice Pezzo: @Model.ProductCode</p>*@
+            <p id="productCode" class="text-center"><i class="bi bi-camera-fill"></i>Codice Pezzo: @Model.ProductCode</p>
         </div>
 
         <div class="mb-4">
             <label for="areaCode" class="form-label">Fotografa il codice dell'Area</label>
             <button id="captureArea" class="btn btn-secondary w-100 mb-2">&nbsp;Fotografa</button>
-            @*<p id="areaCode" class="text-center">Codice Area: @Model.AreaCode</p>*@
+            <p id="areaCode" class="text-center"><i class="bi bi-camera-fill"></i>Codice Area: @Model.AreaCode</p>
         </div>
         <button id="insertBtn" class="btn btn-primary w-100">Inserisci</button>
     </div>
@@ -85,33 +85,61 @@
 
     <script>
         const productCodeEl = document.getElementById('productCode');
-        const areaCodeEl = document.getElementById('areaCode');
-        const overlay = document.getElementById('overlay');
-        const closeOverlayBtn = document.getElementById('closeOverlay');
+        const areaCodeEl = document.getElementById('AreaCode');
 
-        function generateRandomCode(prefix) {
-          return `${prefix}${Math.floor(Math.random() * 100).toString().padStart(3,'0')}`;
+        // Funzione per ottenere un prodotto casuale
+        async function getRandomProduct() {
+            try {
+                const response = await fetch('/Consegna/GetAllProducts'); // Cambia URL con il tuo endpoint
+                if (!response.ok) {
+                    throw new Error('Errore nel recupero dei prodotti');
+                }
+
+                const products = await response.json();
+                if (products.length === 0) {
+                    alert("Nessun prodotto trovato!");
+                    return;
+                }
+
+                // Seleziona un prodotto casuale
+                const randomProduct = products[Math.floor(Math.random() * products.length)];
+
+                // Mostra il nome del prodotto nel paragrafo productCode
+                productCodeEl.textContent = `Codice Pezzo: ${randomProduct.name}`;
+            } catch (error) {
+                console.error("Errore nella richiesta API:", error);
+                alert("Si è verificato un errore nel recupero dei prodotti!");
+            }
         }
 
-        document.getElementById('captureProduct').addEventListener('click', () => {
-          const randomProductCode = generateRandomCode('P');
-          productCodeEl.textContent = `Codice Pezzo: ${randomProductCode}`;
-        });
+        // Funzione per ottenere un'area casuale
+        async function getRandomSpace() {
+            try {
+                const response = await fetch('/Consegna/GetAllSpaces');
+                if (!response.ok) {
+                    throw new Error('Errore nel recupero delle aree');
+                }
 
-        document.getElementById('captureArea').addEventListener('click', () => {
-          const randomAreaCode = generateRandomCode('A');
-          areaCodeEl.textContent = `Codice Area: ${randomAreaCode}`;
-        });
+                const space = await response.json();
+                if (space.length === 0) {
+                    alert("Nessuna area trovata!");
+                    return;
+                }
 
-        document.getElementById('insertBtn').addEventListener('click', () => {
-          overlay.style.display = 'flex';
-        });
+                // Seleziona un prodotto casuale
+                const randomSpace = space[Math.floor(Math.random() * space.length)];
 
-        closeOverlayBtn.addEventListener('click', () => {
-          overlay.style.display = 'none';
-          productCodeEl.textContent = 'Codice Pezzo: ........';
-          areaCodeEl.textContent = 'Codice Area: ........';
-        });
+                // Mostra il nome del prodotto nel paragrafo productCode
+                areaCodeEl.textContent = `Codice Area: ${randomSpace.SpaceId}`;
+            } catch (error) {
+                console.error("Errore nella richiesta API:", error);
+                alert("Si è verificato un errore nel recupero delle aree!");
+            }
+        }
+
+        // Aggiungi gli eventi per i pulsanti 'Fotografa' per mostrare un prodotto casuale e un'area casuale
+        document.getElementById('captureProduct').addEventListener('click', getRandomProduct);
+        document.getElementById('captureArea').addEventListener('click', getRandomSpace);
     </script>
 </body>
 </html>

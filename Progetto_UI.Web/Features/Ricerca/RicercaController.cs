@@ -32,8 +32,6 @@ namespace Progetto_UI.Web.Features.Ricerca
         [HttpGet("api/products/{id}")]
         public virtual IActionResult GetProductById(int id)
         {
-            Console.WriteLine($"🔍 Ricerca per ProductId: {id}"); // Debug
-
             var product = _context.Products
                                   .Where(p => p.ProductId == id)
                                   .Select(p => new
@@ -46,11 +44,9 @@ namespace Progetto_UI.Web.Features.Ricerca
 
             if (product == null)
             {
-                Console.WriteLine($"❌ Prodotto con ID {id} non trovato");
                 return NotFound(new { message = "Prodotto non trovato" });
             }
 
-            Console.WriteLine($"✅ Prodotto trovato: {product.Name}");
             return Ok(product);
         }
     }
