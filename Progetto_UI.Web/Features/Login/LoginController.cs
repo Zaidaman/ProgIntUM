@@ -53,8 +53,6 @@ namespace Progetto_UI.Web.Features.Login
                 SameSite = SameSiteMode.Strict
             });
 
-            TempData["UserName"] = utente.NickName;
-
             if (string.IsNullOrWhiteSpace(returnUrl))
             {
                 returnUrl = Url.Action("Index", "Home");

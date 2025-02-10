@@ -71,7 +71,7 @@
         // Funzione per ottenere un prodotto casuale
         async function getRandomProduct() {
             try {
-                const response = await fetch('/Consegna/GetAllProducts'); // Cambia URL con il tuo endpoint
+                const response = await fetch('/Consegna/GetAllProducts');
                 if (!response.ok) {
                     throw new Error('Errore nel recupero dei prodotti');
                 }
@@ -93,7 +93,6 @@
             }
         }
 
-        // Aggiungi l'evento per il pulsante 'Fotografa' per mostrare un prodotto casuale
         document.getElementById('captureProduct').addEventListener('click', getRandomProduct);
     </script>
 </body>
