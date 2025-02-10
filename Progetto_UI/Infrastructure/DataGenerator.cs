@@ -41,6 +41,15 @@ namespace Progetto_UI.Infrastructure
                     FirstName = "Mario",
                     LastName = "Vialli",
                     NickName = "Viama0"
+                },
+                new User
+                {
+                    Id = Guid.Parse("aea13c69-7edb-4332-bd3f-c141f1055a47"), // Forced to specific Guid for tests
+                    Email = "a@a.it",
+                    Password = "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb", // SHA-256 of text "a"
+                    FirstName = "a",
+                    LastName = "a",
+                    NickName = "a"
                 });
 
             if (!context.Warehouses.Any())
