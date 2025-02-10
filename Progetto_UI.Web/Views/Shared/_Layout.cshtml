@@ -56,9 +56,11 @@
                 </button>
                 @{
                     var nickname = Context.Request.Cookies["UserNickName"];
+                    var isLoginPage = ViewContext.RouteData.Values["Controller"]?.ToString()?.ToLower() == "login" &&
+                    ViewContext.RouteData.Values["Action"]?.ToString()?.ToLower() == "login";
                 }
 
-                @if (!string.IsNullOrEmpty(nickname))
+                @if (!string.IsNullOrEmpty(nickname) && !isLoginPage)
                 {
                     <div class="navbar-text ms-auto name-box">
                         @nickname
