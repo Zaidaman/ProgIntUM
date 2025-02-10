@@ -3,19 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\lucav\\OneDrive\\Desktop\\ProgIntUM\\Progetto_UI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|c:\\users\\lucav\\onedrive\\desktop\\progintum\\progetto_ui\\infrastructure\\datagenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|solutionrelative:infrastructure\\datagenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|c:\\users\\lucav\\onedrive\\desktop\\progintum\\progetto_ui\\services\\shared\\space.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|solutionrelative:services\\shared\\space.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A1B99431-CF29-4890-8AB9-8DFF37C9BC35}|..\\Progetto_UI.Web\\Progetto_UI.Web.csproj|c:\\users\\lucav\\onedrive\\desktop\\progintum\\progetto_ui.web\\features\\consegna\\consegna.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|c:\\users\\lucav\\onedrive\\desktop\\progintum\\progetto_ui\\services\\shared\\org.commands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|solutionrelative:services\\shared\\org.commands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A1B99431-CF29-4890-8AB9-8DFF37C9BC35}|..\\Progetto_UI.Web\\Progetto_UI.Web.csproj|c:\\users\\lucav\\onedrive\\desktop\\progintum\\progetto_ui.web\\features\\consegna\\consegnacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -25,62 +16,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Space.cs",
-              "DocumentMoniker": "C:\\Users\\lucav\\OneDrive\\Desktop\\ProgIntUM\\Progetto_UI\\Services\\Shared\\Space.cs",
-              "RelativeDocumentMoniker": "Services\\Shared\\Space.cs",
-              "ToolTip": "C:\\Users\\lucav\\OneDrive\\Desktop\\ProgIntUM\\Progetto_UI\\Services\\Shared\\Space.cs",
-              "RelativeToolTip": "Services\\Shared\\Space.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T15:03:40.215Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Org.Commands.cs",
-              "DocumentMoniker": "C:\\Users\\lucav\\OneDrive\\Desktop\\ProgIntUM\\Progetto_UI\\Services\\Shared\\Org.Commands.cs",
-              "RelativeDocumentMoniker": "Services\\Shared\\Org.Commands.cs",
-              "ToolTip": "C:\\Users\\lucav\\OneDrive\\Desktop\\ProgIntUM\\Progetto_UI\\Services\\Shared\\Org.Commands.cs",
-              "RelativeToolTip": "Services\\Shared\\Org.Commands.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAqwDIAAAAWAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "ConsegnaController.cs",
+              "DocumentMoniker": "C:\\Users\\lucav\\OneDrive\\Desktop\\ProgIntUM\\Progetto_UI.Web\\Features\\Consegna\\ConsegnaController.cs",
+              "RelativeDocumentMoniker": "..\\Progetto_UI.Web\\Features\\Consegna\\ConsegnaController.cs",
+              "ToolTip": "C:\\Users\\lucav\\OneDrive\\Desktop\\ProgIntUM\\Progetto_UI.Web\\Features\\Consegna\\ConsegnaController.cs",
+              "RelativeToolTip": "..\\Progetto_UI.Web\\Features\\Consegna\\ConsegnaController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwB0AAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T15:04:00.613Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "consegna.cshtml",
-              "DocumentMoniker": "C:\\Users\\lucav\\OneDrive\\Desktop\\ProgIntUM\\Progetto_UI.Web\\Features\\Consegna\\consegna.cshtml",
-              "RelativeDocumentMoniker": "..\\Progetto_UI.Web\\Features\\Consegna\\consegna.cshtml",
-              "ToolTip": "C:\\Users\\lucav\\OneDrive\\Desktop\\ProgIntUM\\Progetto_UI.Web\\Features\\Consegna\\consegna.cshtml",
-              "RelativeToolTip": "..\\Progetto_UI.Web\\Features\\Consegna\\consegna.cshtml",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAAE0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-10T15:02:04.762Z",
+              "WhenOpened": "2025-02-10T15:14:26.588Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DataGenerator.cs",
-              "DocumentMoniker": "C:\\Users\\lucav\\OneDrive\\Desktop\\ProgIntUM\\Progetto_UI\\Infrastructure\\DataGenerator.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\DataGenerator.cs",
-              "ToolTip": "C:\\Users\\lucav\\OneDrive\\Desktop\\ProgIntUM\\Progetto_UI\\Infrastructure\\DataGenerator.cs",
-              "RelativeToolTip": "Infrastructure\\DataGenerator.cs",
-              "ViewState": "AgIAAEkAAAAAAAAAAAAgwGQAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T14:37:51.745Z",
+              "Title": "consegna.cshtml",
+              "DocumentMoniker": "C:\\Users\\lucav\\OneDrive\\Desktop\\ProgIntUM\\Progetto_UI.Web\\Features\\Consegna\\consegna.cshtml",
+              "RelativeDocumentMoniker": "..\\Progetto_UI.Web\\Features\\Consegna\\consegna.cshtml",
+              "ToolTip": "C:\\Users\\lucav\\OneDrive\\Desktop\\ProgIntUM\\Progetto_UI.Web\\Features\\Consegna\\consegna.cshtml",
+              "RelativeToolTip": "..\\Progetto_UI.Web\\Features\\Consegna\\consegna.cshtml",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAEgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-10T15:02:04.762Z",
               "EditorCaption": ""
             }
           ]
