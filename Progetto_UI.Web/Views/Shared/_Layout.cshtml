@@ -31,14 +31,24 @@
             left: 10px;
             z-index: 1100;
         }
-    </style>
+
+         .name-box {
+            text-align: center;                   
+            color: black;
+            background-color: #484848;
+            display: block;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;            
+            width: fit-content;
+        }
+    </style> 
 }
 <div id="pageId" class="onit-page">
     <div class="onit-page-sticky-top" id="onit-page-sticky-top">
         <nav class="navbar navbar-expand-lg navbar-dark onit-page-menu">
             <div class="container-fluid">
                 <a class="navbar-brand" href="/">
-                    <img class="onit-suites-logo" src="~/images/app-logo.png" />
+                    @* <img class="onit-suites-logo" src="~/images/app-logo.png" /> *@
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa-solid fa-bars"></i>
@@ -60,10 +70,10 @@
                             </li>
                         }
                     </ul>
-                    @* Aggiungi questo div per mostrare l'email nell'angolo in alto a destra *@
+
                     @if (TempData["UserName"] != null)
                     {
-                        <div class="navbar-text ms-auto">
+                        <div class="navbar-text ms-auto name-box">
                             @TempData["UserName"]
                         </div>
                     }
