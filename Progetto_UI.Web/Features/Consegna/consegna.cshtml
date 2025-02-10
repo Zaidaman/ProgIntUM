@@ -64,9 +64,16 @@
         </div>
         <button id="insertBtn" class="btn btn-primary w-100">Inserisci</button>
     </div>
+    <div id="overlay" class="overlay">
+        <div class="overlay-content">
+            <p>Il pezzo è stato consegnato</p>
+            <button id="closeOverlay" class="btn btn-light mt-3">Chiudi</button>
+        </div>
+    </div>
 
     <script>
         const productCodeEl = document.getElementById('productCode');
+        const closeOverlayBtn = document.getElementById('closeOverlay');
 
         // Funzione per ottenere un prodotto casuale
         async function getRandomProduct() {
@@ -94,5 +101,14 @@
         }
 
         document.getElementById('captureProduct').addEventListener('click', getRandomProduct);
+
+        document.getElementById('insertBtn').addEventListener('click', () => {
+            overlay.style.display = 'flex';
+        });
+
+        closeOverlayBtn.addEventListener('click', () => {
+            overlay.style.display = 'none';
+            productCodeEl.textContent = 'Codice Pezzo:';
+        });
     </script>
 </body>
