@@ -83,7 +83,7 @@
         const overlay = document.getElementById('overlay');
         const closeOverlayBtn = document.getElementById('closeOverlay');
 
-        async function fetchRandomItem(url, element, label, key) {
+                async function fetchRandomItem(url, element, label) {
             try {
                 const response = await fetch(url);
                 if (!response.ok) throw new Error(`Errore nel recupero dei dati da ${url}`);
@@ -95,19 +95,19 @@
                 }
 
                 const randomItem = data[Math.floor(Math.random() * data.length)];
-                element.textContent = `${label}: ${randomItem[key]}`;
+                element.textContent = `${label}: ${randomItem.name || randomItem.SpaceId}`;
             } catch (error) {
                 console.error("Errore API:", error);
                 alert(`Errore nel recupero dei dati!`);
             }
         }
 
-        document.getElementById('captureAreaRimuovi').addEventListener('click', () => {
-            fetchRandomItem('/Consegna/GetAllSpaces', areaRemoveEl, 'Codice Area Rimuovi', 'SpaceId');
+                document.getElementById('captureAreaRimuovi').addEventListener('click', () => {
+            fetchRandomItem('/Consegna/GetAllSpaces', areaRemoveEl, 'Codice Area Rimuovi');
         });
 
         document.getElementById('captureAreaInserisci').addEventListener('click', () => {
-            fetchRandomItem('/Consegna/GetAllSpaces', areaInsertEl, 'Codice Area Inserisci', 'SpaceId');
+            fetchRandomItem('/Consegna/GetAllSpaces', areaInsertEl, 'Codice Area Inserisci');
         });
 
         document.getElementById('spostaBtn').addEventListener('click', () => {
