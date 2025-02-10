@@ -92,11 +92,13 @@ namespace Progetto_UI.Infrastructure
                     new Space
                     {
                         SpaceId = 1,
+                        Name = "A01",
                         WarehouseId = 1
                     },
                     new Space
                     {
                         SpaceId = 2,
+                        Name = "A02",
                         WarehouseId = 1
                     });
             }
