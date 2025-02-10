@@ -26,20 +26,21 @@
         }
 
         .back-home {
-            position: fixed;
-            top: 10px;
+            position: absolute;
+            top: 5px;
             left: 10px;
-            z-index: 1100;
         }
 
-         .name-box {
-            text-align: center;                   
-            color: black;
+        .name-box {
+            position: absolute;
+            right: 10px;
+            top: 5px;
             background-color: #484848;
-            display: block;
-            padding: 0.5rem 1rem;
-            border-radius: 0.5rem;            
-            width: fit-content;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: bold;
         }
     </style> 
 }
@@ -53,6 +54,16 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa-solid fa-bars"></i>
                 </button>
+                @{
+                    var nickname = Context.Request.Cookies["UserNickName"];
+                }
+
+                @if (!string.IsNullOrEmpty(nickname))
+                {
+                    <div class="navbar-text ms-auto name-box">
+                        @nickname
+                    </div>
+                }
                 <div class="collapse navbar-collapse flex-wrap" id="navbarSupportedContent">
                     <ul class="nav navbar-nav ms-auto onit-page-menu-user">
                         @if (identitaCorrente != null)
@@ -70,13 +81,6 @@
                             </li>
                         }
                     </ul>
-
-                    @if (TempData["UserName"] != null)
-                    {
-                        <div class="navbar-text ms-auto name-box">
-                            @TempData["UserName"]
-                        </div>
-                    }
                 </div>
             </div>
         </nav>

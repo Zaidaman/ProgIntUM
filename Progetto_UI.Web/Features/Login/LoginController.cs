@@ -9,6 +9,7 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using Progetto_UI.Infrastructure;
 using Progetto_UI.Services.Shared;
+using Microsoft.AspNetCore.Http;
 
 namespace Progetto_UI.Web.Features.Login
 {
@@ -32,18 +33,27 @@ namespace Progetto_UI.Web.Features.Login
             var claims = new List<Claim>
             {
                 new Claim(ClaimTypes.NameIdentifier, utente.Id.ToString()),
-                new Claim(ClaimTypes.Email, utente.Email)
+                new Claim(ClaimTypes.Email, utente.Email),
+                new Claim(ClaimTypes.Name, utente.NickName)
             };
 
             var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
 
             HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity), new AuthenticationProperties
             {
-                ExpiresUtc = (rememberMe) ? DateTimeOffset.UtcNow.AddMonths(3) : null,
+                ExpiresUtc = rememberMe ? DateTimeOffset.UtcNow.AddMonths(3) : null,
                 IsPersistent = rememberMe,
             });
 
-            TempData["UserName"] = $"{utente.NickName}";
+            Response.Cookies.Append("UserNickName", utente.NickName, new CookieOptions
+            {
+                Expires = rememberMe ? DateTimeOffset.UtcNow.AddMonths(3) : DateTimeOffset.UtcNow.AddHours(1),
+                HttpOnly = false,
+                Secure = true,
+                SameSite = SameSiteMode.Strict
+            });
+
+            TempData["UserName"] = utente.NickName;
 
             if (string.IsNullOrWhiteSpace(returnUrl))
             {
@@ -52,7 +62,6 @@ namespace Progetto_UI.Web.Features.Login
 
             return Redirect(returnUrl);
         }
-
 
         [HttpGet]
         public virtual IActionResult Login(string returnUrl)

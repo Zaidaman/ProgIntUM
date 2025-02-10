@@ -53,21 +53,25 @@
     </a>
 
     <div class="container my-5">
-
         <div class="mb-4">
             @section pageTitleContent {
             Inserimento Pezzo
             }
             <label for="productCode" class="form-label">Fotografa il codice del Pezzo</label>
-            <button id="captureProduct" class="btn btn-secondary w-100 mb-2"><i class="bi bi-camera-fill"></i>&nbsp;Fotografa</button>
-            @*<p id="productCode" class="text-center"><i class="bi bi-camera-fill"></i>Codice Pezzo: @Model.ProductCode</p>*@
+            <button id="captureProduct" class="btn btn-secondary w-100 mb-2">
+                <i class="bi bi-camera-fill"></i>&nbsp;Fotografa
+            </button>
+            <p id="productCode" class="text-center">Codice Pezzo: .......</p>
         </div>
 
         <div class="mb-4">
             <label for="areaCode" class="form-label">Fotografa il codice dell'Area</label>
-            <button id="captureArea" class="btn btn-secondary w-100 mb-2"><i class="bi bi-camera-fill"></i>&nbsp;Fotografa</button>
-            @*<p id="areaCode" class="text-center">Codice Area: @Model.AreaCode</p>*@
+            <button id="captureArea" class="btn btn-secondary w-100 mb-2">
+                <i class="bi bi-camera-fill"></i>&nbsp;Fotografa
+            </button>
+            <p id="areaCode" class="text-center">Codice Area: .......</p>
         </div>
+
         <button id="insertBtn" class="btn btn-primary w-100">Inserisci</button>
     </div>
 
@@ -84,28 +88,41 @@
         const overlay = document.getElementById('overlay');
         const closeOverlayBtn = document.getElementById('closeOverlay');
 
-        function generateRandomCode(prefix) {
-          return `${prefix}${Math.floor(Math.random() * 100).toString().padStart(3,'0')}`;
+        async function fetchRandomItem(url, element, label) {
+            try {
+                const response = await fetch(url);
+                if (!response.ok) throw new Error(`Errore nel recupero dei dati da ${url}`);
+
+                const data = await response.json();
+                if (data.length === 0) {
+                    alert(`Nessun ${label} trovato!`);
+                    return;
+                }
+
+                const randomItem = data[Math.floor(Math.random() * data.length)];
+                element.textContent = `${label}: ${randomItem.name || randomItem.SpaceId}`;
+            } catch (error) {
+                console.error("Errore API:", error);
+                alert(`Errore nel recupero dei dati!`);
+            }
         }
 
         document.getElementById('captureProduct').addEventListener('click', () => {
-          const randomProductCode = generateRandomCode('P');
-          productCodeEl.textContent = `Codice Pezzo: ${randomProductCode}`;
+            fetchRandomItem('/Consegna/GetAllProducts', productCodeEl, 'Codice Pezzo');
         });
 
         document.getElementById('captureArea').addEventListener('click', () => {
-          const randomAreaCode = generateRandomCode('A');
-          areaCodeEl.textContent = `Codice Area: ${randomAreaCode}`;
+            fetchRandomItem('/Consegna/GetAllSpaces', areaCodeEl, 'Codice Area');
         });
 
         document.getElementById('insertBtn').addEventListener('click', () => {
-          overlay.style.display = 'flex';
+            overlay.style.display = 'flex';
         });
 
         closeOverlayBtn.addEventListener('click', () => {
-          overlay.style.display = 'none';
-          productCodeEl.textContent = 'Codice Pezzo: ........';
-          areaCodeEl.textContent = 'Codice Area: ........';
+            overlay.style.display = 'none';
+            productCodeEl.textContent = 'Codice Pezzo:';
+            areaCodeEl.textContent = 'Codice Area:';
         });
     </script>
 </body>
