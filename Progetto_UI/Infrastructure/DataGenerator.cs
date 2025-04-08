@@ -52,35 +52,34 @@ namespace Progetto_UI.Infrastructure
                     NickName = "a"
                 });
 
-            if (!context.Warehouses.Any())
+            if (!context.Warehouse.Any())
             {
-                context.Warehouses.AddRange(
+                context.Warehouse.AddRange(
                     new Warehouse
                     {
                         WarehouseId = 1,
-                        Name = "Warehouse1",
-                        Capacity = 100
+                        Name = "Warehouse1"                        
                     });                  
             }
 
-            if (!context.Products.Any())
+            if (!context.Piece.Any())
             {
-                context.Products.AddRange(
-                    new Product
+                context.Piece.AddRange(
+                    new Piece
                     {
-                        ProductId = 1,
+                        Id = 1,
                         Name = "Product1",
                         Description = "Description1"
                     },
-                    new Product
+                    new Piece
                     {
-                        ProductId = 2,
+                        Id = 2,
                         Name = "Product2",
                         Description = "Description2"
                     },
-                    new Product
+                    new Piece
                     {
-                        ProductId = 3,
+                        Id = 3,
                         Name = "Marchingegno",
                         Description = "Ingranaggi"
                     });
@@ -91,14 +90,12 @@ namespace Progetto_UI.Infrastructure
                 context.Space.AddRange(
                     new Space
                     {
-                        SpaceId = 1,
-                        Name = "A01",
+                        Id = 1,
                         WarehouseId = 1
                     },
                     new Space
                     {
-                        SpaceId = 2,
-                        Name = "A02",
+                        Id = 2,
                         WarehouseId = 1
                     });
             }

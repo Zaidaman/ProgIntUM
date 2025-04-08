@@ -32,11 +32,11 @@ namespace Progetto_UI.Web.Features.Ricerca
         [HttpGet("api/products/{id}")]
         public virtual IActionResult GetProductById(int id)
         {
-            var product = _context.Products
-                                  .Where(p => p.ProductId == id)
+            var product = _context.Piece
+                                  .Where(p => p.Id == id)
                                   .Select(p => new
                                   {
-                                      p.ProductId,
+                                      p.Id,
                                       p.Name,
                                       p.Description
                                   })

@@ -29,7 +29,7 @@ namespace Progetto_UI.Web.Features.Consegna
         [HttpGet]
         public virtual IActionResult GetAllProducts()
         {
-            var products = _context.Products.ToList();
+            var products = _context.Piece.ToList();
             return Ok(products);
         }
         [HttpGet]

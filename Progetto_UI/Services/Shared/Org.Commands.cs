@@ -1,100 +1,71 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Progetto_UI.Services.Shared
 {
-    public class AddProductToSpaceCommand
+    public class AssignPieceToSpaceCommand
     {
-        public Int32 ProductId { get; set; }
-        public Int32 SpaceId { get; set; }
+        public int PieceId { get; set; }
+        public int SpaceId { get; set; }
     }
 
-    public class MoveProductCommand
+    public class RemovePieceFromSpaceCommand
     {
-        public Int32 ProductId { get; set; }
-        public Int32 NewSpaceId { get; set; }
+        public int SpaceId { get; set; }
     }
 
-    public class RemoveProductFromSpaceCommand
+    public class MovePieceToAnotherSpaceCommand
     {
-        public Int32 ProductId { get; set; }
+        public int PieceId { get; set; }
+        public int NewSpaceId { get; set; }
     }
 
     public partial class SharedService
     {
-        /// <summary>
-        /// Adds a product to a space
-        /// </summary>
-        /// <param name="cmd"></param>
-        /// <returns></returns>
-        public async Task Handle(AddProductToSpaceCommand cmd)
+        public async Task AssignPieceToSpace(AssignPieceToSpaceCommand cmd)
         {
             var space = await _dbContext.Space
-                .Where(x => x.SpaceId == cmd.SpaceId)
-                .FirstOrDefaultAsync();
+                .FirstOrDefaultAsync(s => s.Id == cmd.SpaceId);
 
             if (space == null)
-            {
-                throw new Exception("Space not found");
-            }
-            space.ProductId = cmd.ProductId;
+                throw new Exception("Spazio non trovato");
+
+            space.PieceId = cmd.PieceId;
 
             await _dbContext.SaveChangesAsync();
         }
 
-        /// <summary>
-        /// Moves a product to a new space
-        /// </summary>
-        /// <param name="cmd"></param>
-        /// <returns></returns>
-        public async Task Handle(MoveProductCommand cmd)
+        public async Task RemovePieceFromSpace(RemovePieceFromSpaceCommand cmd)
         {
             var space = await _dbContext.Space
-                .Where(x => x.ProductId == cmd.ProductId)
-                .FirstOrDefaultAsync();
+                .FirstOrDefaultAsync(s => s.Id == cmd.SpaceId);
 
             if (space == null)
-            {
-                throw new Exception("Product not found in any space");
-            }
+                throw new Exception("Spazio non trovato");
 
-            space.ProductId = 0; // Remove product from current space
+            space.PieceId = 0; // Rimuove la relazione impostando il valore a 0 o null
+
+            await _dbContext.SaveChangesAsync();
+        }
+
+        public async Task MovePieceToAnotherSpace(MovePieceToAnotherSpaceCommand cmd)
+        {
+            var currentSpace = await _dbContext.Space
+                .FirstOrDefaultAsync(s => s.PieceId == cmd.PieceId);
+
+            if (currentSpace != null)
+            {
+                currentSpace.PieceId = 0; // Rimuove il pezzo dallo spazio corrente
+            }
 
             var newSpace = await _dbContext.Space
-                .Where(x => x.SpaceId == cmd.NewSpaceId)
-                .FirstOrDefaultAsync();
+                .FirstOrDefaultAsync(s => s.Id == cmd.NewSpaceId);
 
             if (newSpace == null)
-            {
-                throw new Exception("New space not found");
-            }
+                throw new Exception("Nuovo spazio non trovato");
 
-            newSpace.ProductId = cmd.ProductId;
-
-            await _dbContext.SaveChangesAsync();
-        }
-
-        /// <summary>
-        /// Removes a product from a space
-        /// </summary>
-        /// <param name="cmd"></param>
-        /// <returns></returns>
-        public async Task Handle(RemoveProductFromSpaceCommand cmd)
-        {
-            var space = await _dbContext.Space
-                .Where(x => x.ProductId == cmd.ProductId)
-                .FirstOrDefaultAsync();
-
-            if (space == null)
-            {
-                throw new Exception("Product not found in any space");
-            }
-
-            space.ProductId = 0; // Remove product from space
+            newSpace.PieceId = cmd.PieceId;
 
             await _dbContext.SaveChangesAsync();
         }

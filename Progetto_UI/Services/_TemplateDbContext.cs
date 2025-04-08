@@ -21,8 +21,8 @@ namespace Progetto_UI.Services
             DataGenerator.InitializeData(this);
         }
 
-        public DbSet<Warehouse> Warehouses { get; set; }
-        public DbSet<Product> Products { get; set; }
+        public DbSet<Warehouse> Warehouse { get; set; }
+        public DbSet<Piece> Piece { get; set; }
         public DbSet<Space> Space { get; set; }
         public DbSet<User> Users { get; set; }
         public string DbPath { get; }

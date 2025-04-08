@@ -12,6 +12,5 @@ namespace Progetto_UI.Services.Shared
         [Key]
         public int WarehouseId { get; set; }
         public string Name { get; set; }
-        public int Capacity { get; set; }
     }
 }
