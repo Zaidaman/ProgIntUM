@@ -23,7 +23,7 @@ namespace Progetto_UI.Services.Shared
 
     public partial class SharedService
     {
-        public async Task AssignPieceToSpace(AssignPieceToSpaceCommand cmd)
+        public virtual async Task AssignPieceToSpace(AssignPieceToSpaceCommand cmd)
         {
             var space = await _dbContext.Space
                 .FirstOrDefaultAsync(s => s.Id == cmd.SpaceId);
