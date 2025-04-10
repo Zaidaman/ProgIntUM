@@ -83,36 +83,33 @@
     </div>
 
     <script>
-        const productCodeEl = document.getElementById('productCode');
-        const areaCodeEl = document.getElementById('areaCode');
+        const PieceId = document.getElementById('productCode');
+        const SpaceId = document.getElementById('areaCode');
         const overlay = document.getElementById('overlay');
         const closeOverlayBtn = document.getElementById('closeOverlay');
 
-        async function fetchRandomItem(url, element, label) {
-            try {
-                const response = await fetch(url);
-                if (!response.ok) throw new Error(`Errore nel recupero dei dati da ${url}`);
-
-                const data = await response.json();
-                if (data.length === 0) {
-                    alert(`Nessun ${label} trovato!`);
-                    return;
-                }
-
-                const randomItem = data[Math.floor(Math.random() * data.length)];
-                element.textContent = `${label}: ${randomItem.name || randomItem.SpaceId}`;
-            } catch (error) {
-                console.error("Errore API:", error);
-                alert(`Errore nel recupero dei dati!`);
-            }
+        if (!pieceId || !spaceId) {
+            alert('Entrambi i codici devono essere forniti.');
+            return;
         }
 
-        document.getElementById('captureProduct').addEventListener('click', () => {
-            fetchRandomItem('/Consegna/GetAllProducts', productCodeEl, 'Codice Pezzo');
-        });
+            try {
+                const url = `@Url.Action("AssignPieceToSpace", "Inserimento")?pieceId=${encodeURIComponent(pieceId)}&spaceId=${encodeURIComponent(spaceId)}`;
+                const response = await fetch(url, {
+                    method: 'POST',
+                });
 
-        document.getElementById('captureArea').addEventListener('click', () => {
-            fetchRandomItem('/Consegna/GetAllSpaces', areaCodeEl, 'Codice Area');
+                const result = await response.json();
+
+                if (result.success) {
+                    overlay.style.display = 'flex';
+                } else {
+                    alert(`Errore: ${result.message}`);
+                }
+            } catch (error) {
+                console.error('Errore durante la chiamata al server:', error);
+                alert('Si è verificato un errore durante la comunicazione con il server.');
+            }
         });
 
         document.getElementById('insertBtn').addEventListener('click', () => {
