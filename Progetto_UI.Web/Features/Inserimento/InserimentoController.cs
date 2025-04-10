@@ -16,7 +16,7 @@ namespace Progetto_UI.Web.Features.Inserimento
         }
 
         [HttpPost]
-        public async Task<IActionResult> AssignPieceToSpace(int pieceId, int spaceId)
+        public virtual async Task<IActionResult> AssignPieceToSpace(int pieceId, int spaceId)
         {
             try
             {
