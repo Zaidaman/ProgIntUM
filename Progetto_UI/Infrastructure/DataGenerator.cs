@@ -82,6 +82,12 @@ namespace Progetto_UI.Infrastructure
                         Id = 3,
                         Name = "Marchingegno",
                         Description = "Ingranaggi"
+                    },
+                    new Piece
+                    {
+                        Id = 4,
+                        Name = "Leva",
+                        Description = "Ingranaggi"
                     });
             }
 

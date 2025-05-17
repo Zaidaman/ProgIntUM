@@ -14,6 +14,8 @@ using System.IO;
 using System.Linq;
 using Progetto_UI.Services;
 using System;
+using Progetto_UI.Services.Shared;
+using Progetto_UI.Infrastructure;
 
 namespace Progetto_UI.Web
 {
@@ -35,7 +37,7 @@ namespace Progetto_UI.Web
 
             services.AddDbContext<TemplateDbContext>(options =>
             {
-                options.UseInMemoryDatabase("InMemoryDb"); // Cambia la configurazione per utilizzare InMemory
+                options.UseInMemoryDatabase("InMemoryDb");
             });
 
             // SERVICES FOR AUTHENTICATION
@@ -80,8 +82,15 @@ namespace Progetto_UI.Web
             Container.RegisterTypes(services);
         }
 
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IServiceProvider serviceProvider)
         {
+            using (var scope = serviceProvider.CreateScope())
+            {
+                var db = scope.ServiceProvider.GetRequiredService<TemplateDbContext>();
+
+                DataGenerator.InitializeData(db);
+            }
+
             if (!env.IsDevelopment())
             {
                 app.UseExceptionHandler("/Home/Error");

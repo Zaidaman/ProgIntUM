@@ -1,12 +1,23 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\lucav\\OneDrive\\Desktop\\ProgIntUM\\Progetto_UI\\",
+  "WorkspaceRootPath": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A1B99431-CF29-4890-8AB9-8DFF37C9BC35}|..\\Progetto_UI.Web\\Progetto_UI.Web.csproj|c:\\users\\lucav\\onedrive\\desktop\\progintum\\progetto_ui.web\\features\\inserimento\\inserimento.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|c:\\users\\steve\\desktop\\prog\\progetto_ui\\infrastructure\\datagenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|solutionrelative:infrastructure\\datagenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A1B99431-CF29-4890-8AB9-8DFF37C9BC35}|..\\Progetto_UI.Web\\Progetto_UI.Web.csproj|c:\\users\\lucav\\onedrive\\desktop\\progintum\\progetto_ui.web\\features\\inserimento\\inserimentocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A1B99431-CF29-4890-8AB9-8DFF37C9BC35}|..\\Progetto_UI.Web\\Progetto_UI.Web.csproj|c:\\users\\steve\\desktop\\prog\\progetto_ui.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|c:\\users\\steve\\desktop\\prog\\progetto_ui\\services\\_templatedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|solutionrelative:services\\_templatedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B99431-CF29-4890-8AB9-8DFF37C9BC35}|..\\Progetto_UI.Web\\Progetto_UI.Web.csproj|c:\\users\\steve\\desktop\\prog\\progetto_ui.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B99431-CF29-4890-8AB9-8DFF37C9BC35}|..\\Progetto_UI.Web\\Progetto_UI.Web.csproj|c:\\users\\steve\\desktop\\prog\\progetto_ui.web\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -16,32 +27,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "InserimentoController.cs",
-              "DocumentMoniker": "C:\\Users\\lucav\\OneDrive\\Desktop\\ProgIntUM\\Progetto_UI.Web\\Features\\Inserimento\\InserimentoController.cs",
-              "RelativeDocumentMoniker": "..\\Progetto_UI.Web\\Features\\Inserimento\\InserimentoController.cs",
-              "ToolTip": "C:\\Users\\lucav\\OneDrive\\Desktop\\ProgIntUM\\Progetto_UI.Web\\Features\\Inserimento\\InserimentoController.cs",
-              "RelativeToolTip": "..\\Progetto_UI.Web\\Features\\Inserimento\\InserimentoController.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwBwAAAAnAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "DataGenerator.cs",
+              "DocumentMoniker": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI\\Infrastructure\\DataGenerator.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\DataGenerator.cs",
+              "ToolTip": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI\\Infrastructure\\DataGenerator.cs*",
+              "RelativeToolTip": "Infrastructure\\DataGenerator.cs*",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAcwFQAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T08:22:21.61Z",
+              "WhenOpened": "2025-05-17T15:10:54.678Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "inserimento.cshtml",
-              "DocumentMoniker": "C:\\Users\\lucav\\OneDrive\\Desktop\\ProgIntUM\\Progetto_UI.Web\\Features\\Inserimento\\inserimento.cshtml",
-              "RelativeDocumentMoniker": "..\\Progetto_UI.Web\\Features\\Inserimento\\inserimento.cshtml",
-              "ToolTip": "C:\\Users\\lucav\\OneDrive\\Desktop\\ProgIntUM\\Progetto_UI.Web\\Features\\Inserimento\\inserimento.cshtml*",
-              "RelativeToolTip": "..\\Progetto_UI.Web\\Features\\Inserimento\\inserimento.cshtml*",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAcwHAAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-10T08:22:01.918Z",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI.Web\\appsettings.json",
+              "RelativeDocumentMoniker": "..\\Progetto_UI.Web\\appsettings.json",
+              "ToolTip": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI.Web\\appsettings.json",
+              "RelativeToolTip": "..\\Progetto_UI.Web\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-17T14:59:21.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI.Web\\Startup.cs",
+              "RelativeDocumentMoniker": "..\\Progetto_UI.Web\\Startup.cs",
+              "ToolTip": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI.Web\\Startup.cs",
+              "RelativeToolTip": "..\\Progetto_UI.Web\\Startup.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAIwFoAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T14:54:29.335Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_TemplateDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI\\Services\\_TemplateDbContext.cs",
+              "RelativeDocumentMoniker": "Services\\_TemplateDbContext.cs",
+              "ToolTip": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI\\Services\\_TemplateDbContext.cs",
+              "RelativeToolTip": "Services\\_TemplateDbContext.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T12:27:59.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI.Web\\Program.cs",
+              "RelativeDocumentMoniker": "..\\Progetto_UI.Web\\Program.cs",
+              "ToolTip": "C:\\Users\\steve\\Desktop\\prog\\Progetto_UI.Web\\Program.cs",
+              "RelativeToolTip": "..\\Progetto_UI.Web\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T12:22:28.401Z",
               "EditorCaption": ""
             }
           ]

@@ -28,6 +28,6 @@ namespace Progetto_UI.Services
         public string DbPath { get; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
-        => options.UseInMemoryDatabase("InMemoryDb");
+            => options.UseInMemoryDatabase("InMemoryDb");
     }
 }

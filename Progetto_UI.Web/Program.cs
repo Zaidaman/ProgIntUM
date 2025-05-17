@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
+using System;
 
 namespace Progetto_UI.Web
 {
@@ -7,6 +8,7 @@ namespace Progetto_UI.Web
     {
         public static void Main(string[] args)
         {
+            Console.WriteLine(Environment.SpecialFolder.LocalApplicationData);
             CreateHostBuilder(args).Build().Run();
         }
 
@@ -16,7 +18,7 @@ namespace Progetto_UI.Web
                 {
                     webBuilder.ConfigureKestrel(kestrel =>
                     {
-                        kestrel.AddServerHeader = false; // OWASP: Remove Kestrel response header 
+                        kestrel.AddServerHeader = false;
                     });
 
                     webBuilder.UseStartup<Startup>();
