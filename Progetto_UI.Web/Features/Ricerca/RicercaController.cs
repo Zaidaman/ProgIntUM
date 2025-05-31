@@ -3,6 +3,7 @@ using Progetto_UI.Services;
 using Progetto_UI.Services.Shared;
 using System;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace Progetto_UI.Web.Features.Ricerca
 {
@@ -10,10 +11,12 @@ namespace Progetto_UI.Web.Features.Ricerca
     public partial class RicercaController : Controller
     {
         private readonly TemplateDbContext _context;
+        private readonly SharedService _sharedService;
 
-        public RicercaController(TemplateDbContext context)
+        public RicercaController(TemplateDbContext context, SharedService sharedService)
         {
             _context = context;
+            _sharedService = sharedService;
         }
 
         [HttpGet]
@@ -30,24 +33,22 @@ namespace Progetto_UI.Web.Features.Ricerca
         }
 
         [HttpGet("api/products/{id}")]
-        public virtual IActionResult GetProductById(int id)
+        public virtual async Task<IActionResult> GetProductById(int id)
         {
-            var product = _context.Piece
-                                  .Where(p => p.Id == id)
-                                  .Select(p => new
-                                  {
-                                      p.Id,
-                                      p.Name,
-                                      p.Description
-                                  })
-                                  .FirstOrDefault();
+            var result = await _sharedService.Query(new FindPieceByIdQuery { PieceId = id });
 
-            if (product == null)
+            if (result == null)
             {
                 return NotFound(new { message = "Prodotto non trovato" });
             }
 
-            return Ok(product);
+            return Ok(new
+            {
+                productId = result.Id,
+                name = result.Name,
+                description = result.Description,
+                spaceId = result.SpaceId
+            });
         }
     }
 }

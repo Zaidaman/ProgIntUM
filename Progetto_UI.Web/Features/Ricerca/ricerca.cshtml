@@ -124,8 +124,9 @@
 
                     const product = await response.json();
 
+                    // Aggiorna la visualizzazione dei risultati
                     productResult.textContent = `Codice prodotto: ${product.productId}`;
-                    areaResult.textContent = `Nome: ${product.name}, Descrizione: ${product.description}`;
+                    areaResult.textContent = `Nome: ${product.name}, Descrizione: ${product.description}, Area: ${product.spaceId ?? 'N/A'}`;
                     resultOverlay.style.display = 'flex';
                 } catch (error) {
                     console.error("Errore nella richiesta API:", error);

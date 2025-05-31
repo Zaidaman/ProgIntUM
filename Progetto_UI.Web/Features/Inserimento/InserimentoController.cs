@@ -29,13 +29,13 @@ namespace Progetto_UI.Web.Features.Inserimento
         }
 
         [HttpPost]
-        public virtual async Task<IActionResult> AssignPieceToSpace(int Id, int SpaceId)
+        public virtual async Task<IActionResult> AssignPieceToSpace(int pieceId, int SpaceId)
         {
             try
             {
                 var cmd = new AssignPieceToSpaceCommand
                 {
-                    PieceId = Id,
+                    PieceId = pieceId,
                     SpaceId = SpaceId
                 };
 

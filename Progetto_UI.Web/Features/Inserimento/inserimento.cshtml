@@ -87,37 +87,26 @@
     </div>
 
     <script>
-        document.getElementById("insertBtn").addEventListener("click", async function () {
-            const productInput = document.getElementById("productInput").value;
-            const areaInput = document.getElementById("areaInput").value;
+        document.getElementById('insertBtn').addEventListener('click', async () => {
+            const pieceRaw = document.getElementById('productInput').value;
+            const spaceRaw = document.getElementById('areaInput').value;
 
-            // Validazione semplice
-            if (!productInput || !areaInput) {
-                alert("Inserisci sia il codice pezzo che il codice area.");
+            const pieceId = pieceRaw.trim();
+            const spaceId = spaceRaw.trim();
+
+            if (!pieceId || !spaceId) {
+                alert("Inserire entrambi i codici.");
                 return;
             }
 
-            try {
-                const response = await fetch('@Url.Action("AssignPieceToSpace", "Inserimento")', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                        'RequestVerificationToken': document.querySelector('input[name="__RequestVerificationToken"]')?.value
-                    },
-                    body: JSON.stringify({
-                        Id: parseInt(productInput),
-                        spaceId: parseInt(areaInput)
-                    })
-                });
+            const url = `/Inserimento/AssignPieceToSpace?pieceId=${encodeURIComponent(pieceId)}&spaceId=${encodeURIComponent(spaceId)}`;
+            const response = await fetch(url, { method: 'POST' });
+            const result = await response.json();
 
-                const result = await response.json();
-                if (result.success) {
-                    document.getElementById("overlay").style.display = "flex";
-                } else {
-                    alert("Errore: " + (result.message || "Impossibile assegnare il pezzo all'area."));
-                }
-            } catch (error) {
-                alert("Errore di rete o server.");
+            if (result.success) {
+                document.getElementById('overlay').style.display = 'flex';
+            } else {
+                alert("Errore: " + result.message);
             }
         });
 
