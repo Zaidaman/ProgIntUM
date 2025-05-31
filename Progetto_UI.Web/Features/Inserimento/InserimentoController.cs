@@ -15,26 +15,6 @@ namespace Progetto_UI.Web.Features.Inserimento
             _sharedService = sharedService;
         }
 
-        [HttpPost]
-        public virtual async Task<IActionResult> AssignPieceToSpace(int pieceId, int spaceId)
-        {
-            try
-            {
-                var command = new AssignPieceToSpaceCommand
-                {
-                    PieceId = pieceId,
-                    SpaceId = spaceId
-                };
-
-                await _sharedService.AssignPieceToSpace(command);
-
-                return Json(new { success = true, message = "Pezzo assegnato allo spazio con successo." });
-            }
-            catch (Exception ex)
-            {
-                return Json(new { success = false, message = ex.Message });
-            }
-        }
         [HttpGet]
         public virtual IActionResult Index()
         {
@@ -46,6 +26,27 @@ namespace Progetto_UI.Web.Features.Inserimento
         public virtual IActionResult Home()
         {
             return RedirectToAction("Index", "Home");
+        }
+
+        [HttpPost]
+        public virtual async Task<IActionResult> AssignPieceToSpace(int Id, int SpaceId)
+        {
+            try
+            {
+                var cmd = new AssignPieceToSpaceCommand
+                {
+                    PieceId = Id,
+                    SpaceId = SpaceId
+                };
+
+                await _sharedService.AssignPieceToSpace(cmd);
+
+                return Json(new { success = true });
+            }
+            catch (Exception ex)
+            {
+                return Json(new { success = false, message = ex.Message });
+            }
         }
     }
 }

@@ -55,8 +55,10 @@
     <div class="container my-5">
         <div class="mb-4">
             @section pageTitleContent {
-            Inserimento Pezzo
+                Inserimento Pezzo
             }
+            <label for="productInput" class="form-label">Inserisci manualmente il codice del Pezzo</label>
+            <input type="text" id="productInput" class="form-control mb-2" placeholder="Codice pezzo" />
             <label for="productCode" class="form-label">Fotografa il codice del Pezzo</label>
             <button id="captureProduct" class="btn btn-secondary w-100 mb-2">
                 <i class="bi bi-camera-fill"></i>&nbsp;Fotografa
@@ -65,6 +67,8 @@
         </div>
 
         <div class="mb-4">
+            <label for="areaInput" class="form-label">Inserisci manualmente il codice dell'Area</label>
+            <input type="text" id="areaInput" class="form-control mb-2" placeholder="Codice area" />
             <label for="areaCode" class="form-label">Fotografa il codice dell'Area</label>
             <button id="captureArea" class="btn btn-secondary w-100 mb-2">
                 <i class="bi bi-camera-fill"></i>&nbsp;Fotografa
@@ -83,43 +87,42 @@
     </div>
 
     <script>
-        const PieceId = document.getElementById('productCode');
-        const SpaceId = document.getElementById('areaCode');
-        const overlay = document.getElementById('overlay');
-        const closeOverlayBtn = document.getElementById('closeOverlay');
+        document.getElementById("insertBtn").addEventListener("click", async function () {
+            const productInput = document.getElementById("productInput").value;
+            const areaInput = document.getElementById("areaInput").value;
 
-        if (!pieceId || !spaceId) {
-            alert('Entrambi i codici devono essere forniti.');
-            return;
-        }
+            // Validazione semplice
+            if (!productInput || !areaInput) {
+                alert("Inserisci sia il codice pezzo che il codice area.");
+                return;
+            }
 
             try {
-                const url = `@Url.Action("AssignPieceToSpace", "Inserimento")?pieceId=${encodeURIComponent(pieceId)}&spaceId=${encodeURIComponent(spaceId)}`;
-                const response = await fetch(url, {
+                const response = await fetch('@Url.Action("AssignPieceToSpace", "Inserimento")', {
                     method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'RequestVerificationToken': document.querySelector('input[name="__RequestVerificationToken"]')?.value
+                    },
+                    body: JSON.stringify({
+                        Id: parseInt(productInput),
+                        spaceId: parseInt(areaInput)
+                    })
                 });
 
                 const result = await response.json();
-
                 if (result.success) {
-                    overlay.style.display = 'flex';
+                    document.getElementById("overlay").style.display = "flex";
                 } else {
-                    alert(`Errore: ${result.message}`);
+                    alert("Errore: " + (result.message || "Impossibile assegnare il pezzo all'area."));
                 }
             } catch (error) {
-                console.error('Errore durante la chiamata al server:', error);
-                alert('Si è verificato un errore durante la comunicazione con il server.');
+                alert("Errore di rete o server.");
             }
         });
 
-        document.getElementById('insertBtn').addEventListener('click', () => {
-            overlay.style.display = 'flex';
-        });
-
-        closeOverlayBtn.addEventListener('click', () => {
-            overlay.style.display = 'none';
-            productCodeEl.textContent = 'Codice Pezzo:';
-            areaCodeEl.textContent = 'Codice Area:';
+        document.getElementById("closeOverlay").addEventListener("click", function () {
+            document.getElementById("overlay").style.display = "none";
         });
     </script>
 </body>
