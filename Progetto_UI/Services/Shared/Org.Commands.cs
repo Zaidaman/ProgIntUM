@@ -30,6 +30,9 @@ namespace Progetto_UI.Services.Shared
 
             if (space == null)
                 throw new Exception("Spazio non trovato");
+            if (space.PieceId != null)
+                throw new Exception("Lo spazio è già occupato da un altro pezzo.");
+
 
             space.PieceId = cmd.PieceId;
 
@@ -44,7 +47,7 @@ namespace Progetto_UI.Services.Shared
             if (space == null)
                 throw new Exception("Spazio non trovato");
 
-            space.PieceId = 0; // Rimuove la relazione impostando il valore a 0 o null
+            space.PieceId = null; // Rimuove la relazione impostando il valore a 0 o null
 
             await _dbContext.SaveChangesAsync();
         }
@@ -64,6 +67,8 @@ namespace Progetto_UI.Services.Shared
 
             if (newSpace == null)
                 throw new Exception("Nuovo spazio non trovato");
+            if (newSpace.PieceId != null)
+                throw new Exception("Lo spazio è già occupato da un altro pezzo.");
 
             newSpace.PieceId = cmd.PieceId;
 
