@@ -94,7 +94,7 @@
     </div>
 
     <script>
-            document.addEventListener("DOMContentLoaded", function () {
+        document.addEventListener("DOMContentLoaded", function () {
             const resultOverlay = document.getElementById('resultOverlay');
             const closeOverlay = document.getElementById('closeOverlay');
             const productResult = document.getElementById('productResult');
@@ -116,7 +116,7 @@
                 }
 
                 try {
-                    const response = await fetch(`https://localhost:7132/ricerca/api/products/${productId}`);
+                    const response = await fetch(`/ricerca/api/products/${productId}`);
 
                     if (!response.ok) {
                         throw new Error(`Errore ${response.status}: Prodotto non trovato`);
@@ -124,7 +124,6 @@
 
                     const product = await response.json();
 
-                    // Aggiorna la visualizzazione dei risultati
                     productResult.textContent = `Codice prodotto: ${product.productId}`;
                     areaResult.textContent = `Nome: ${product.name}, Descrizione: ${product.description}, Area: ${product.spaceId ?? 'N/A'}`;
                     resultOverlay.style.display = 'flex';

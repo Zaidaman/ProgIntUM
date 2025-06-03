@@ -35,14 +35,14 @@ namespace Progetto_UI.Web.Features.Ricerca
         [HttpGet("api/products/{id}")]
         public virtual async Task<IActionResult> GetProductById(int id)
         {
-            var result = await _sharedService.Query(new FindPieceByIdQuery { PieceId = id });
+            var query = new FindPieceByIdQuery { PieceId = id };
+            var result = await _sharedService.Query(query);
 
             if (result == null)
-            {
-                return NotFound(new { message = "Prodotto non trovato" });
-            }
+                return NotFound();
 
-            return Ok(new
+            // Adatta la risposta secondo le proprietà di FindPieceByIdDTO
+            return Json(new
             {
                 productId = result.Id,
                 name = result.Name,
