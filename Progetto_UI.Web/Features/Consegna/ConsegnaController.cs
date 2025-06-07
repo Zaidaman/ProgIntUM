@@ -1,11 +1,20 @@
-﻿using System.Linq;
-using Microsoft.AspNetCore.Mvc;
-using Progetto_UI.Services;
+﻿using Microsoft.AspNetCore.Mvc;
+using Progetto_UI.Services.Shared;
+using System.Threading.Tasks;
+using System;
 
 namespace Progetto_UI.Web.Features.Consegna
 {
     public partial class ConsegnaController : Controller
     {
+
+        private readonly SharedService _sharedService;
+
+        public ConsegnaController(SharedService sharedService)
+        {
+            _sharedService = sharedService;
+        }
+
         [HttpGet]
         public virtual IActionResult Index()
         {
@@ -19,24 +28,25 @@ namespace Progetto_UI.Web.Features.Consegna
             return RedirectToAction("Index", "Home");
         }
 
-        private readonly TemplateDbContext _context;
 
-        public ConsegnaController(TemplateDbContext context)
+        [HttpPost]
+        public virtual async Task<IActionResult> RemovePieceFromSpace(int spaceId)
         {
-            _context = context;
-        }
+            try
+            {
+                var cmd = new RemovePieceFromSpaceCommand
+                {
+                    SpaceId = spaceId
+                };
 
-        [HttpGet]
-        public virtual IActionResult GetAllProducts()
-        {
-            var products = _context.Piece.ToList();
-            return Ok(products);
-        }
-        [HttpGet]
-        public virtual IActionResult GetAllSpaces()
-        {
-            var space = _context.Space.ToList();
-            return Ok(space);
+                await _sharedService.RemovePieceFromSpace(cmd);
+
+                return Json(new { success = true });
+            }
+            catch (Exception ex)
+            {
+                return Json(new { success = false, message = ex.Message });
+            }
         }
     }
 }

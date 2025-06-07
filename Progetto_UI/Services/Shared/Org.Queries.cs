@@ -17,6 +17,11 @@ namespace Progetto_UI.Services.Shared
         public int? SpaceId { get; set; }
     }
 
+    public class RemovePieceFromSpaceQuery
+    {
+        public int SpaceId { get; set; }
+    }
+
     public partial class SharedService
     {
         public async Task<FindPieceByIdDTO> Query(FindPieceByIdQuery qry)
@@ -35,5 +40,7 @@ namespace Progetto_UI.Services.Shared
                 })
                 .FirstOrDefaultAsync();
         }
+
+        
     }
 }

@@ -58,6 +58,8 @@
             @section pageTitleContent {
             Consegna Pezzo
             }
+            <label for="areaInput" class="form-label">Inserisci manualmente il codice dell'Area</label>
+            <input type="text" id="areaInput" class="form-control mb-2" placeholder="Codice area" />
             <label for="productCode" class="form-label">Fotografa il codice del Pezzo</label>
             <button id="captureProduct" class="btn btn-secondary w-100 mb-2"><i class="bi bi-camera-fill"></i>&nbsp;Fotografa</button>
             <p id="productCode" class="text-center">Codice Pezzo: @Model.ProductCode</p>
@@ -72,42 +74,31 @@
     </div>
 
     <script>
-        const productCodeEl = document.getElementById('productCode');
-        const closeOverlayBtn = document.getElementById('closeOverlay');
+        document.getElementById('insertBtn').addEventListener('click', async () => {
+            const spaceRaw = document.getElementById('areaInput').value;
+            const spaceId = spaceRaw.trim();
 
-        // Funzione per ottenere un prodotto casuale
-        async function getRandomProduct() {
-            try {
-                const response = await fetch('/Consegna/GetAllProducts');
-                if (!response.ok) {
-                    throw new Error('Errore nel recupero dei prodotti');
-                }
-
-                const products = await response.json();
-                if (products.length === 0) {
-                    alert("Nessun prodotto trovato!");
-                    return;
-                }
-
-                // Seleziona un prodotto casuale
-                const randomProduct = products[Math.floor(Math.random() * products.length)];
-
-                // Mostra il nome del prodotto nel paragrafo productCode
-                productCodeEl.textContent = `Codice Pezzo: ${randomProduct.name}`;
-            } catch (error) {
-                console.error("Errore nella richiesta API:", error);
-                alert("Si è verificato un errore nel recupero dei prodotti!");
+            if (!spaceId) {
+                alert('Inserisci un codice area valido.');
+                return;
             }
-        }
 
-        document.getElementById('captureProduct').addEventListener('click', getRandomProduct);
+            const url = `/Consegna/RemovePieceFromSpace?spaceId=${encodeURIComponent(spaceId)}`;
+            try {
+                const response = await fetch(url, { method: 'POST' });
+                const result = await response.json();
 
-        document.getElementById('insertBtn').addEventListener('click', () => {
-            overlay.style.display = 'flex';
+                if (result.success) {
+                    document.getElementById('overlay').style.display = 'flex';
+                } else {
+                    alert("Errore: " + result.message);
+                }
+            } catch (err) {
+                alert("Errore di rete o server.");
+            }
         });
-
-        closeOverlayBtn.addEventListener('click', () => {
-            overlay.style.display = 'none';
+        document.getElementById("closeOverlay").addEventListener("click", function () {
+            document.getElementById("overlay").style.display = "none";
             productCodeEl.textContent = 'Codice Pezzo:';
         });
     </script>
