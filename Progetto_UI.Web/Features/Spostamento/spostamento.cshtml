@@ -110,8 +110,31 @@
             fetchRandomItem('/Consegna/GetAllSpaces', areaInsertEl, 'Codice Area Inserisci');
         });
 
-        document.getElementById('spostaBtn').addEventListener('click', () => {
-            overlay.style.display = 'flex';
+        document.getElementById('spostaBtn').addEventListener('click', async () => {
+            const pieceRaw = document.getElementById('productInput').value;
+            const spaceRaw = document.getElementById('areaInput').value;
+        
+            const pieceId = pieceRaw.trim();
+            const spaceId = spaceRaw.trim();
+        
+            if (!pieceId || !spaceId) {
+                alert("Inserire entrambi i codici.");
+                return;
+            }
+        
+            const url = `/Spostamento/MovePieceToAnotherSpace?pieceId=${encodeURIComponent(pieceId)}&spaceId=${encodeURIComponent(spaceId)}`;
+            try {
+                const response = await fetch(url, { method: 'POST' });
+                const result = await response.json();
+        
+                if (result.success) {
+                    document.getElementById('overlay').style.display = 'flex';
+                } else {
+                    alert("Errore: " + result.message);
+                }
+            } catch (err) {
+                alert("Errore di rete o server.");
+            }
         });
 
         closeOverlayBtn.addEventListener('click', () => {
