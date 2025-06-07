@@ -1,4 +1,4 @@
-﻿@model Progetto_UI.Web.Features.Consegna.ConsegnaViewModel
+@model Progetto_UI.Web.Features.Consegna.ConsegnaViewModel
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 
 <head>
@@ -99,7 +99,7 @@
         });
         document.getElementById("closeOverlay").addEventListener("click", function () {
             document.getElementById("overlay").style.display = "none";
-            productCodeEl.textContent = 'Codice Pezzo:';
+            productCode.textContent = 'Codice Pezzo:';
         });
     </script>
 </body>
