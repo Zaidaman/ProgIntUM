@@ -59,7 +59,7 @@ namespace Progetto_UI.Services.Shared
 
             if (currentSpace != null)
             {
-                currentSpace.PieceId = 0; // Rimuove il pezzo dallo spazio corrente
+                currentSpace.PieceId = null;
             }
 
             var newSpace = await _dbContext.Space
