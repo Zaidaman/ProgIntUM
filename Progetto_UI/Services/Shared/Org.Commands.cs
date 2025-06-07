@@ -1,4 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Threading.Tasks;
 
@@ -46,6 +46,8 @@ namespace Progetto_UI.Services.Shared
 
             if (space == null)
                 throw new Exception("Spazio non trovato");
+            if (space.PieceId == null)
+                throw new Exception("Nessun oggetto da consegnare");
 
             space.PieceId = null; // Rimuove la relazione impostando il valore a 0 o null
 
