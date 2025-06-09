@@ -1,9 +1,20 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Progetto_UI.Services.Shared;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Progetto_UI.Web.Features.Home
 {
     public partial class HomeController : Controller
     {
+
+        private readonly SharedService _sharedService;
+
+        public HomeController(SharedService sharedService)
+        {
+            _sharedService = sharedService;
+        }
+
         [HttpGet]
         public virtual IActionResult Index()
         {
@@ -48,6 +59,22 @@ namespace Progetto_UI.Web.Features.Home
             {
                 Response.Cookies.Delete(".AspNetCore.Cookies");
             }
+        }
+
+        [HttpGet]
+        public virtual async Task<IActionResult> StampaInventario()
+        {
+            var data = await _sharedService.QueryAllSpacesWithPiece();
+
+            var sb = new StringBuilder();
+            sb.AppendLine("Area,Codice Pezzo");
+            foreach (var item in data)
+            {
+                sb.AppendLine($"{item.SpaceId},{(item.PieceId.HasValue ? item.PieceId.Value.ToString() : "")}");
+            }
+
+            var bytes = Encoding.UTF8.GetBytes(sb.ToString());
+            return File(bytes, "text/csv", "inventario.csv");
         }
     }
 }

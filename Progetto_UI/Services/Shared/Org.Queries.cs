@@ -1,5 +1,6 @@
 ﻿using System.Linq;
 using System.Threading.Tasks;
+using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 
 namespace Progetto_UI.Services.Shared
@@ -22,6 +23,12 @@ namespace Progetto_UI.Services.Shared
         public int SpaceId { get; set; }
     }
 
+    public class SpaceWithPieceDTO
+    {
+        public int SpaceId { get; set; }
+        public int? PieceId { get; set; }
+    }
+
     public partial class SharedService
     {
         public async Task<FindPieceByIdDTO> Query(FindPieceByIdQuery qry)
@@ -41,6 +48,15 @@ namespace Progetto_UI.Services.Shared
                 .FirstOrDefaultAsync();
         }
 
-        
+        public async Task<List<SpaceWithPieceDTO>> QueryAllSpacesWithPiece()
+        {
+            return await _dbContext.Space
+                .Select(s => new SpaceWithPieceDTO
+                {
+                    SpaceId = s.Id,
+                    PieceId = s.PieceId
+                })
+                .ToListAsync();
+        }
     }
 }
