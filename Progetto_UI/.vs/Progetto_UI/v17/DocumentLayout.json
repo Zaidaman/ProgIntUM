@@ -3,14 +3,22 @@
   "WorkspaceRootPath": "C:\\Users\\lucav\\OneDrive\\Desktop\\ProgIntUM\\Progetto_UI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A1B99431-CF29-4890-8AB9-8DFF37C9BC35}|..\\Progetto_UI.Web\\Progetto_UI.Web.csproj|c:\\users\\lucav\\onedrive\\desktop\\progintum\\progetto_ui.web\\features\\home\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A1B99431-CF29-4890-8AB9-8DFF37C9BC35}|..\\Progetto_UI.Web\\Progetto_UI.Web.csproj|c:\\users\\lucav\\onedrive\\desktop\\progintum\\progetto_ui.web\\features\\consegna\\consegna.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B99431-CF29-4890-8AB9-8DFF37C9BC35}|..\\Progetto_UI.Web\\Progetto_UI.Web.csproj|c:\\users\\lucav\\onedrive\\desktop\\progintum\\progetto_ui.web\\features\\inserimento\\inserimento.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B99431-CF29-4890-8AB9-8DFF37C9BC35}|..\\Progetto_UI.Web\\Progetto_UI.Web.csproj|c:\\users\\lucav\\onedrive\\desktop\\progintum\\progetto_ui.web\\features\\spostamento\\spostamento.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B99431-CF29-4890-8AB9-8DFF37C9BC35}|..\\Progetto_UI.Web\\Progetto_UI.Web.csproj|c:\\users\\lucav\\onedrive\\desktop\\progintum\\progetto_ui.web\\features\\ricerca\\ricerca.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B99431-CF29-4890-8AB9-8DFF37C9BC35}|..\\Progetto_UI.Web\\Progetto_UI.Web.csproj|c:\\users\\lucav\\onedrive\\desktop\\progintum\\progetto_ui.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A1B99431-CF29-4890-8AB9-8DFF37C9BC35}|..\\Progetto_UI.Web\\Progetto_UI.Web.csproj|c:\\users\\lucav\\onedrive\\desktop\\progintum\\progetto_ui.web\\features\\home\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|c:\\users\\lucav\\onedrive\\desktop\\progintum\\progetto_ui\\services\\shared\\org.queries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9499895F-61D7-46A2-90E8-BAEFA2059738}|Progetto_UI.csproj|solutionrelative:services\\shared\\org.queries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -20,45 +28,79 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\lucav\\OneDrive\\Desktop\\ProgIntUM\\Progetto_UI.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "..\\Progetto_UI.Web\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\lucav\\OneDrive\\Desktop\\ProgIntUM\\Progetto_UI.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "..\\Progetto_UI.Web\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-10T10:00:11.595Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "home.cshtml",
               "DocumentMoniker": "C:\\Users\\lucav\\OneDrive\\Desktop\\ProgIntUM\\Progetto_UI.Web\\Features\\Home\\home.cshtml",
               "RelativeDocumentMoniker": "..\\Progetto_UI.Web\\Features\\Home\\home.cshtml",
               "ToolTip": "C:\\Users\\lucav\\OneDrive\\Desktop\\ProgIntUM\\Progetto_UI.Web\\Features\\Home\\home.cshtml",
               "RelativeToolTip": "..\\Progetto_UI.Web\\Features\\Home\\home.cshtml",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAAEIAAACSAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-09T07:25:35.106Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-10T09:54:59.459Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\lucav\\OneDrive\\Desktop\\ProgIntUM\\Progetto_UI.Web\\Features\\Home\\HomeController.cs",
-              "RelativeDocumentMoniker": "..\\Progetto_UI.Web\\Features\\Home\\HomeController.cs",
-              "ToolTip": "C:\\Users\\lucav\\OneDrive\\Desktop\\ProgIntUM\\Progetto_UI.Web\\Features\\Home\\HomeController.cs",
-              "RelativeToolTip": "..\\Progetto_UI.Web\\Features\\Home\\HomeController.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAmwEAAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T07:25:33.825Z",
-              "EditorCaption": ""
+              "DocumentIndex": 3,
+              "Title": "ricerca.cshtml",
+              "DocumentMoniker": "C:\\Users\\lucav\\OneDrive\\Desktop\\ProgIntUM\\Progetto_UI.Web\\Features\\Ricerca\\ricerca.cshtml",
+              "RelativeDocumentMoniker": "..\\Progetto_UI.Web\\Features\\Ricerca\\ricerca.cshtml",
+              "ToolTip": "C:\\Users\\lucav\\OneDrive\\Desktop\\ProgIntUM\\Progetto_UI.Web\\Features\\Ricerca\\ricerca.cshtml",
+              "RelativeToolTip": "..\\Progetto_UI.Web\\Features\\Ricerca\\ricerca.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-10T09:08:04.85Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Org.Queries.cs",
-              "DocumentMoniker": "C:\\Users\\lucav\\OneDrive\\Desktop\\ProgIntUM\\Progetto_UI\\Services\\Shared\\Org.Queries.cs",
-              "RelativeDocumentMoniker": "Services\\Shared\\Org.Queries.cs",
-              "ToolTip": "C:\\Users\\lucav\\OneDrive\\Desktop\\ProgIntUM\\Progetto_UI\\Services\\Shared\\Org.Queries.cs",
-              "RelativeToolTip": "Services\\Shared\\Org.Queries.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAUwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T07:03:30.267Z",
+              "Title": "spostamento.cshtml",
+              "DocumentMoniker": "C:\\Users\\lucav\\OneDrive\\Desktop\\ProgIntUM\\Progetto_UI.Web\\Features\\Spostamento\\spostamento.cshtml",
+              "RelativeDocumentMoniker": "..\\Progetto_UI.Web\\Features\\Spostamento\\spostamento.cshtml",
+              "ToolTip": "C:\\Users\\lucav\\OneDrive\\Desktop\\ProgIntUM\\Progetto_UI.Web\\Features\\Spostamento\\spostamento.cshtml",
+              "RelativeToolTip": "..\\Progetto_UI.Web\\Features\\Spostamento\\spostamento.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-10T08:23:16.17Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "inserimento.cshtml",
+              "DocumentMoniker": "C:\\Users\\lucav\\OneDrive\\Desktop\\ProgIntUM\\Progetto_UI.Web\\Features\\Inserimento\\inserimento.cshtml",
+              "RelativeDocumentMoniker": "..\\Progetto_UI.Web\\Features\\Inserimento\\inserimento.cshtml",
+              "ToolTip": "C:\\Users\\lucav\\OneDrive\\Desktop\\ProgIntUM\\Progetto_UI.Web\\Features\\Inserimento\\inserimento.cshtml",
+              "RelativeToolTip": "..\\Progetto_UI.Web\\Features\\Inserimento\\inserimento.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-10T07:57:19.356Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "consegna.cshtml",
+              "DocumentMoniker": "C:\\Users\\lucav\\OneDrive\\Desktop\\ProgIntUM\\Progetto_UI.Web\\Features\\Consegna\\consegna.cshtml",
+              "RelativeDocumentMoniker": "..\\Progetto_UI.Web\\Features\\Consegna\\consegna.cshtml",
+              "ToolTip": "C:\\Users\\lucav\\OneDrive\\Desktop\\ProgIntUM\\Progetto_UI.Web\\Features\\Consegna\\consegna.cshtml",
+              "RelativeToolTip": "..\\Progetto_UI.Web\\Features\\Consegna\\consegna.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-10T07:54:37.61Z",
               "EditorCaption": ""
             }
           ]

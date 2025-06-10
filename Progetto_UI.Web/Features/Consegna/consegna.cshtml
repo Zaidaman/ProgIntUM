@@ -11,40 +11,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <style>
         body {
-            background-color: #6063A0;
+            background-color: #023047;
             color: white;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
 
-        .overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            display: none;
-            justify-content: center;
-            align-items: center;
-        }
 
-        .overlay-content {
-            background-color: #5c5cad;
-            padding: 20px;
-            border-radius: 8px;
-            color: white;
-            text-align: center;
-        }
-
-            .overlay-content button {
-                margin-top: 10px;
-                padding: 10px;
-                border: none;
-                background-color: white;
-                color: black;
-                font-weight: bold;
-                border-radius: 4px;
-            }
     </style>
 </head>
 <body>
@@ -52,20 +24,21 @@
         <i class="bi bi-house-door-fill"></i> Home
     </a>
 
-    <div class="container my-5">
-
-        <div class="mb-4">
+        <div class="form-section">
             @section pageTitleContent {
             Consegna Pezzo
             }
-            <label for="areaInput" class="form-label">Inserisci manualmente il codice dell'Area</label>
-            <input type="text" id="areaInput" class="form-control mb-2" placeholder="Codice area" />
-            <label for="productCode" class="form-label">Fotografa il codice del Pezzo</label>
+            <h2>Inserisci il codice del dell'area con il prodotto in consegna</h2>
+            <input type="text" id="areaInput" placeholder="Codice area" />
+            @* <label for="productCode" class="form-label">Fotografa il codice del Pezzo</label>
             <button id="captureProduct" class="btn btn-secondary w-100 mb-2"><i class="bi bi-camera-fill"></i>&nbsp;Fotografa</button>
-            <p id="productCode" class="text-center">Codice Pezzo: @Model.ProductCode</p>
+            <p id="productCode" class="text-center">Codice Pezzo: @Model.ProductCode</p> *@
+        <br>
+        <button id="insertBtn">Inserisci</button>
         </div>
-        <button id="insertBtn" class="btn btn-primary w-100">Inserisci</button>
-    </div>
+        
+
+
     <div id="overlay" class="overlay">
         <div class="overlay-content">
             <p>Il pezzo è stato consegnato</p>
