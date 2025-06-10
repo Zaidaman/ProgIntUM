@@ -68,14 +68,14 @@ namespace Progetto_UI.Infrastructure
                     new Piece
                     {
                         Id = 1,
-                        Name = "Product1",
-                        Description = "Description1"
+                        Name = "Pistone",
+                        Description = "Motore"
                     },
                     new Piece
                     {
                         Id = 2,
-                        Name = "Product2",
-                        Description = "Description2"
+                        Name = "Cinghia",
+                        Description = "Motore"
                     },
                     new Piece
                     {
@@ -88,7 +88,14 @@ namespace Progetto_UI.Infrastructure
                         Id = 4,
                         Name = "Leva",
                         Description = "Ingranaggi"
+                    },
+                    new Piece
+                    {
+                        Id = 5,
+                        Name = "Portiera",
+                        Description = "Scocca"
                     });
+
             }
 
             if (!context.Space.Any())
@@ -102,6 +109,21 @@ namespace Progetto_UI.Infrastructure
                     new Space
                     {
                         Id = 2,
+                        WarehouseId = 1
+                    },
+                    new Space
+                    {
+                        Id = 3,
+                        WarehouseId = 1
+                    },
+                    new Space
+                    {
+                        Id = 4,
+                        WarehouseId = 1
+                    },
+                    new Space
+                    {
+                        Id = 5,
                         WarehouseId = 1
                     });
             }
