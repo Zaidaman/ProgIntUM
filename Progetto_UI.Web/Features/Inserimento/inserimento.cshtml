@@ -28,7 +28,7 @@
                 Inserimento Pezzo
             }
             <h2>Inserisci il codice del pezzo da registrare</h2>
-            <input type="text" id="productInput" placeholder="-------" />
+            <input type="text" id="productInput" placeholder="" />
             @* <label for="productCode" class="form-label">Fotografa il codice del Pezzo</label>
             <button id="captureProduct" class="btn btn-secondary w-100 mb-2">
                 <i class="bi bi-camera-fill"></i>&nbsp;Fotografa
@@ -36,7 +36,7 @@
             <p id="productCode" class="text-center">Codice Pezzo:</p> *@
         <br>
             <h2>Inserisci il codice dell'Area da collegare</h2>
-            <input type="text" id="areaInput" placeholder="-------" />
+            <input type="text" id="areaInput" placeholder="" />
             @* <label for="areaCode" class="form-label">Fotografa il codice dell'Area</label>
             <button id="captureArea" class="btn btn-secondary w-100 mb-2">
                 <i class="bi bi-camera-fill"></i>&nbsp;Fotografa
@@ -79,6 +79,8 @@
 
         document.getElementById("closeOverlay").addEventListener("click", function () {
             document.getElementById("overlay").style.display = "none";
+            areaInput.value = null;
+            productInput.value = null;
         });
     </script>
 </body>

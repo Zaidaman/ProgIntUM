@@ -30,7 +30,7 @@
         Ricerca Pezzo
         }
         <h2>Inserisci il codice del prodotto che vuoi ricercare</h2>
-        <input type="text" id="productInput" placeholder="-----">
+        <input type="text" id="productInput" placeholder="">
         <br>
         <button id="searchButton">Ricerca</button>
     </div>
@@ -87,7 +87,7 @@
 
             closeOverlay.addEventListener('click', () => {
                 resultOverlay.style.display = 'none';
-                productInput.value = productInput.placeholder;
+                productInput.value = null;
             });
         });
     </script>

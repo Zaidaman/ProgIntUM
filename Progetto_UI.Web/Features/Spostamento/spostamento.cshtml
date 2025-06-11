@@ -28,13 +28,13 @@
             Spostamento Pezzo
             }
             <h2>Inserisci il codice del pezzo</h2>
-            <input type="text" id="productInput" placeholder="--------" />
+            <input type="text" id="productInput" placeholder="" />
             @* <label for="areaRimuovi" class="form-label">Fotografa il codice dell'Area da cui prendere il pezzo</label>
             <button id="captureAreaRimuovi" class="btn btn-secondary w-100 mb-2"><i class="bi bi-camera-fill"></i>&nbsp;Fotografa</button>
             <p id="areaRimuovi" class="text-center">Codice Area Rimuovi: @Model.AreaRimuovi</p> *@
         <br>
             <h2>Inserisci il codice della nuova area</h2>
-            <input type="text" id="areaInput" placeholder="--------" />
+            <input type="text" id="areaInput" placeholder="" />
             @* <label for="areaInserisci" class="form-label">Fotografa il codice dell'Area in cui inserire il pezzo</label>
             <button id="captureAreaInserisci" class="btn btn-secondary w-100 mb-2"><i class="bi bi-camera-fill"></i>&nbsp;Fotografa</button>
             <p id="areaInserisci" class="text-center">Codice Area Inserisci: @Model.AreaInserisci</p> *@
@@ -84,8 +84,8 @@
 
         closeOverlayBtn.addEventListener('click', () => {
             overlay.style.display = 'none';
-            areaRemoveEl.textContent = 'Codice Area Rimuovi: ...';
-            areaInsertEl.textContent = 'Codice Area Inserisci: ...';
+            areaInput.value = null;
+            productInput.value = null;
         });
     </script>
 
