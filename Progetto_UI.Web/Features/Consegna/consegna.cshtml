@@ -41,8 +41,8 @@
 
     <div id="overlay" class="overlay">
         <div class="overlay-content">
-            <p>Il pezzo è stato consegnato</p>
-            <button id="closeOverlay" class="btn btn-light mt-3">Chiudi</button>
+            <p>L'area è stata liberata</p>
+            <button id="closeOverlay">Chiudi</button>
         </div>
     </div>
 
@@ -72,7 +72,8 @@
         });
         document.getElementById("closeOverlay").addEventListener("click", function () {
             document.getElementById("overlay").style.display = "none";
-            productCode.textContent = 'Codice Pezzo:';
+            productCode.textContent = 'Codice Pezzo:';           
+            document.getElementById("areaInput").value = "";
         });
     </script>
 </body>
