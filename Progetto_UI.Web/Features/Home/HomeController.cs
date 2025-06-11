@@ -64,7 +64,7 @@ namespace Progetto_UI.Web.Features.Home
         [HttpGet]
         public virtual async Task<IActionResult> StampaInventario()
         {
-            var data = await _sharedService.QueryAllSpacesWithPiece();
+            var data = await _sharedService.AllSpacesWithPiece();
 
             var sb = new StringBuilder();
             sb.AppendLine("Area,Codice Pezzo");

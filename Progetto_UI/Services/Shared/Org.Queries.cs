@@ -48,7 +48,7 @@ namespace Progetto_UI.Services.Shared
                 .FirstOrDefaultAsync();
         }
 
-        public async Task<List<SpaceWithPieceDTO>> QueryAllSpacesWithPiece()
+        public async Task<List<SpaceWithPieceDTO>> AllSpacesWithPiece()
         {
             return await _dbContext.Space
                 .Select(s => new SpaceWithPieceDTO
